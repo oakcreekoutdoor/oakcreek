@@ -1,4 +1,3 @@
-
 <section id="testimonial" class="container cf">
 	<h1>What Customers Are Saying</h1>
 	<div class="video">

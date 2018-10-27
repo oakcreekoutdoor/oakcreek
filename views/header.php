@@ -20,7 +20,7 @@
 
 			<nav class="cf">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a href="index.php?controller=Pages&action=home">Home</a></li>
 					<li><a href="#">Shop</a></li>
 					<li><a href="#">Testimonial</a></li>
 					<li><a href="#">About</a></li>
