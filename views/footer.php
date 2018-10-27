@@ -1,0 +1,6 @@
+	<footer>
+		<p>Copyright &copy; 2018 - All Rights Reserved</p>
+	</footer><!-- //footer -->
+
+</body>
+</html>

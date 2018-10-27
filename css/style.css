@@ -1,0 +1,519 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	box-sizing: border-box;
+	list-style: none; 
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+body {
+	padding-bottom: 70px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	width: 85%;
+	margin: auto;
+	position: relative;
+}
+
+.cf::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn {
+	padding: 10px;
+	margin: 10px;
+	display: block;
+}
+
+.btn.prime {
+	background-color: green;
+	color: #fff;
+}
+
+.btn.prime:hover {
+	background-color: olive;
+}
+
+.btn.sec {
+	background-color: olive;
+	color: #fff;
+}
+
+.btn.sec:hover {
+	background-color: green;
+}
+
+
+/*------------- Header -------------*/
+
+header h1 {
+	text-indent: -999999px;
+	position: absolute;
+}
+
+header nav {
+	width: 100%;
+	position: relative;
+}
+
+header ul li {
+	display: inline-block;
+	width: 20%;
+	background-color: green;
+	text-align: center;
+	float: left;
+}
+
+header ul li a {
+	padding: 15px;
+	color: white;
+	display: block;
+}
+
+header ul li a:hover {
+	background-color: olive;
+}
+
+.logo {
+	width: 30%;
+	padding: 20px;
+	display: inline-block;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.cart-user {
+	width: 60%;
+	text-align: right;
+	display: inline-block;
+	float: right;
+	padding: 40px 20px 0;
+}
+
+.cart-user .user {
+	margin-right: 30px;
+}
+
+.cart-user>a {
+	color: #000;
+}
+
+.cart-user>a:hover {
+	color: green;
+}
+
+.fas {
+	margin-right: 10px;
+}
+
+
+/*------------- Hero -------------*/
+
+#heroSection {
+	width: 100%;
+	position: relative;
+}
+
+#heroDiv {
+	overflow: hidden;
+	height: 500px;
+	margin-top: 15px;
+}
+
+#heroDiv img {
+	width: 100%;
+}
+
+
+/*------------- Product Grid -------------*/
+
+.product {
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #aaa;
+}
+
+.product.col-3 {
+	width: 31.33%;
+	display: inline-block;
+	float: left;
+	margin: 1%;
+}
+
+.product img {
+	width: 100%;
+}
+
+
+/*------------- Home -------------*/
+
+#featureProd h2 {
+	text-align: center;
+	margin: 35px;
+}
+
+
+/*------------- About -------------*/
+
+#about, #shop, #testimonial, #contact, #product, #profile, #orderDetails {
+	margin-top: 35px;
+	position: relative;
+}
+
+.imgText {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	height: 500px;
+}
+
+.imgText h2 {
+	margin-bottom: 5px 0;
+}
+
+.imgText p {
+	margin: 10px 0;
+}
+
+.col-img {
+	overflow: hidden;
+}
+
+.col-img img {
+	height: 100%;
+}
+
+.col-text {
+	padding-left: 35px;
+}
+
+
+/*------------- Shop -------------*/
+
+#product #heroDiv {
+	height: 250px;
+	position: relative;
+}
+
+#product #heroDiv:before {
+	content: "";
+	background-color: #000;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#breadCrumb {
+	position: relative;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.heroText {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+}
+
+.heroText h2 {
+	margin-bottom: 20px;
+}
+
+.shopCat {
+	width: 45%;
+	float: left;
+	background: #ddd;
+	margin: 0 2.5%;
+	padding: 55px;
+	text-align: center;
+}
+
+.shopCat h2 {
+	margin-bottom: 35px;
+}
+
+.shopCat .btn {
+	display: inline-block;
+}
+
+
+/*------------- Product Detail -------------*/
+
+#prodDetails {
+	display: inline-block;
+}
+
+#prodDetails .imgText.col-img {
+	width: 55%;
+	height: auto;
+}
+
+#prodDetails .imgText.col-text {
+	width: 45%;
+	padding: 25px 0 25px 55px;
+}
+
+#prodDetails .imgText .moreInfo {
+	margin: 10px 0;
+}
+
+#prodDetails .imgText .btn {
+	margin: 20px 0;
+	display: inline-block;
+}
+
+.bigImg {
+	width: 100%;
+	display: block;
+	padding: 25px;
+}
+
+.smallImg {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	padding: 15px;
+}
+
+.modalBox {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.modalBox:before {
+	content: "";
+	position: absolute;
+	background-color: #000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	opacity: 0.8;
+}
+
+.modalCont, .modalProd {
+	display: inline-block;
+	width: 100%;
+}
+
+.modalCont {
+	position: fixed;
+	width: 50%;
+	height: 50%;
+	background-color: #fff;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	margin: auto;
+	padding: 35px;
+}
+
+.modalProd {
+	display: flex;
+	align-items: center;
+}
+
+.modalImg, .modalInfo {
+	float: left;
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.modalCont h1 {
+	text-align: center;
+}
+
+.modalImg {
+	width: 30%;
+}
+
+.modalImg img {
+	width: 100%;
+	padding: 15px;
+}
+
+.modalInfo {
+	width: 70%;
+	padding-left: 30px;
+}
+
+.modalInfo>* {
+	display: block;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.modalLabel {
+	font-weight: bold;
+}
+
+.modalAdd {
+	text-align: center;
+	margin-top: 35px;
+}
+
+.modalAdd .btn {
+	width: 40%;
+	display: inline-block;
+	padding: 15px 0;
+	margin-top: 25px;
+}
+
+
+/*------------- Account Page -------------*/
+
+#heroProfile {
+	overflow: hidden;
+	height: 200px;
+}
+
+#heroProfile img {
+	display: inline-block;
+	width: 100%;
+}
+
+#userName {
+	text-align: center;
+	padding: 40px;
+}
+
+#userName h2 {
+	font-size: 30px;
+}
+
+#userName a {
+	color: #666;
+	padding-top: 8px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+#userName a:hover {
+	color: #000;
+}
+
+#accNav {
+	border: 1px solid grey;
+	border-left: 0;
+	border-right: 0;
+	text-align: center;
+}
+
+#accNav a {
+	padding: 25px;
+	margin: 0 25px;
+	display: inline-block;
+	color: olive;
+	font-weight: bold;
+}
+
+#accNav a:hover {
+	background-color: green;
+	color: #fff;
+}
+
+#account {
+	margin: 25px;
+	display: inline-block;
+	width: 100%;
+	display: none;
+}
+
+.actAccNav {
+	background-color: #e6e6e6;
+}
+
+.actAccNav:hover {
+	background-color: #e6e6e6 !important;
+	color: olive !important;
+}
+
+.userInfo, .shipInfo {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.userInfo {
+	padding-right: 55px;
+}
+
+.shipInfo {
+	padding-left: 55px;
+}
+
+.labelEdit {
+	padding: 20px 0 5px;
+	border-bottom: 1px solid #666;
+}
+
+.labelEdit h3, .labelEdit a {
+	display: inline-block;
+}
+
+.labelEdit .btn {
+	padding: 5px 25px;
+	margin: 0 0 0 45px;
+}
+
+.contEdit {
+	margin-top: 25px;
+	line-height: 25px;
+	display: inline-block;
+	float: left;
+	width: 50%;
+	padding-right: 30px;
+}
+
+.labelList {
+	margin: 25px 0 10px;
+}
+
+.orderList {
+	padding: 25px 0;
+	border-bottom: 1px solid #aaa;
+}
+
+.listCol {
+	width: 20%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+
+/*------------- Footer -------------*/
+
+footer {
+	background-color: #f5f5f5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
