@@ -274,6 +274,158 @@ header ul li a:hover {
 	padding: 15px;
 }
 
+/*--------------Cart----------------*/
+
+#cartSummary {
+	padding-top: 30px;
+	height: auto;
+	border-bottom: 2px solid #000;
+}
+#cartSummary h2 {
+	font-size: 24pt;
+}
+#cartItems {
+	margin-top: 40px;
+}
+.cart-item {
+	height: 125px;
+}
+.cart-item> div, .cart-item> p {
+	float: left;
+	display: block;
+	text-align: center;
+	margin-right: 190px;
+}
+.cart-item> div p:nth-child(2) {
+	margin-top: 30px;
+}
+.cart-item img {
+	margin-right: 20px;
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+}
+.cart-item > div:nth-child(4) span {
+	border: none;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	display: block;
+	margin-top: 25px;
+	margin-left: 20px;
+	color: red;
+}
+.cart-item > div:nth-child(4) span:hover {
+	color: black;
+}
+.cart-item input {
+	width: 35px;
+	height: 25px;
+	display: block;
+	margin-top: 25px;
+}
+p.cart-label {
+	font-weight: bold;
+	float: left;
+	font-size: 12pt;
+}
+#cartCheckout {
+	margin-top: 30px;
+	position: relative;
+}
+.cart-code {
+	margin-bottom: 20px;
+}
+.cart-code >.btn.sec {
+	display: inline-block;
+}
+.cart-code .cart-label {
+	float: none;
+}
+.cart-code input {
+	height: 40px;
+	width: 120px;
+}
+#cartCheckout > div {
+	float: left;
+}
+#cartCheckout > div:nth-child(2) {
+	width: 250px;
+	position: absolute;
+	right: 0;
+}
+#cartCheckout > div:nth-child(2) p {
+	text-align: right;
+	line-height: 25px;
+}
+.cart-total {
+	margin-top: 20px;
+	font-size: 20pt;
+	font-weight: bold;
+}
+.cart-total p {
+	float: left;
+}
+.cart-total p:nth-child(2) {
+	margin-left: 90px;
+}
+#cartCheckout .btn.prime {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	margin-top: 60px;
+	padding: 20px;
+}
+
+/*--------------Shipping------------*/
+
+#shipping {
+	margin-top: 30px;
+}
+#shippingForm {
+	width: 500px;
+}
+#shippingForm h2 {
+	float: left;
+	clear: both;
+	margin-right: 190px;
+}
+#shippingForm p {
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+#shipping form label {
+	display: block;
+}
+#shipping form input {
+	display: block;
+	height: 30px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+#shipping form div {
+	float: left;
+	margin-right: 30px;
+}
+#shipping form input[name="zipcode"], #shipping form input[name="phone"], #shipping form input[name="altphone"] {
+	width: 220px;
+} 
+#shipping form select {
+	width: 220px;
+	height: 30px;
+}
+#shipping form a {
+	display: block;
+	width: 220px;
+	text-align: center;
+	margin: 0;
+	margin-top: 180px;
+	padding: 20px;
+}
+
+
+
 /*------------- Footer -------------*/
 
 footer {
@@ -285,142 +437,3 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
-
-/*------------- Testimonial ---------*/
-
-#testimonial h1{
-	text-align:center;
-	font-family: 'Zilla Slab', serif;
-	font-size:30px;
-	text-transform: uppercase;
-	margin-top:50px;
-}
-.video{
-	grid-template-columns: 1fr 1fr;
-	display:grid;
-	grid-gap:40px
-}
-.video img{
-	width:575px;
-	margin-top:50px;
-}
-.reviews{
-	background-color: #D3D3D3;/*lightgrey*/
-	margin-top:50px;
-	padding:30px 60px;
-}
-
-q{
-	font-family: 'Muli', sans-serif;
-	font-size:20px;
-}
-.reviews p{
-	font-family: 'Muli', sans-serif;
-	font-weight:bold;
-	margin-top:10px;
-}
-
-/*----------- Contact -------------*/
-#contact{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	margin-top:80px;
-	width:900px;
-	grid-gap:100px;
-}
-.contactText h2{
-	font-family: 'Zilla Slab', serif;  
-	font-size:30pt;
-}
-.contactText p{
-	font-family: 'Muli', sans-serif;
-	width:300px;
-	font-size:15pt;
-	margin-top:20px;
-}
-
-form{
-	background-color: #D3D3D3;/*lightgrey*/
-	padding:15px 30px;
-	width:500px;
-}
-input[type=text], textarea{
-	width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-textarea{
-	height:100px;
-}
-form .btn{
-	display:inline-block;
-	padding:18px 30px;
-	margin-left:0;
-	border-radius: 4px;
-}
-/*----------- Login ----------------*/
-
-#login form{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	width:800px;
-	background:white;
-	margin:0 auto;
-	margin-top:100px;
-	grid-column-gap: 100px;
-
-}
-.loginForm, .signUpForm{
-	border:1px solid black;
-	padding:20px 40px;
-
-}
-
-.loginForm h2, .signUpForm h2{
-	font-family: 'Zilla Slab', serif;
-	font-size:25pt;
-	margin-bottom:30px;
-}
-
-/*------------ Thank You -------------*/
-#thankyou{
-	margin-top:50px;
-	position:relative;
-}
-
-#thankyou img{
-	width:1200px;
-	margin-bottom:50px;
-}
-
-#thankyou h1{
-	position:absolute;
-	top:170px;
-	left:460px;
-	font-size:40pt;
-	color:white;
-}
-
-#thankyou p{
-	text-align:center;
-	font-size:18pt;
-	line-height:30pt;
-
-}
-
-#thankyou span{
-	font-weight:bold;
-}
-
-
-
-
-
-
-
-
-
