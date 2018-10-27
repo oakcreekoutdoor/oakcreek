@@ -1,69 +1,57 @@
 <section id="orderDetails" class="container cf">
 	<div id="userName">
-		<h2>Hello Paul Baker</h2>
-		<a href="#">Logout here</a>
+		<h2>Order Details</h2>
+		<p href="#">Thank you for your order! Check out the details below.</p>
 	</div><!-- //userName -->
 
-	<div id="accNav">
-		<a class="actAccNav" href="#">Account</a>
-		<a href="#">Order History</a>
-	</div><!-- //accNav -->
-
-	<div id="account">
-		<div class="userInfo">
-			<div class="labelEdit cf">
-				<h3>Personal Details</h3>
-				<a class="btn sec" href="#">Edit</a>
-			</div><!-- //labelEdit -->
-			<div class="contEdit">
-				<p>Paul Bake</p>
-				<p>paul.baker@gmail.com</p>
-				<p>+1 222 333 4444</p>
-			</div><!-- //contEdit -->
-		</div><!-- //userInfo -->
-
-		<div class="shipInfo">
-			<div class="labelEdit cf">
-				<h3>Addresses</h3>
-				<a class="btn sec" href="#">Edit</a>
-			</div><!-- //labelEdit -->
-			<div class="contEdit">
-				<h4>Address 1</h4>
-				<p>1616 Pendrell St.</p>
-				<p>Vancouver BC</p>
-				<p>V6G 1S8</p>
-			</div><!-- //contEdit -->
-			<div class="contEdit">
-				<h4>Address 2</h4>
-				<p>1616 Pendrell St.</p>
-				<p>Vancouver BC</p>
-				<p>V6G 1S8</p>
-			</div><!-- //contEdit -->
-		</div><!-- //shipInfo -->
-	</div><!-- //account -->
-
-	<div id="orderHistory">
-		<div class="labelList cf">
-			<div class="listCol"><h4>Order</h4></div>
-			<div class="listCol"><h4>Date</h4></div>
-			<div class="listCol"><h4>Status</h4></div>
-			<div class="listCol"><h4>Total</h4></div>
+	<div id="orderStatus">
+		<h3>Your order was sent</h3>
+		<div class="stOrderLabel cf">
+			<div class="oCol"><h4>Order Number</h4></div>
+			<div class="oCol"><h4>Order Date</h4></div>
+			<div class="oCol"><h4>Shipped Date</h4></div>
 		</div><!-- //labelList -->
 
-		<div class="orderList cf">
-			<div class="listCol"><p>#5793746</p></div>
-			<div class="listCol"><p>26/10/2018</p></div>
-			<div class="listCol"><p>Shipped</p></div>
-			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a href="#">View Order</a></div>
+		<div class="stOrderList cf">
+			<div class="oCol"><p>#5793746</p></div>
+			<div class="oCol"><p>26/10/2018</p></div>
+			<div class=oCol"><p>28/10/2018</p></div>
 		</div><!-- //orderList -->
+	</div><!-- //orderStatus -->
 
-		<div class="orderList cf">
-			<div class="listCol"><p>#5793746</p></div>
-			<div class="listCol"><p>26/10/2018</p></div>
-			<div class="listCol"><p>Shipped</p></div>
-			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a href="#">View Order</a></div>
+	<div id="orderTrack">
+		<div class="stOrderLabel cf">
+			<div class="oCol"><h4>Trancking Number</h4></div>
+			<div class="oText oCol"><h4>Comment</h4></div>
+		</div><!-- //labelList -->
+
+		<div class="stOrderList cf">
+			<div class="oCol"><p>ua6269949006us</p></div>
+			<div class="oText oCol"><p>Your order is currently in transit to the destination.</p></div>
 		</div><!-- //orderList -->
-	</div><!-- //orderHistory -->
+	</div><!-- //orderTrack -->
+
+	<div id="orderItems">
+		<h3>Order items</h3>
+		<div class="itemLabel cf">
+			<div class="listCol itemMd"><h4>Product</h4></div>
+			<div class="listCol itemBg"><h4>Product Name</h4></div>
+			<div class="listCol itemSm"><h4>Qtd</h4></div>
+			<div class="listCol itemSm"><h4>Price</h4></div>
+		</div><!-- //itemLabel -->
+
+		<div class="itemList cf">
+			<div class="listCol itemMd"><img src="assets/hammock.jpg" alt="Product"></div>
+			<div class="listCol itemBg"><p>Super Fancy Hammock</p></div>
+			<div class="listCol itemSm"><p>1</p></div>
+			<div class="listCol itemSm"><p>$18</p></div>
+		</div><!-- //itemList -->
+
+		<div class="itemList cf">
+			<div class="listCol itemMd"><img src="assets/hammock.jpg" alt="Product"></div>
+			<div class="listCol itemBg"><p>Super Fancy Hammock</p></div>
+			<div class="listCol itemSm"><p>1</p></div>
+			<div class="listCol itemSm"><p>$18</p></div>
+		</div><!-- //itemList -->
+	</div><!-- //orderItems -->
 </section><!-- //profile container -->

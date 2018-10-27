@@ -443,6 +443,14 @@ header ul li a:hover {
 	display: none;
 }
 
+#orderStatus h3 {
+	padding: 25px 0 5px;
+}
+
+#orderItems {
+	margin-top: 70px;
+}
+
 .actAccNav {
 	background-color: #e6e6e6;
 }
@@ -493,16 +501,65 @@ header ul li a:hover {
 	margin: 25px 0 10px;
 }
 
-.orderList {
+.orderList, .stOrderList {
 	padding: 25px 0;
 	border-bottom: 1px solid #aaa;
 }
 
-.listCol {
+.stOrderList {
+	padding-top: 8px;
+}
+
+.stOrderLabel .oCol {
+	padding-top: 25px;
+}
+
+.itemLabel {
+	margin: 25px 0 15px;
+}
+
+.itemList {
+	border-bottom: 1px solid #aaa;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+}
+
+.listCol, .oCol, .oText, .listCol {
 	width: 20%;
 	display: inline-block;
 	float: left;
 	text-align: center;
+}
+
+.oCol {
+	width: 33%;
+	text-align: left;
+}
+
+.oText {
+	width: 66%;
+}
+
+.listCol {
+	text-align: left;
+}
+
+.listCol img {
+	height: 80px;
+}
+
+.itemBg {
+	width: 40%;
+}
+
+.itemMd {
+	width: 20%;
+}
+
+.itemSm {
+	padding-left: 25px;
+	width: 20%;
 }
 
 
