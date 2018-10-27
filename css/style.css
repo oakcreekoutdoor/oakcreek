@@ -615,6 +615,59 @@ p.cart-label {
 	margin-top: 15px;
 }
 
+/*-------------Billing--------------------*/
+
+#billing {
+	margin-top: 30px;
+}
+.shipping-info {
+	width: 500px;
+	position: relative;
+	border-bottom: 1px solid #000;
+	padding-bottom: 20px;
+}
+.shipping-info a {
+	padding: 5px 30px;
+	border: 2px solid #000;
+	color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.shipping-info a:hover {
+	color: #fff;
+	background: #000;
+}
+.shipping-info > div, .billing-info > div {
+	margin-top: 20px;
+}
+#billing .policies {
+	top: 500px;
+}
+.billing-info {
+	width: 500px;
+	position: relative;
+	margin-top: 20px;
+}
+.billing-info input {
+	margin-top: 20px;
+}
+.billing-info > p {
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+}
+.billing-info .btn.prime {
+	display: block;
+	width: 220px;
+	text-align: center;
+	margin: 0;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+
+
 
 
 
