@@ -4,7 +4,7 @@ class Connect
 {
 	static function runSql($value, $sql)
 	{
-		$con = mysqli_connect("192.185.103.161","goki_peakgolf","1234ABCD*","goki_peakgolf");
+		$con = mysqli_connect("192.185.103.161","rheajuar_oakcreek","123456","rheajuar_oakcreek");
 
 		$result = mysqli_query($con, $sql);
 
