@@ -711,6 +711,137 @@ p.cart-label {
 	width: 20%;
 }
 
+/*------------- Testimonial ---------*/
+
+#testimonial h1{
+	text-align:center;
+	font-family: 'Zilla Slab', serif;
+	font-size:30px;
+	text-transform: uppercase;
+	margin-top:50px;
+}
+.video{
+	grid-template-columns: 1fr 1fr;
+	display:grid;
+	grid-gap:40px
+}
+.video img{
+	width:575px;
+	margin-top:50px;
+}
+.reviews{
+	background-color: #D3D3D3;/*lightgrey*/
+	margin-top:50px;
+	padding:30px 60px;
+}
+
+q{
+	font-family: 'Muli', sans-serif;
+	font-size:20px;
+}
+.reviews p{
+	font-family: 'Muli', sans-serif;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+/*----------- Contact -------------*/
+#contact{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top:80px;
+	width:900px;
+	grid-gap:100px;
+}
+.contactText h2{
+	font-family: 'Zilla Slab', serif;  
+	font-size:30pt;
+}
+.contactText p{
+	font-family: 'Muli', sans-serif;
+	width:300px;
+	font-size:15pt;
+	margin-top:20px;
+}
+
+form{
+	background-color: #D3D3D3;/*lightgrey*/
+	padding:15px 30px;
+	width:500px;
+}
+input[type=text], textarea{
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+textarea{
+	height:100px;
+}
+form .btn{
+	display:inline-block;
+	padding:18px 30px;
+	margin-left:0;
+	border-radius: 4px;
+}
+/*----------- Login ----------------*/
+
+#login form{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	width:800px;
+	background:white;
+	margin:0 auto;
+	margin-top:100px;
+	grid-column-gap: 100px;
+
+}
+.loginForm, .signUpForm{
+	border:1px solid black;
+	padding:20px 40px;
+
+}
+
+.loginForm h2, .signUpForm h2{
+	font-family: 'Zilla Slab', serif;
+	font-size:25pt;
+	margin-bottom:30px;
+}
+
+/*------------ Thank You -------------*/
+#thankyou{
+	margin-top:50px;
+	position:relative;
+}
+
+#thankyou img{
+	width:1200px;
+	margin-bottom:50px;
+}
+
+#thankyou h1{
+	position:absolute;
+	top:170px;
+	left:460px;
+	font-size:40pt;
+	color:white;
+}
+
+#thankyou p{
+	text-align:center;
+	font-size:18pt;
+	line-height:30pt;
+
+}
+
+#thankyou span{
+	font-weight:bold;
+}
+
+
 
 
 /*------------- Footer -------------*/
