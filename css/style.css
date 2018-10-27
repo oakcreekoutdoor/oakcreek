@@ -494,6 +494,7 @@ p.cart-label {
 }
 #shippingForm {
 	width: 500px;
+	position: relative;
 }
 #shippingForm h2 {
 	float: left;
@@ -529,9 +530,94 @@ p.cart-label {
 	width: 220px;
 	text-align: center;
 	margin: 0;
-	margin-top: 180px;
+	margin-top: 160px;
 	padding: 20px;
 }
+#formCountry {
+	position: absolute;
+	right: -30px;
+}
+#formProvince {
+	position: absolute;
+	margin-top: 65px;
+}
+#formCity {
+	position: absolute;
+	margin-top: 65px;
+	right: -30px;
+}
+.cart-review {
+	border: 1px solid #000;
+	padding: 30px;
+	float: left;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 450px;
+}
+.cart-review-summary {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+.cart-review-item {
+	margin-top: 20px;
+	position: relative;
+	height: 100px;
+}
+.cart-review-item img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+}
+.cart-review-item div {
+	float: left;
+	margin-left: 20px;
+}
+.cart-review-item p {
+	width: 100%;
+	line-height: 25px;
+	font-size: 12pt;
+}
+.cart-review-item p:nth-child(4) {
+	margin-top: 50px;
+	right: -200px;
+}
+.cart-review > div:nth-child(3) {
+	margin-top: 10px;
+	width: 350px;
+	right: 0;
+}
+.cart-review > div:nth-child(3) p {
+	text-align: right;
+	line-height: 25px;
+}
+.cart-review .cart-total {
+	font-size: 16pt;
+	margin-top: 5px;
+}
+.cart-review .cart-total p:nth-child(2) {
+	position: absolute;
+	right: 65px;
+}
+.policies {
+	float: left;
+	position: absolute;
+	right: 0;
+	width: 450px;
+	height: 300px;
+}
+.policies p {
+	line-height: 20px;
+}
+.policies-title {
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+
+
+
 
 /*------------- Account Page -------------*/
 
