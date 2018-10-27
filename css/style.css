@@ -171,7 +171,7 @@ header ul li a:hover {
 
 /*------------- About -------------*/
 
-#about, #shop, #testimonial, #contact, #product, #profile, #orderDetails {
+#about, #shop, #testimonial, #contact, #product {
 	margin-top: 35px;
 	position: relative;
 }
@@ -239,29 +239,8 @@ header ul li a:hover {
 	margin-bottom: 20px;
 }
 
-.shopCat {
-	width: 45%;
-	float: left;
-	background: #ddd;
-	margin: 0 2.5%;
-	padding: 55px;
-	text-align: center;
-}
-
-.shopCat h2 {
-	margin-bottom: 35px;
-}
-
-.shopCat .btn {
-	display: inline-block;
-}
-
 
 /*------------- Product Detail -------------*/
-
-#prodDetails {
-	display: inline-block;
-}
 
 #prodDetails .imgText.col-img {
 	width: 55%;
@@ -295,274 +274,6 @@ header ul li a:hover {
 	padding: 15px;
 }
 
-.modalBox {
-	width: 100%;
-	height: 100%;
-	display: none;
-}
-
-.modalBox:before {
-	content: "";
-	position: absolute;
-	background-color: #000;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	opacity: 0.8;
-}
-
-.modalCont, .modalProd {
-	display: inline-block;
-	width: 100%;
-}
-
-.modalCont {
-	position: fixed;
-	width: 50%;
-	height: 50%;
-	background-color: #fff;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	margin: auto;
-	padding: 35px;
-}
-
-.modalProd {
-	display: flex;
-	align-items: center;
-}
-
-.modalImg, .modalInfo {
-	float: left;
-	display: inline-block;
-	margin-top: 25px;
-}
-
-.modalCont h1 {
-	text-align: center;
-}
-
-.modalImg {
-	width: 30%;
-}
-
-.modalImg img {
-	width: 100%;
-	padding: 15px;
-}
-
-.modalInfo {
-	width: 70%;
-	padding-left: 30px;
-}
-
-.modalInfo>* {
-	display: block;
-	width: 100%;
-	padding: 5px 0;
-}
-
-.modalLabel {
-	font-weight: bold;
-}
-
-.modalAdd {
-	text-align: center;
-	margin-top: 35px;
-}
-
-.modalAdd .btn {
-	width: 40%;
-	display: inline-block;
-	padding: 15px 0;
-	margin-top: 25px;
-}
-
-
-/*------------- Account Page -------------*/
-
-#heroProfile {
-	overflow: hidden;
-	height: 200px;
-}
-
-#heroProfile img {
-	display: inline-block;
-	width: 100%;
-}
-
-#userName {
-	text-align: center;
-	padding: 40px;
-}
-
-#userName h2 {
-	font-size: 30px;
-}
-
-#userName a {
-	color: #666;
-	padding-top: 8px;
-	font-size: 16px;
-	display: inline-block;
-}
-
-#userName a:hover {
-	color: #000;
-}
-
-#accNav {
-	border: 1px solid grey;
-	border-left: 0;
-	border-right: 0;
-	text-align: center;
-}
-
-#accNav a {
-	padding: 25px;
-	margin: 0 25px;
-	display: inline-block;
-	color: olive;
-	font-weight: bold;
-}
-
-#accNav a:hover {
-	background-color: green;
-	color: #fff;
-}
-
-#account {
-	margin: 25px;
-	display: inline-block;
-	width: 100%;
-	display: none;
-}
-
-#orderStatus h3 {
-	padding: 25px 0 5px;
-}
-
-#orderItems {
-	margin-top: 70px;
-}
-
-.actAccNav {
-	background-color: #e6e6e6;
-}
-
-.actAccNav:hover {
-	background-color: #e6e6e6 !important;
-	color: olive !important;
-}
-
-.userInfo, .shipInfo {
-	width: 50%;
-	display: inline-block;
-	float: left;
-}
-
-.userInfo {
-	padding-right: 55px;
-}
-
-.shipInfo {
-	padding-left: 55px;
-}
-
-.labelEdit {
-	padding: 20px 0 5px;
-	border-bottom: 1px solid #666;
-}
-
-.labelEdit h3, .labelEdit a {
-	display: inline-block;
-}
-
-.labelEdit .btn {
-	padding: 5px 25px;
-	margin: 0 0 0 45px;
-}
-
-.contEdit {
-	margin-top: 25px;
-	line-height: 25px;
-	display: inline-block;
-	float: left;
-	width: 50%;
-	padding-right: 30px;
-}
-
-.labelList {
-	margin: 25px 0 10px;
-}
-
-.orderList, .stOrderList {
-	padding: 25px 0;
-	border-bottom: 1px solid #aaa;
-}
-
-.stOrderList {
-	padding-top: 8px;
-}
-
-.stOrderLabel .oCol {
-	padding-top: 25px;
-}
-
-.itemLabel {
-	margin: 25px 0 15px;
-}
-
-.itemList {
-	border-bottom: 1px solid #aaa;
-	padding: 15px 0;
-	display: flex;
-	align-items: center;
-}
-
-.listCol, .oCol, .oText, .listCol {
-	width: 20%;
-	display: inline-block;
-	float: left;
-	text-align: center;
-}
-
-.oCol {
-	width: 33%;
-	text-align: left;
-}
-
-.oText {
-	width: 66%;
-}
-
-.listCol {
-	text-align: left;
-}
-
-.listCol img {
-	height: 80px;
-}
-
-.itemBg {
-	width: 40%;
-}
-
-.itemMd {
-	width: 20%;
-}
-
-.itemSm {
-	padding-left: 25px;
-	width: 20%;
-}
-
-
 /*------------- Footer -------------*/
 
 footer {
@@ -574,3 +285,142 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
+/*------------- Testimonial ---------*/
+
+#testimonial h1{
+	text-align:center;
+	font-family: 'Zilla Slab', serif;
+	font-size:30px;
+	text-transform: uppercase;
+	margin-top:50px;
+}
+.video{
+	grid-template-columns: 1fr 1fr;
+	display:grid;
+	grid-gap:40px
+}
+.video img{
+	width:575px;
+	margin-top:50px;
+}
+.reviews{
+	background-color: #D3D3D3;/*lightgrey*/
+	margin-top:50px;
+	padding:30px 60px;
+}
+
+q{
+	font-family: 'Muli', sans-serif;
+	font-size:20px;
+}
+.reviews p{
+	font-family: 'Muli', sans-serif;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+/*----------- Contact -------------*/
+#contact{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top:80px;
+	width:900px;
+	grid-gap:100px;
+}
+.contactText h2{
+	font-family: 'Zilla Slab', serif;  
+	font-size:30pt;
+}
+.contactText p{
+	font-family: 'Muli', sans-serif;
+	width:300px;
+	font-size:15pt;
+	margin-top:20px;
+}
+
+form{
+	background-color: #D3D3D3;/*lightgrey*/
+	padding:15px 30px;
+	width:500px;
+}
+input[type=text], textarea{
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+textarea{
+	height:100px;
+}
+form .btn{
+	display:inline-block;
+	padding:18px 30px;
+	margin-left:0;
+	border-radius: 4px;
+}
+/*----------- Login ----------------*/
+
+#login form{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	width:800px;
+	background:white;
+	margin:0 auto;
+	margin-top:100px;
+	grid-column-gap: 100px;
+
+}
+.loginForm, .signUpForm{
+	border:1px solid black;
+	padding:20px 40px;
+
+}
+
+.loginForm h2, .signUpForm h2{
+	font-family: 'Zilla Slab', serif;
+	font-size:25pt;
+	margin-bottom:30px;
+}
+
+/*------------ Thank You -------------*/
+#thankyou{
+	margin-top:50px;
+	position:relative;
+}
+
+#thankyou img{
+	width:1200px;
+	margin-bottom:50px;
+}
+
+#thankyou h1{
+	position:absolute;
+	top:170px;
+	left:460px;
+	font-size:40pt;
+	color:white;
+}
+
+#thankyou p{
+	text-align:center;
+	font-size:18pt;
+	line-height:30pt;
+
+}
+
+#thankyou span{
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
