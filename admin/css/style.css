@@ -68,6 +68,21 @@
 	width: 80%;
 	padding: 5px;
 }
+.deleteBtn {
+	font-size: 10pt;
+	color: red;
+}
+.deleteBtn:hover {
+	color: #000;
+}
+.editBtn {
+	font-size: 10pt;
+	margin-right: 10px;
+	color: #669900; /* yellow green */
+}
+.editBtn:hover {
+	color: #223300; /* green */
+}
 input[type="submit"], #editUser a {
 	background: #5bbaae; /* teal */
 	padding: 13px 30px 25px 30px;
@@ -86,7 +101,6 @@ input[type="submit"]:hover {
 	margin-left: 150px;
 }
 #welcome h1 {
-	font-family: 'Cormorant Garamond', serif;
 	font-size: 40pt;
 	font-style: italic;
 	text-align: center;
@@ -186,7 +200,7 @@ nav a:hover {
 	background: #000; 
 	color: #fff;
 }
-#contactBox, #serviceBox {
+#contactBox {
 	width: 500px;
 	margin: 0 auto;
 }
@@ -194,9 +208,9 @@ nav a:hover {
 	width: 40px;
 	text-align: center;
 }
-.contactList, .serviceList {
+.contactList, .contentList {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 60px;
 	margin-top: 40px;
 	padding-bottom: 50px;
@@ -208,26 +222,6 @@ nav a:hover {
 }
 .contactList h3 {
 	margin-bottom: 10px;
-}
-.deleteBtn, #pageList a {
-	background: #b30000; /*red*/
-	font-size: 10pt;
-	padding: 4px 10px;
-	margin-right: 7px;
-	color: #fff;
-}
-.deleteBtn:hover, #pageList a:hover {
-	background: #000;
-}
-.editBtn {
-	background: #000;
-	font-size: 10pt;
-	padding: 4px 10px;
-	margin-right: 7px;
-	color: #fff;
-}
-.editBtn:hover {
-	background: #5bbaae; /* teal */
 }
 #users {
 	height: 700px;
@@ -264,33 +258,30 @@ nav a:hover {
 #editUser form, #editService form {
 	margin-top: 30px;
 }
-#content {
-	height: 1000px;
-}
-.serviceList {
-	height: 600px;
+.contentList {
 	margin-bottom: 100px;
 }
-.serviceList div {
+.contentList div {
 	margin: 0 auto;
 	margin-bottom: 10px;
-	width: 240px;
+	width: 150px;
 	height: 150px;
+	font-size: 12pt;
 }
 #content h1 {
 	font-size: 40pt;
 	display: inline-block;
 }
 #serviceBox img {
-	width: 150px;
+	width: 100px;
 }
-.serviceList h3, .galleryList h3 {
+.contentList h3, .galleryList h3 {
 	margin-bottom: 30px;
-	font-family: 'Cormorant Garamond', serif;
 	font-size: 22pt;
 }
-.serviceList p {
+.contentList p {
 	margin-bottom: 10px;
+	font-size: 12pt;
 }
 #content form {
 	padding-bottom: 100px;
@@ -300,15 +291,16 @@ nav a:hover {
 	float: right;
 	margin-left: 40px;
 	margin-top: 15px;
-	padding: 6px 10px;
-	border: 2px solid #5bbaae; /* teal */
-	width: 160px;
-	color: #000;
+	padding: 10px 15px;
+	border: 2px solid #669900; /* yellow green */
+	width: 200px;
 	font-size: 13pt;
 	text-align: center;
+	color: #669900; /* yellow green */
+	border-radius: 50px;
 }
 .addBtn:hover {
-	background-color: #5bbaae; /* teal */
+	background-color: #669900; /* yellow green */
 	color: #fff;
 }
 #serviceForm {
