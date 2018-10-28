@@ -14,6 +14,7 @@
 					    product_cats.*,
 					    products.strName AS strProdName,
 					    products.nPrice,
+					    products.strFeatPhoto,
 					    categories.strName AS strCatName,
 					    categories.strHeroImage AS strHeroImg,
 					    categories.strDesc
