@@ -18,7 +18,11 @@
 		}
 
 		public function product() {
-			$this->loadView("productDetails", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["product"] = Product::getProduct();
+			
+			$content = $this->showView("productDetails", $arrData);
+			include("templates/pages.php");
 		}
 
 		public function About() {
