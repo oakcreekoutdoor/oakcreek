@@ -1,7 +1,7 @@
 <?php
 include_once("functions/db.php");
 
-$arrMyContacts = runSelectSQL("SELECT * FROM admin");
+$arrMyUsers = runSelectSQL("SELECT * FROM users");
 
 ?>
 
@@ -10,10 +10,10 @@ $arrMyContacts = runSelectSQL("SELECT * FROM admin");
 		<h3>Full Name</h3>
 
 		<?php
-		foreach($arrMyContacts as $contact)
+		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><a class="editBtn" href="edit_user.php?id=<?=$contact['id']?>">Edit</a><a class="deleteBtn" href="delete_user.php?id=<?=$contact['id']?>">Delete</a><?=$contact['strFullName']?>
+		<div><a class="editBtn" href="edit_user.php?id=<?=$user['id']?>">Edit</a><a class="deleteBtn" href="delete_user.php?id=<?=$user['id']?>">Delete</a><?=$user['strFullName']?>
 
 	</div>
 
@@ -27,10 +27,10 @@ $arrMyContacts = runSelectSQL("SELECT * FROM admin");
 		<h3>Username</h3>
 
 		<?php
-		foreach($arrMyContacts as $contact)
+		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$contact['strUsername']?>
+		<div><?=$user['strUserName']?>
 
 	</div>
 
@@ -44,18 +44,48 @@ $arrMyContacts = runSelectSQL("SELECT * FROM admin");
 		<h3>Password</h3>
 
 		<?php
-		foreach($arrMyContacts as $contact)
+		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$contact['strPassword']?>
+		<div><?=$user['strPassword']?>
 
 	</div>
-
 
 <?php
 
 }
 
 ?></div>
+      <div class="email">
+		<h3>Email Address</h3>
 
+		<?php
+		foreach($arrMyUsers as $user)
+		{
+		?>
+		<div><?=$user['strEmailAddress']?>
+
+	</div>
+
+<?php
+
+}
+
+?></div>
+      <div class="Phone">
+		<h3>Phone Number</h3>
+
+		<?php
+		foreach($arrMyUsers as $user)
+		{
+		?>
+		<div><?=$user['nPhone']?>
+
+	</div>
+
+<?php
+
+}
+
+?></div>
 </div>	

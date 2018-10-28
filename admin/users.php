@@ -42,8 +42,10 @@ include("partials/nav.php");
 			method: "POST",
 			data: {
 				strFullName: $("#myName").val(),
-				strUsername: $("#myUserName").val(),
-				strPassword: $("#myPassword").val()
+				strUserName: $("#myUserName").val(),
+				strPassword: $("#myPassword").val(),
+				strEmailAddress: $("#myEmail").val(),
+				nPhone: $("#myPhone").val()
 			},
 
 			success: function(result){

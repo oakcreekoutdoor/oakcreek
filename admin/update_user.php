@@ -2,11 +2,14 @@
 include_once("functions/db.php");
 runSQL("
 	UPDATE
-		admin
+		users
 	SET
 		strFullName = '".$_POST["strFullName"]."',
-		strUsername = '".$_POST["strUsername"]."',
-		strPassword = '".$_POST["strPassword"]."'
+		strUserName = '".$_POST["strUserName"]."',
+		strPassword = '".$_POST["strPassword"]."',
+		strEmailAddress = '".$_POST["strEmailAddress"]."',
+		nPhone = '".$_POST["nPhone"]."'
+
 			WHERE id=".$_GET["id"]."");
 
 header("location: users.php");

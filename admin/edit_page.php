@@ -8,28 +8,26 @@ $arrPages = runSelectSQL("SELECT * FROM pages WHERE id='".$_GET["id"]."'");
 		<h1>Edit Page</h1>
 		<form method="post" enctype="multipart/form-data" action="update_page.php?id=<?=$arrPages[0]['id']?>" onsubmit="return validateForm();">
 
-			<label>Template:</label>
-			<select name="nTemplatesID">
-				<?php
-				$arrAllTemplates = runSelectSQL("SELECT * FROM templates");
-
-				foreach($arrAllTemplates as $template)
-				{
-
-					echo "<option value='".$template["id"]."'>".$template["strName"]."</option>";
-				}
-				?>
-				
-			</select><br/>
-
 			<label class="requiredLabel">Page Title:</label>
 			<input type="text" class="requiredField" name="strName" value="<?=$arrPages[0]['strName']?>">
+             
+            <label class="requiredLabel">Main Page:</label>
 
-			<label>Heading:</label>
-			<input type="text" name="strHeading" value="<?=$arrPages[0]['strHeading']?>"/>
+			<input type="radio" class="requiredField" name="bMainPage"  value="1">Yes
+			
+			<input type="radio" class="requiredField" name="bMainPage"  value="0">No
 
-			<label>Subheading:</label>
-			<input type="text" placeholder="Enter Subheading" name="strSubheading" value="<?=$arrPages[0]['strSubheading']?>"/>
+			<label>Heading1:</label>
+			<input type="text" placeholder="Enter Heading1" name="strHeading1" value="<?=$arrPages[0]['strHeading1']?>"/>
+
+			<label class="requiredLabel">Heading2:</label>
+			<input type="text" class="requiredField" name="strHeading2" value="<?=$arrPages[0]['strHeading1']?>">
+
+			<label>Subheading1:</label>
+			<input type="text" name="strSubheading1" value="<?=$arrPages[0]['strSubheading1']?>"/>
+
+			<label>Subheading2:</label>
+			<input type="text" placeholder="Enter Subheading2" name="strSubheading2" value="<?=$arrPages[0]['strSubheading2']?>"/>
 
 			<label>Body Text:</label>
 			<textarea name="strBodyText"><?=$arrPages[0]['strBodyText']?></textarea>
@@ -38,7 +36,7 @@ $arrPages = runSelectSQL("SELECT * FROM pages WHERE id='".$_GET["id"]."'");
 			<a href="pages.php">Cancel</a>
 
 		</form>
-	</div><!--editUser-->
+	</div><!--editPage-->
 
 <?php
 include("partials/footer.php");

@@ -2,18 +2,22 @@
 include("functions/db.php");
 
 $sql = "INSERT INTO pages (
-		nTemplatesID,
 		strName, 
-		strHeading,
-		strSubheading,
+		bMainPage,
+		strHeading1,
+		strHeading2, 
+		strSubheading1,
+		strSubheading2,
 		strBodyText
 		) 
 
 	VALUES (
-		'".$_POST["nTemplatesID"]."',
 		'".$_POST["strName"]."', 
-		'".$_POST["strHeading"]."',
-		'".$_POST["strSubheading"]."',
+		'".$_POST["bMainPage"]."',
+		'".$_POST["strHeading1"]."',
+		'".$_POST["strHeading2"]."', 
+		'".$_POST["strSubheading1"]."',
+		'".$_POST["strSubheading2"]."',
 		'".$_POST["strBodyText"]."'
 		
 	)";

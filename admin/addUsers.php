@@ -1,19 +1,23 @@
 <?php
 include("functions/db.php");
 
-$error = ($_POST["strFullName"] && $_POST["strUsername"] && $_POST["strPassword"])?false:true;
+$error = ($_POST["strFullName"] && $_POST["strUserName"] && $_POST["strPassword"] && $_POST["strEmailAddress"] && $_POST["nPhone"])?false:true;
 
 
-$sql = "INSERT INTO admin (
+$sql = "INSERT INTO users (
 		strFullName, 
-		strUsername,
-		strPassword
+		strUserName,
+		strPassword,
+		strEmailAddress,
+		nPhone
 		) 
 
 	VALUES (
 		'".$_POST["strFullName"]."', 
-		'".$_POST["strUsername"]."',
-		'".$_POST["strPassword"]."'
+		'".$_POST["strUserName"]."',
+		'".$_POST["strPassword"]."', 
+		'".$_POST["strEmailAddress"]."',
+		'".$_POST["nPhone"]."'
 		
 	)";
 
