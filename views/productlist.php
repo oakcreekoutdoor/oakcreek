@@ -1,5 +1,5 @@
 <?php
-foreach($arrData as $product)
+foreach($arrData["prods"] as $product)
 {
 ?>
 	<div class="product col-3">

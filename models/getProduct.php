@@ -10,9 +10,21 @@
 
 	    static function getProductCats()
 	    {
-	        $sql = "SELECT products.*, product_cats.*, categories.* FROM products
-			       LEFT JOIN product_cats ON products.id = product_cats.nProductsID 
-			       LEFT JOIN categories ON products.nCategoriesID = categories.id";
+	        $sql = "SELECT
+					    product_cats.*,
+					    products.strName AS strProdName,
+					    products.nPrice,
+					    categories.strName AS strCatName,
+					    categories.strHeroImage AS strHeroImg,
+					    categories.strDesc,
+					    product_photos.strPhoto
+					FROM
+					    product_cats
+					LEFT JOIN products ON products.id = product_cats.nProductsID
+					LEFT JOIN categories ON categories.id = product_cats.nCategoriesID
+					LEFT JOIN product_photos ON product_photos.nProductsID = products.id
+					WHERE
+					    product_cats.nCategoriesID =".$_GET["cID"];
 			       return DBFactory::newData()->runSql("getData", $sql);
 		 }
 

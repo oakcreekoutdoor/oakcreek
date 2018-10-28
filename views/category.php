@@ -5,7 +5,7 @@
 	?>
 	<div id="productGrid">
 		<?php
-			include("views/product_grid.php");
+			include("views/productList.php");
 		?>
 	</div><!-- //productGrid -->
 </section><!-- //product container -->

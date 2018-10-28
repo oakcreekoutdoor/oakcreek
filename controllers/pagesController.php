@@ -2,10 +2,10 @@
 	class PagesController extends MainController {
 		public function Home() {
 			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["prods"] = Product::featureProducts();
+			
 			$content = $this->showView("heroImg");
-
-			$arrProd = Product::featureProducts();
-			$content .= $this->showView("product_section", $arrProd);
+			$content .= $this->showView("product_section", $arrData);
 			include("templates/pages.php");
 		}
 
@@ -18,7 +18,11 @@
 		}
 
 		public function category() {
-			$this->loadView("category", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["prods"] = Product::getProductCats();
+			
+			$content = $this->showView("category", $arrData);
+			include("templates/pages.php");
 		}
 
 		public function product() {
