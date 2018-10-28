@@ -17,9 +17,13 @@ include("partials/nav.php");
 			<label>Full Name:</label>
 			<input type="text" class="requiredField" placeholder="Enter Full Name" name="strFullName" id="myName" value=""/>
 			<label>Username:</label>
-			<input type="text" class="requiredField" placeholder="Enter Username" name="strUsername" id="myUserName" value=""/>
+			<input type="text" class="requiredField" placeholder="Enter Username" name="strUserName" id="myUserName" value=""/>
 			<label>Password:</label>
 			<input type="password" class="requiredField" placeholder="(4 characters)" name="strPassword" id="myPassword" value=""/>
+			<label>Email Address:</label>
+			<input type="text" class="requiredField" placeholder="Enter Email Address" name="strEmailAddress" id="myEmail" value=""/>
+			<label>Phone Number:</label>
+			<input type="text" class="requiredField" placeholder="Enter Phone Number" name="nPhone" id="myPhone" value=""/>
 			<a href="#" id="doAjax" onClick="validateForm()">ADD USER</a>
 		</form>
 </div>
