@@ -91,6 +91,7 @@ input[type="submit"]:hover {
 	font-style: italic;
 	text-align: center;
 	margin-top: 120px;
+	color: #223300; /* green */
 }
 #welcome a {
 	color: #000;
@@ -114,8 +115,8 @@ input[type="submit"]:hover {
 	border: 3px solid #000;
 }
 #manage > div:hover {
-	border: 3px solid #5bbaae; /* teal */
-	background-color: #5bbaae; /* teal */
+	border: 3px solid #669900; /* yellow green */
+	background-color: #669900; /* yellow green */
 }
 #nav {
 	position: fixed;
@@ -124,7 +125,7 @@ input[type="submit"]:hover {
 	height: 100%;
 	width: 230px;
 	padding: 30px;
-	background-color: #19334d; /*navy blue*/
+	background-color: #223300; /* green */
 }
 #nav img {
 	width: 160px;
@@ -136,19 +137,19 @@ nav li, a {
 	font-weight: 600;
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #fff;
+	color: #e6e600; /* neon green */
 	margin-bottom: 40px;
 	width: 100%;
 }
 nav a:hover {
-	border-bottom: 5px solid #5bbaae; /* teal */
+	border-bottom: 5px solid #669900; /* yellow green */
 }
 #users form {
 	padding: 40px 40px 40px 0px;
 	background: #fff;
 	width: 300px;
 }
-#users, #service-list {
+#users, #content-list {
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 100px;
@@ -263,7 +264,7 @@ nav a:hover {
 #editUser form, #editService form {
 	margin-top: 30px;
 }
-#services {
+#content {
 	height: 1000px;
 }
 .serviceList {
@@ -276,7 +277,7 @@ nav a:hover {
 	width: 240px;
 	height: 150px;
 }
-#services h1 {
+#content h1 {
 	font-size: 40pt;
 	display: inline-block;
 }
@@ -291,7 +292,7 @@ nav a:hover {
 .serviceList p {
 	margin-bottom: 10px;
 }
-#services form {
+#content form {
 	padding-bottom: 100px;
 }
 .addBtn {
@@ -356,15 +357,4 @@ nav a:hover {
 #serviceForm select, #editService select{
 	margin-bottom: 10px;
 }
-.galleryList div {
-	margin: 0 auto;
-	float: left;
-	height: 600px;
-	width: 900px;
-}
-.galleryPhoto {
-	margin-top: 40px;
-}
-.galleryPhoto img {
-	width: 500px !important;
-}
+
