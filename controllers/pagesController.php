@@ -1,12 +1,15 @@
 <?php
 	class PagesController extends MainController {
-		public function home() {
-			$content = $this->showView("heroImg", "");
-			$content .= $this->showView("product_section", "");
+		public function Home() {
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$content = $this->showView("heroImg");
+
+			$arrProd = Product::featureProducts();
+			$content .= $this->showView("product_section", $arrProd);
 			include("templates/pages.php");
 		}
 
-		public function shop() {
+		public function Shop() {
 			$this->loadView("shop", "pages");
 		}
 
@@ -15,18 +18,18 @@
 		}
 
 		public function product() {
-			$this->loadView("product", "pages");
+			$this->loadView("productDetails", "pages");
 		}
 
-		public function about() {
+		public function About() {
 			$this->loadView("about", "pages");
 		}
 
-		public function testimonial() {
+		public function Testimonials() {
 			$this->loadView("testimonial", "pages");
 		}
 
-		public function contact() {
+		public function Contact() {
 			$this->loadView("contact", "pages");
 		}
 	}
