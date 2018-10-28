@@ -1,23 +1,28 @@
 <section id="product" class="container">		
-	<?php include("views/breadcrumb.php")?>
+	<?php 
+	include("views/breadcrumb.php");
+	$arrPhoto = array_map("trim", explode(", ",$arrData["product"][0]["strPhotos"]));
+	?>
 
 	<div id="prodDetails">
 		<div class="imgText col-img cf">
-			<img class="bigImg" src="assets/hammock.jpg" alt="about" />
-			<img class="smallImg" src="assets/hammock.jpg" alt="about" />
-			<img class="smallImg" src="assets/hammock.jpg" alt="about" />
-			<img class="smallImg" src="assets/hammock.jpg" alt="about" />
-			<img class="smallImg" src="assets/hammock.jpg" alt="about" />
+			<img class="bigImg" src="assets/<?=$arrPhoto[0]?>" alt="<?=$arrPhoto[0]?>" />
+		<?php
+		foreach($arrPhoto as $photo)
+		{
+		?>
+			<img class="smallImg" src="assets/<?=$photo?>" alt="<?=$photo?>" />
+		<?php
+		}
+		?>
 		</div><!-- //imgText col-img -->
 
 		<div class="imgText col-text">
-			<h2>Product Name</h2>
-			<h3>Price: $99.00</h3>
+			<h2><?=$arrData["product"][0]["strName"]?></h2>
+			<h3>Price: $<?=$arrData["product"][0]["nPrice"]?></h3>
 			<span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
 			<h4>Description</h4>
-			<p>BBQ GRILL COVERS measure 58 Inch Length x 24 Inch Width x 48 Inch Height</p>
-			<p>Mof durable 600D polyester fabric to provide ultimate weather resistant protection for your outdoor grill cover</p>
-			<a href="#" class="moreInfo cf">Read More</a>
+			<p><?=$arrData["product"][0]["strDescription"]?></p>
 			<a href="#" class="btn prime">Add to Cart</a>
 		</div><!-- //imgText col-text -->
 	</div><!-- //prodDetails -->
