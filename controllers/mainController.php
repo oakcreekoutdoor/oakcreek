@@ -1,6 +1,7 @@
 <?php
 	class MainController {
-		public function showView($view, $arrData="")
+
+		public function showView($view, $arrData)
 		{
 			ob_start();
 			include_once('views/'.$view.".php");
@@ -10,8 +11,13 @@
 			return $content;
 		}
 
-		public function loadView($file, $template) {
-			$content = $this->showView($file);
+		public function showNav() {
+			$arrMainNav = MainNav::makeMainNav();
+			$content = $this->loadView($file, $template, $arrMainNav);
+		}
+
+		public function loadView($file, $template, $data="") {
+			$content = $this->showView($file, $data);
 			include("templates/".$template.".php");
 		}
 	}

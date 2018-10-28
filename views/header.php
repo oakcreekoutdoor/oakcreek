@@ -14,18 +14,11 @@
 				<img src="images/logo_black.png" alt="Logo" />
 			</div><!-- //logo -->
 			<div class="cart-user">
-				<a class="user" href="#"><span class="fas fa-user-circle"></span>Login / Sign Up</a>
+				<a class="user" href="index.php?controller=Account&action=login"><span class="fas fa-user-circle"></span>Login / Sign Up</a>
 				<a href="#"><span class="fas fa-shopping-cart"></span>Cart (0)</a>
 			</div><!-- //cart-user -->
-
-			<nav class="cf">
-				<ul>
-					<li><a href="index.php?controller=Pages&action=home">Home</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Testimonial</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav><!-- //nav -->
+			<?php 
+				include("views/nav.php") 
+			?>
 		</div><!-- //container -->
 	</header><!-- //header -->
