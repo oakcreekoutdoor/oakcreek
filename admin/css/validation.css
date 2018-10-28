@@ -1,0 +1,8 @@
+.error {
+	border-bottom: 1px solid tomato;
+	background-color: #ff8080; /* salmon */
+}
+form label.requiredLabel::after {
+	content: "*"; 
+	color: tomato;
+}

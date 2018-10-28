@@ -4,7 +4,6 @@ include("libs/DBFactory.php");
 include("models/getMainNav.php");
 include("models/getProduct.php");
 include("models/getOrders.php");
-include("models/getReview.php");
 include("models/accessAcc.php");
 include("controllers/MainController.php");
 include("controllers/PagesController.php");

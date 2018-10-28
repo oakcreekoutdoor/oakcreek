@@ -1,0 +1,370 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14pt;
+	font-weight: 400;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+#container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+}
+.loginError {
+	position: absolute;
+	top: 130px;
+	padding: 10px;
+	background-color: #ff8080; /* salmon */
+	border: 2px solid tomato;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+	font-weight: 500;
+	font-size: 12pt;
+}
+#loginForm {
+	align-self: center;
+	background: #fff;
+	padding-top: 40px;
+	height: 450px;
+	border: 1px solid #eee;
+	-webkit-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
+	-moz-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
+	box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
+}
+#loginForm img {
+	width: 80px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#loginForm form {
+	width: 300px;
+	margin-top: 60px;
+}
+#loginForm form input {
+	height: 50px;
+}
+#loginForm h1 {
+	font-size: 20pt;
+	margin-bottom: -30px;
+	text-align: center;
+}
+#loginForm input {
+	margin-bottom: 15px;
+	height: 30px;
+	width: 80%;
+	padding: 5px;
+}
+input[type="submit"], #editUser a {
+	background: #5bbaae; /* teal */
+	padding: 13px 30px 25px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14pt;
+	font-weight: 600;
+	border: 0;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background: #457786; /*dark blue*/
+	transition: all 0.3s ease;
+}
+#welcome {
+	margin-left: 150px;
+}
+#welcome h1 {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 40pt;
+	font-style: italic;
+	text-align: center;
+	margin-top: 120px;
+}
+#welcome a {
+	color: #000;
+	font-size: 16pt;
+	letter-spacing: 1px;
+}
+#manage {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+	width: 560px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+#manage img {
+	width: 80px;
+	margin-bottom: 20px;
+}
+#manage > div {
+	padding: 40px 20px;
+	border: 3px solid #000;
+}
+#manage > div:hover {
+	border: 3px solid #5bbaae; /* teal */
+	background-color: #5bbaae; /* teal */
+}
+#nav {
+	position: fixed;
+	left: 0;
+	top:0;
+	height: 100%;
+	width: 230px;
+	padding: 30px;
+	background-color: #19334d; /*navy blue*/
+}
+#nav img {
+	width: 160px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+nav li, a {
+	font-size: 14pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 40px;
+	width: 100%;
+}
+nav a:hover {
+	border-bottom: 5px solid #5bbaae; /* teal */
+}
+#users form {
+	padding: 40px 40px 40px 0px;
+	background: #fff;
+	width: 300px;
+}
+#users, #service-list {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-left: 300px;
+}
+#users h1, #services h1 {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 40pt;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+#users input, #services input, #editUser input, #serviceForm input {
+	height: 40px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	display: block;
+	width: 300px;
+}
+#users label {
+	display: inline-block;
+}
+#users form a, #serviceForm a {
+	background: #5bbaae; /* teal */
+	padding: 10px 30px 10px 30px;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 13pt;
+	border: 0;
+	cursor: pointer;
+	width: 170px;
+}
+#users form a:hover, #services form a:hover, #serviceForm a:hover {
+	background: #000; 
+	color: #fff;
+}
+#contactBox, #serviceBox {
+	width: 500px;
+	margin: 0 auto;
+}
+#contactBox img {
+	width: 40px;
+	text-align: center;
+}
+.contactList, .serviceList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 60px;
+	margin-top: 40px;
+	padding-bottom: 50px;
+}
+.contactList div {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 240px;
+}
+.contactList h3 {
+	margin-bottom: 10px;
+}
+.deleteBtn, #pageList a {
+	background: #b30000; /*red*/
+	font-size: 10pt;
+	padding: 4px 10px;
+	margin-right: 7px;
+	color: #fff;
+}
+.deleteBtn:hover, #pageList a:hover {
+	background: #000;
+}
+.editBtn {
+	background: #000;
+	font-size: 10pt;
+	padding: 4px 10px;
+	margin-right: 7px;
+	color: #fff;
+}
+.editBtn:hover {
+	background: #5bbaae; /* teal */
+}
+#users {
+	height: 700px;
+}
+#editUser, #editService {
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-left: 300px;
+	width: 300px;
+}
+#editUser input[type="submit"], #editService input[type="submit"], #serviceForm input[type="submit"] {
+	padding: 10px 30px; 
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	font-size: 13pt;
+	display: inline-block;
+}
+#editUser a, #editService a {
+	background: #000;
+	color: #fff;
+	width: 170px;
+	height: 50px;
+	margin-top: 30px;
+	padding: 13px 30px; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13pt;
+}
+#editUser a:hover, #editService a:hover{
+	background-color: #5bbaae; /* teal */
+	color: #000;
+}
+#editUser form, #editService form {
+	margin-top: 30px;
+}
+#services {
+	height: 1000px;
+}
+.serviceList {
+	height: 600px;
+	margin-bottom: 100px;
+}
+.serviceList div {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 240px;
+	height: 150px;
+}
+#services h1 {
+	font-size: 40pt;
+	display: inline-block;
+}
+#serviceBox img {
+	width: 150px;
+}
+.serviceList h3, .galleryList h3 {
+	margin-bottom: 30px;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 22pt;
+}
+.serviceList p {
+	margin-bottom: 10px;
+}
+#services form {
+	padding-bottom: 100px;
+}
+.addBtn {
+	position: absolute;
+	float: right;
+	margin-left: 40px;
+	margin-top: 15px;
+	padding: 6px 10px;
+	border: 2px solid #5bbaae; /* teal */
+	width: 160px;
+	color: #000;
+	font-size: 13pt;
+	text-align: center;
+}
+.addBtn:hover {
+	background-color: #5bbaae; /* teal */
+	color: #fff;
+}
+#serviceForm {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-left: 300px;
+}
+#serviceForm label, #serviceForm input, #editService label, #editService input {
+	display: block;
+	margin-bottom: 10px;
+}
+#serviceForm h1, #editService h1 {
+	margin-bottom: 30px;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 40pt;
+	font-style: italic;
+}
+#serviceForm textarea, #editService textarea {
+	width: 300px;
+	height: 200px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+#editService a.removeBtn {
+	font-size: 8pt;
+	padding: 5px 10px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+#editService input {
+	height: 40px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	display: block;
+	width: 300px;
+}
+.pageList div {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 500px;
+	height: 20px;
+}
+#serviceForm select, #editService select{
+	margin-bottom: 10px;
+}
+.galleryList div {
+	margin: 0 auto;
+	float: left;
+	height: 600px;
+	width: 900px;
+}
+.galleryPhoto {
+	margin-top: 40px;
+}
+.galleryPhoto img {
+	width: 500px !important;
+}
