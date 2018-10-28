@@ -1,5 +1,5 @@
 <?php
 	include("views/header.php");
-	include("templates/billing.php");
+	include("templates/payment.php");
 	include("views/footer.php");
 ?>
