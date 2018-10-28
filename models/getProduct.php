@@ -1,6 +1,13 @@
 <?php
 	class Product
 	{
+	    static function getCats()
+	    {
+	        $sql = "SELECT *
+	        		FROM categories";
+			       return DBFactory::newData()->runSql("getData", $sql);
+		 }
+
 	    static function getProductCats()
 	    {
 	        $sql = "SELECT products.*, product_cats.*, categories.* FROM products

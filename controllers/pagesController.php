@@ -10,7 +10,11 @@
 		}
 
 		public function Shop() {
-			$this->loadView("shop", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["cats"] = Product::getCats();
+			
+			$content = $this->showView("shop", $arrData);
+			include("templates/pages.php");
 		}
 
 		public function category() {
