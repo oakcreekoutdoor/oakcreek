@@ -63,6 +63,7 @@ a {
 header h1 {
 	text-indent: -999999px;
 	position: absolute;
+	z-index: -1;
 }
 
 header nav {

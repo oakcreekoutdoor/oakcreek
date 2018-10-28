@@ -1,6 +1,6 @@
 <?php
 	class PagesController extends MainController {
-		public function Home() {
+		public function home() {
 			$arrData["mainNav"] = MainNav::makeMainNav();
 			$arrData["prods"] = Product::featureProducts();
 			
@@ -9,7 +9,7 @@
 			include("templates/pages.php");
 		}
 
-		public function Shop() {
+		public function shop() {
 			$arrData["mainNav"] = MainNav::makeMainNav();
 			$arrData["cats"] = Product::getCats();
 			
@@ -33,15 +33,15 @@
 			include("templates/pages.php");
 		}
 
-		public function About() {
+		public function about() {
 			$this->loadView("about", "pages");
 		}
 
-		public function Testimonials() {
+		public function testimonials() {
 			$this->loadView("testimonial", "pages");
 		}
 
-		public function Contact() {
+		public function contact() {
 			$this->loadView("contact", "pages");
 		}
 	}
