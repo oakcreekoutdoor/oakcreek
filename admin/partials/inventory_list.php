@@ -20,56 +20,84 @@ $arrPhotos = runSelectSQL("
 ");
 
 ?>
-	<div class="serviceList">
+	<div class="contentList">
 		<div>
-			<h3>Listings</h3>
+			<h3>Name</h3>
 
 			<?php
 			foreach($arrProducts as $product)
 			{
 			?>
-			<div><p><?=$product['strName']?></p><a class="editBtn" href="edit_inventory.php?id=<?=$product['id']?>">Edit</a><a class="deleteBtn" href="delete_inventory.php?id=<?=$product['id']?>">Delete</a>
+			<div>
+				<p><?=$product['strName']?></p>
+				<a class="editBtn" href="edit_inventory.php?id=<?=$product['id']?>"><span class="far fa-edit"></span></a>
+				<a class="deleteBtn" href="delete_inventory.php?id=<?=$product['id']?>"><span class="far fa-trash-alt"></span></a>
+			</div>
+		<?php
+		}
+		?></div>
 
-		</div>
-	<?php
+		<div>
+			<h3>Category</h3>
 
-	}
-
-	?></div>
-
-	<div>
-		<h3>Price</h3>
+			<?php
+			foreach($arrProducts as $product)
+			{
+			?>
+			<div><?=$product['strCategoryName']?></div>
 
 		<?php
-		foreach($arrProducts as $product)
-		{
-		?>
-		<div><?=$product['nPrice']?>
+		}
+		?></div>
 
-	</div>
+		<div>
+			<h3>Price</h3>
 
-<?php
-
-}
-
-?></div>
-
-	<div>
-		<h3>Cover Photo</h3>
+			<?php
+			foreach($arrProducts as $product)
+			{
+			?>
+			<div><?=$product['nPrice']?></div>
 
 		<?php
-		foreach($arrPhotos as $photo)
-		{
-		?>
-		<div><img class="photo" src="../assets/<?=$photo['strPhoto']?>"/>
+		}
+		?></div>
 
-	</div>
+		<div>
+			<h3>Description</h3>
 
+			<?php
+			foreach($arrProducts as $product)
+			{
+			?>
+			<div><?=$product['strDescription']?></div>
 
-	<?php
+		<?php
+		}
+		?></div>
 
-	}
+		<div>
+			<h3>Quantity</h3>
 
-	?></div>
+			<?php
+			foreach($arrProducts as $product)
+			{
+			?>
+			<div><?=$product['nQuantity']?></div>
 
-	</div>	
+		<?php
+		}
+		?></div>
+
+		<div>
+			<h3>Photos</h3>
+
+			<?php
+			foreach($arrPhotos as $photo)
+			{
+			?>
+			<div><img class="photo" src="../assets/<?=$photo['strPhoto']?>"/></div>
+		<?php
+		}
+		?></div>
+	</div><!--serviceList-->
