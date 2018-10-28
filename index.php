@@ -1,10 +1,10 @@
 <?php
 include("libs/connect.php");
 include("libs/DBFactory.php");
-include("models/getMainNav.php");
 include("controllers/MainController.php");
 include("controllers/PagesController.php");
 include("controllers/AccountController.php");
+include("controllers/CartController.php");
 
 session_start();
 

@@ -1,8 +1,8 @@
 <?php
 	class PagesController extends MainController {
 		public function home() {
-			$content = $this->showView("heroImg");
-			$content .= $this->showView("product_section");
+			$content = $this->showView("heroImg", "");
+			$content .= $this->showView("product_section", "");
 			include("templates/pages.php");
 		}
 
