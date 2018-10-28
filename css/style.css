@@ -98,6 +98,10 @@ header ul li a:hover {
 	width: 100%;
 }
 
+.logo a, .prodImg {
+	display: block;
+}
+
 .cart-user {
 	width: 60%;
 	text-align: right;
@@ -254,6 +258,12 @@ header ul li a:hover {
 
 .shopCat .btn {
 	display: inline-block;
+}
+
+.prodImg {
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 15px;
 }
 
 
