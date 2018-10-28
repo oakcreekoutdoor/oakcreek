@@ -13,15 +13,15 @@ $arrUsers = runSelectSQL("SELECT * FROM users");
 			</div>
 
 			<div>
-				<a href="gallery.php"><img src="img/gallery.png"/><br/>Products</a>
-			</div>
-
-			<div>
-				<a href="menu.php"><img src="img/menu.png"/><br/>Orders</a>
-			</div>
-
-			<div>
 				<a href="pages.php"><img src="img/pages.png"/><br/>Pages</a>
+			</div>
+
+			<div>
+				<a href="orders.php"><img src="img/orders.png"/><br/>Orders</a>
+			</div>
+
+			<div>
+				<a href="inventory.php"><img src="img/inventory.png"/><br/>Inventory</a>
 			</div>
 
 		</div><!--manage-->
