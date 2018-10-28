@@ -1,3 +1,3 @@
-<div id="breadCrumb">
+<!-- <div id="breadCrumb">
 	<a href="#">Home > Shop > Category Name</a>
-</div><!-- //breadCrumb -->
+</div> --><!-- //breadCrumb -->

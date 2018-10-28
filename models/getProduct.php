@@ -16,13 +16,12 @@
 					    products.nPrice,
 					    categories.strName AS strCatName,
 					    categories.strHeroImage AS strHeroImg,
-					    categories.strDesc,
-					    product_photos.strPhoto
+					    categories.strDesc
 					FROM
 					    product_cats
 					LEFT JOIN products ON products.id = product_cats.nProductsID
 					LEFT JOIN categories ON categories.id = product_cats.nCategoriesID
-					LEFT JOIN product_photos ON product_photos.nProductsID = products.id
+					LEFT JOIN product_photos ON product_photos.strPhoto = product_cats.nProductsID
 					WHERE
 					    product_cats.nCategoriesID =".$_GET["cID"];
 			       return DBFactory::newData()->runSql("getData", $sql);
