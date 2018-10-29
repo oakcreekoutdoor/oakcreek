@@ -20,5 +20,4 @@ $action = (isset($_GET["action"]))	?$_GET["action"]:"shipping";
 $cName = ucfirst($controller)."Controller";
 $oController = new $cName();
 $oController->$action();
-
 ?>
