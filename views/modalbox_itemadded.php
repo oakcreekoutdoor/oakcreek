@@ -3,11 +3,11 @@
 		<h1>Item Added!</h1>
 		<div class="modalProd">
 			<div class="modalImg">
-				<img src="assets/hammock.jpg" alt="about" />
+				<img src="assets/<?=$arrPhoto[0]?>" alt="<?=$arrPhoto[0]?>" />
 			</div><!-- //modalImg -->
 			<div class="modalInfo">
-				<h2>Product Name</h2>
-				<p><span class="modalLabel">Price:</span> $99.00</p>
+				<h2><?=$arrData["product"][0]["strName"]?></h2>
+				<p><span class="modalLabel">Price:</span> $<?=$arrData["product"][0]["nPrice"]?></p>
 				<p><span class="modalLabel">Quantity:</span> 1</p>
 			</div><!-- //modalInfo -->
 		</div><!-- //modalProd -->

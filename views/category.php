@@ -1,7 +1,7 @@
 <section id="product" class="container">
 	<?php
 		include("views/smallHeroImg.php");
-		include("views/breadcrumb.php");
+		//include("views/breadcrumb.php");
 	?>
 	<div id="productGrid">
 		<?php

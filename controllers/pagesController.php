@@ -44,5 +44,10 @@
 		public function contact() {
 			$this->loadView("contact", "pages");
 		}
+
+		public function addItem() {
+			$oCart = new Cart();
+			$oCart->addToCart($_GET['pID']);
+		}
 	}
 ?>
