@@ -3,10 +3,16 @@
 	{
 	    static function getCats()
 	    {
-	        $sql = "SELECT *
-	        		FROM categories";
-			       return DBFactory::newData()->runSql("getData", $sql);
+	        $sql = "SELECT * FROM categories";
+			return DBFactory::newData()->runSql("getData", $sql);
 		 }
+
+		 static function getProdAdd($id)
+	    {
+	        $sql = "SELECT * FROM products WHERE id=".$id;
+			return DBFactory::newData()->runSql("getData", $sql)[0];
+		 }
+
 
 	    static function getProductCats()
 	    {
@@ -25,7 +31,7 @@
 					LEFT JOIN product_photos ON product_photos.strPhoto = product_cats.nProductsID
 					WHERE
 					    product_cats.nCategoriesID =".$_GET["cID"];
-			       return DBFactory::newData()->runSql("getData", $sql);
+			return DBFactory::newData()->runSql("getData", $sql);
 		 }
 
 		static function getProduct()

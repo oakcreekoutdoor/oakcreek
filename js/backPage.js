@@ -1,5 +1,6 @@
 $(function(){
 	$('#goBack').on('click', function goBack(){
-		window.history.back();
+		parent.history.back();
+        return false;
 	});
 });

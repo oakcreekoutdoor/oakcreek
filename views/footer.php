@@ -8,7 +8,5 @@
   crossorigin="anonymous"></script>
 <!-- JQuery CDN -->
 
-<script src="js/backPage.js"></script>
-
 </body>
 </html>
