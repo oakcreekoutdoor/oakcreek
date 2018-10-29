@@ -82,7 +82,7 @@ $arrProducts = runSelectSQL("
 		?></div>
 
 		<div>
-			<h3>Photos</h3>
+			<h3>Photo</h3>
 
 			<?php
 			foreach($arrProducts as $product)

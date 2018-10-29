@@ -272,7 +272,7 @@ nav a:hover {
 	font-size: 40pt;
 	display: inline-block;
 }
-#serviceBox img {
+.contentBox img {
 	width: 100px;
 }
 .contentList h3, .galleryList h3 {
