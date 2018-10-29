@@ -6,6 +6,7 @@ $(function(){
 			$('#shipForm').attr('action', 'index.php?controller=Cart&action=payment');
 		} else {
 			$('#shipSubmit').val("Continue to Billing");
+			$('#shipForm').attr('action', 'index.php?controller=Cart&action=billing');
 		}
 	});
 	

@@ -12,14 +12,26 @@
 	<div class="billing-info">
 		<h2>Billing Information</h2>
 		<p>Step 2/3</p>
-		<form method="post" action="index.php?controller=Cart&action=payment">
-			<input type="checkbox"> Use my shipping address as my billing address.<br>
+		<form id="billForm" method="post" action="index.php?controller=Cart&action=payment">
+			<label>Address</label>
+			<input type="text" name="address" id="addressShip" class="requiredField" />
 			<div>
-				<p>Full Name</p>
-				<p>Address - City</p>
-				<p>Province/Country/Postal Code</p>
+				<label>Postal/Zip Code</label>
+				<input type="text" name="zipcode" id="zipcodeShip" class="requiredField" />
 			</div>
-			<input type="submit" class="btn prime" value="Continue to Payment" />
+			<div id="formCountry">
+				<label>Country</label>
+				<input type="text" name="country" id="countryShip" class="requiredField" />
+			</div><!--formCountry-->
+			<div id="formProvince">
+				<label>State/Province</label>
+				<input type="text" name="state" id="stateShip" class="requiredField" />
+			</div><!--formProvince-->
+			<div id="formCity">
+				<label>City</label>
+				<input type="text" name="city" id="cityShip" class="requiredField" />
+			</div><!--formCity-->
+			<input id="billSubmit" type="submit" class="btn prime" value="Continue to Payment" />
 		</form>
 	</div><!--billing-info-->
 
