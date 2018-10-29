@@ -48,6 +48,8 @@
 		public function addItem() {
 			$oCart = new Cart();
 			$oCart->addToCart($_GET['pID']);
+
+			header("location: index.php?controller=Cart&action=cart");
 		}
 	}
 ?>

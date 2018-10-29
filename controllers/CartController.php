@@ -19,5 +19,11 @@
 		public function orderplaced() {
 			$this->loadView("orderplaced", "cart");
 		}
+
+		public function delItem() {
+			unset($_SESSION["arrCart"][$_GET["nItem"]]);
+
+			header("location: index.php?controller=Cart&action=cart");
+		}
 	}
 ?>
