@@ -1,7 +1,7 @@
 <div id="payment" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		<a href="#">Edit</a>
+		<a href="index.php?controller=Cart&action=shipping">Edit</a>
 		<div>
 			<p>Full Name</p>
 			<p>Address - City</p>
@@ -11,7 +11,7 @@
 
 	<div class="billing-info">
 		<h2>Billing Information</h2>
-		<a href="#">Edit</a>
+		<a href="index.php?controller=Cart&action=billing">Edit</a>
 		<div>
 			<p>Full Name</p>
 			<p>Address - City</p>
@@ -22,7 +22,7 @@
 	<div id="paymentInfo">
 		<h2>Payment Information</h2>
 		<p>Step 3/3</p>
-		<form>
+		<form method="post" action="index.php?controller=Cart&action=orderplaced">
 			<input type="radio"> Card Number
 			<input type="radio"> Paypal
 			<label>Name on Card</label>
@@ -64,55 +64,11 @@
 				<label>CVV Number</label>
 				<input type="text">
 			</div><!--cvv-->
+			<input type="submit" class="btn prime" value="Place Order" />
 		</form>
-		<a class="btn prime" href="#">Place Order</a>
 	</div><!--paymentInfo-->
 
-
-	<div class="cart-review">
-		<h2>Cart Review</h2>
-		<div class="cart-review-summary">
-			<div class="cart-review-item">
-				<img src="assets/bbq_toolset.jpg">
-				<div>
-					<p class="cart-label">Product Name</p>
-					<p class="cart-label">Qty: 1</p>
-					<p class="cart-label">Price</p>
-					<p>$140.00</p>
-				</div>
-			</div><!--cart-item-review-->
-			<div class="cart-review-item">
-				<img src="assets/bbq_toolset.jpg">
-				<div>
-					<p class="cart-label">Product Name</p>
-					<p class="cart-label">Qty: 1</p>
-					<p class="cart-label">Price</p>
-					<p>$140.00</p>
-				</div>
-			</div><!--cart-item-review-->
-		</div><!--cart-review--summary-->
-		<div>
-			<p class="cart-label">Subtotal</p>
-			<p>$280.00</p>
-			<p class="cart-label">Shipping</p>
-			<p>FREE</p>
-			<p class="cart-label">Coupon</p>
-			<p>$0.00</p>
-			<p class="cart-label">Tax</p>
-			<p>$7.26</p>
-			<div class="cart-total">
-				<p>Total</p>
-				<p>$287.26</p>
-			</div><!--cart-total-->
-		</div>
-	</div><!--cart-review-->
-
-	<div class="policies">
-		<p class="policies-title">Shipping & Delivery</p>
-		<p>We deliver to 17 countries with some restrictions. Terms & Conditions apply.</p>
-		<p class="policies-title">Free Returns</p>
-		<p>Free returns on items purchased within the last 60 days.
-		<p class="policies-title">Guarantee</p>
-		<p>Free returns on items purchased within the last 60 days.</p>
-	</div><!--policies-->
+	<?php
+	include("views/sideOrderReview.php");
+	?>	
 </div><!--shipping-->

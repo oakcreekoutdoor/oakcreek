@@ -62,7 +62,7 @@
 			<p>Total</p>
 			<p>$287.26</p>
 		</div><!--cart-total-->
-		<a href="#" class="btn prime">Checkout</a>
+		<a href="index.php?controller=Cart&action=shipping" class="btn prime">Checkout</a>
 	</div>
 
 
