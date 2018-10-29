@@ -8,14 +8,16 @@ include("partials/nav.php");
 	<label class="requiredLabel">Product Name:</label>
 	<input type="text" placeholder="Enter Product Name" name="strName" class="requiredField" value=""/>
 
-	<label class="requiredLabel">Category:</label>
+	<label class="requiredLabel">Select Category:</label>
 	<div class="cbOptions" >
       <?php
 		$arrCategories = getRecords("SELECT * FROM categories");
 			foreach($arrCategories as $category)
 			{
 			?>
-          	  <input type="checkbox" name="category[]" value="<?=$category['id']?>"><span> <?=$category['strName']?></span><br/>
+			<div>
+          	  <span> <?=$category['strName']?></span><input type="checkbox" name="category[]" value="<?=$category['id']?>"><br/>
+          	</div>
          	<?php
          	}
          	?>

@@ -1,15 +1,15 @@
 <?php
 include_once("functions/db.php");
 
-if(!$_FILES["strPhoto"]["name"] && $_POST["oldImage"])
+if(!$_FILES["strFeatPhoto"]["name"] && $_POST["oldImage"])
 {
 	$myFileUploadName = $_POST["oldImage"];
 
-} else if (!$_FILES["strPhoto"]["name"] && !$_POST["oldImage"])
+} else if (!$_FILES["strFeatPhoto"]["name"] && !$_POST["oldImage"])
 { 
 	$myFileUploadName = "";
 } else { 
-	$myFileUploadName = uploadFile("strPhoto");
+	$myFileUploadName = uploadFile("strFeatPhoto");
 }
 
 if ($_GET["id"])
@@ -18,30 +18,36 @@ if ($_GET["id"])
 	runSQL("
 
 		UPDATE 
-			wedding_menu 
+			products 
 		SET 
 			strName='".$_POST['strName']."',
-			strDetails='".$_POST['strDetails']."',
-			strPhoto='".$myFileUploadName."' 
+			nPrice='".$_POST['nPrice']."',
+			strDescription='".$_POST['strDescription']."',
+			nQuantity='".$_POST['nQuantity']."',
+			strFeatPhoto='".$myFileUploadName."' 
 				WHERE id='".$_GET["id"]."'");
 } else {
 
 	runInsertSQL("
 
 		INSERT INTO 
-		wedding_menu (
+		products (
 			strName, 
+			nPrice,
 			strDescription, 
-			strPhoto) 
+			nQuantity,
+			strFeatPhoto) 
 
 		VALUES (
 		'".$_POST['strName']."',
-		'".$_POST['strDetails']."',
+		'".$_POST['nPrice']."',
+		'".$_POST['strDescription']."',
+		'".$_POST['nQuantity']."',
 		'".$myFileUploadName."'
 		
 		)"
 	);
 }
 
-header("location: menu.php");
+header("location: inventory.php");
 ?>
