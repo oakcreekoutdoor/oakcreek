@@ -2,19 +2,22 @@
 	<h2>Cart Review</h2>
 	<div class="cart-review-summary">
 	<?php
-	$arrProds = $_SESSION["arrCart"];
-	foreach ($arrProds as $prod) {
-	?>
-		<div class="cart-review-item">
-			<img src="assets/<?=$prod['strImage']?>">
-			<div>
-				<p class="cart-label"><?=$prod['strName']?></p>
-				<p class="cart-label">Qty: 1</p>
-				<p class="cart-label">Price</p>
-				<p><?=$prod['nPrice']?></p>
-			</div>
-		</div><!--cart-item-review-->
+	if(!empty($_SESSION["arrCart"]))
+	{
+		$arrProds = $_SESSION["arrCart"];
+		foreach ($arrProds as $prod) {
+		?>
+			<div class="cart-review-item">
+				<img src="assets/<?=$prod['strImage']?>">
+				<div>
+					<p class="cart-label"><?=$prod['strName']?></p>
+					<p class="cart-label">Qty: 1</p>
+					<p class="cart-label">Price</p>
+					<p><?=$prod['nPrice']?></p>
+				</div>
+			</div><!--cart-item-review-->
 	<?php
+		}
 	}
 	?>
 	</div><!--cart-review--summary-->
