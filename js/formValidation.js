@@ -1,5 +1,6 @@
 function validateForm()
 {
+	bSubmit = true;
 	var arrRequiredFieldsElements = document.getElementsByClassName("requiredField");
 
 	for(var i=0; i<arrRequiredFieldsElements.length; i++)
@@ -28,6 +29,7 @@ function validateForm()
 				manageError(el.value, el)
 		}
 	}
+	return bSubmit;
 }
 
 function manageError(checkState, thisEl)
@@ -35,6 +37,7 @@ function manageError(checkState, thisEl)
 	if(!checkState)
 	{
 		thisEl.className += " error";
+		bSubmit = false;
 	} else {
 		thisEl.classList.remove("error");
 	}

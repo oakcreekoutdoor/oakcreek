@@ -8,6 +8,10 @@
   crossorigin="anonymous"></script>
 <!-- JQuery CDN -->
 
-<script src="js/form_validation.js"></script>
+<script src="js/formValidation.js"></script>
+<script src="js/ajaxForm.js"></script>
+<?php
+include("libs/date.php");
+?>
 </body>
 </html>
