@@ -11,14 +11,6 @@ $arrProducts = runSelectSQL("
 	LEFT JOIN categories ON product_cats.nCategoriesID = categories.id
 ");
 
-$arrPhotos = runSelectSQL("
-	SELECT 
-		* 
-	FROM 
-		product_photos 
-	LEFT JOIN products ON product_photos.nProductsID = products.id
-");
-
 ?>
 	<div class="contentList">
 		<div>
@@ -93,10 +85,10 @@ $arrPhotos = runSelectSQL("
 			<h3>Photos</h3>
 
 			<?php
-			foreach($arrPhotos as $photo)
+			foreach($arrProducts as $product)
 			{
 			?>
-			<div><img class="photo" src="../assets/<?=$photo['strPhoto']?>"/></div>
+			<div><img class="photo" src="../assets/<?=$product['strFeatPhoto']?>"/></div>
 		<?php
 		}
 		?></div>

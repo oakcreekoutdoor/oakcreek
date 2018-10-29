@@ -5,7 +5,7 @@ include("partials/nav.php");
 <section id="content">
 	<div id="content-list">
 		<h1>Manage Inventory</h1>
-		<a class="addBtn fas fa-plus" href="add_inventory.php"> Add Product</a>
+		<a class="addBtn fas fa-plus" href="add_inventory.php"> <p> Add Product</p></a>
 		<div id="serviceBox">
 
 			<?php

@@ -170,23 +170,23 @@ nav a:hover {
 	margin-left: 300px;
 }
 #users h1, #services h1 {
-	font-family: 'Cormorant Garamond', serif;
 	font-size: 40pt;
 	font-style: italic;
 	margin-bottom: 20px;
 }
-#users input, #services input, #editUser input, #serviceForm input {
+#users input, #services input, #editUser input, #addForm input {
 	height: 40px;
 	margin-right: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	margin-top: 5px;
 	display: block;
-	width: 300px;
+	width: 350px;
+	padding: 5px;
 }
 #users label {
 	display: inline-block;
 }
-#users form a, #serviceForm a {
+#users form a, #addForm a {
 	background: #5bbaae; /* teal */
 	padding: 10px 30px 10px 30px;
 	color: #000;
@@ -196,7 +196,7 @@ nav a:hover {
 	cursor: pointer;
 	width: 170px;
 }
-#users form a:hover, #services form a:hover, #serviceForm a:hover {
+#users form a:hover, #services form a:hover, #addForm a:hover {
 	background: #000; 
 	color: #fff;
 }
@@ -232,7 +232,7 @@ nav a:hover {
 	margin-left: 300px;
 	width: 300px;
 }
-#editUser input[type="submit"], #editService input[type="submit"], #serviceForm input[type="submit"] {
+#editUser input[type="submit"], #editService input[type="submit"], #addForm input[type="submit"] {
 	padding: 10px 30px; 
 	width: 200px;
 	height: 50px;
@@ -278,6 +278,8 @@ nav a:hover {
 .contentList h3, .galleryList h3 {
 	margin-bottom: 30px;
 	font-size: 22pt;
+	color: #669900; /* yellow green */
+	font-weight: bold;
 }
 .contentList p {
 	margin-bottom: 10px;
@@ -294,7 +296,7 @@ nav a:hover {
 	padding: 10px 15px;
 	border: 2px solid #669900; /* yellow green */
 	width: 200px;
-	font-size: 13pt;
+	font-size: 12pt;
 	text-align: center;
 	color: #669900; /* yellow green */
 	border-radius: 50px;
@@ -303,25 +305,43 @@ nav a:hover {
 	background-color: #669900; /* yellow green */
 	color: #fff;
 }
-#serviceForm {
-	width: 400px;
+.addBtn p {
+	display: inline-block;
+	font-size: 12pt;
+	font-weight: bold;
+}
+#addForm {
+	width: 600px;
 	margin: 0 auto;
 	margin-top: 100px;
 	margin-left: 300px;
+	position: relative;
 }
-#serviceForm label, #serviceForm input, #editService label, #editService input {
+#addForm input[name="nPrice"], #addForm input[name="nQuantity"] {
+	width: 80px;
+	height: 30px;
+}
+#addForm span {
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.formQuantity {
+	position: absolute;
+	margin-top: -86px;
+	margin-left: 140px;
+}
+#addForm label, #editService label, #editService input {
 	display: block;
-	margin-bottom: 10px;
 }
-#serviceForm h1, #editService h1 {
+#addForm h1, #editService h1 {
 	margin-bottom: 30px;
-	font-family: 'Cormorant Garamond', serif;
 	font-size: 40pt;
-	font-style: italic;
 }
-#serviceForm textarea, #editService textarea {
-	width: 300px;
-	height: 200px;
+#addForm textarea, #editService textarea {
+	width: 350px;
+	height: 150px;
 	margin-bottom: 15px;
 	padding: 10px;
 }
@@ -330,7 +350,6 @@ nav a:hover {
 	padding: 5px 10px;
 	letter-spacing: 1px;
 	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
 }
 #editService input {
 	height: 40px;
@@ -340,13 +359,8 @@ nav a:hover {
 	display: block;
 	width: 300px;
 }
-.pageList div {
-	margin: 0 auto;
-	margin-top: 20px;
-	width: 500px;
-	height: 20px;
-}
-#serviceForm select, #editService select{
-	margin-bottom: 10px;
+#addForm select, #editService select{
+	margin-bottom: 20px;
+	width: 350px;
 }
 

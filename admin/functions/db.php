@@ -38,6 +38,18 @@ function runInsertSQL($sql)
 	return $lastID;
 }
 
+function getRecords($sql)
+{
+	$con = dbConnect();
+	$result = mysqli_query($con, $sql);
+
+	while($row=mysqli_fetch_assoc($result))
+	{
+		$results[] = $row;
+	}
+	return $results;
+}
+
 function getGlobalValue($record)
 {
 	$arrGlobalValue = runSelectSQL("SELECT * FROM siteglobals WHERE strName='".$record."'");
@@ -68,6 +80,32 @@ function uploadFile($whichFile)
 	move_uploaded_file($_FILES[$whichFile]["tmp_name"], $serverLocationAndName);
 
 	return $_FILES[$whichFile]["name"];
+}
+
+function uploadMultipleFiles($files)
+{
+	$total = count($_FILES['upload']['name']);
+
+	// Loop through each file
+	for($i=0; $i<$total; $i++) {
+
+  	//Get the temp file path
+  	$tmpFilePath = $_FILES['upload']['tmp_name'][$i];
+
+  	//Make sure we have a file path
+ 	if($tmpFilePath != ""){
+
+    //Setup our new file path
+ 	$directory = "../assets";
+    $newFilePath = $directory."/".$_FILES[$whichFile]["name"][$i];
+
+    //Upload the file into the temp dir
+    if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+    	return $_FILES[$files]["name"][$i];
+    }
+  }
+}
 }
 
 ?>
