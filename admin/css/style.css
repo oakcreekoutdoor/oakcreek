@@ -226,13 +226,13 @@ nav a:hover {
 #users {
 	height: 700px;
 }
-#editUser, #editService {
+#editUser, #editForm {
 	margin: 0 auto;
 	margin-top: 100px;
 	margin-left: 300px;
-	width: 300px;
+	width: 500px;
 }
-#editUser input[type="submit"], #editService input[type="submit"], #addForm input[type="submit"] {
+#editUser input[type="submit"], #editForm input[type="submit"], #addForm input[type="submit"] {
 	padding: 10px 30px; 
 	width: 200px;
 	height: 50px;
@@ -240,7 +240,7 @@ nav a:hover {
 	font-size: 13pt;
 	display: inline-block;
 }
-#editUser a, #editService a {
+#editUser a, .cancelBtn {
 	background: #000;
 	color: #fff;
 	width: 170px;
@@ -251,11 +251,11 @@ nav a:hover {
 	letter-spacing: 1px;
 	font-size: 13pt;
 }
-#editUser a:hover, #editService a:hover{
+#editUser a:hover, .cancelBtn:hover{
 	background-color: #5bbaae; /* teal */
 	color: #000;
 }
-#editUser form, #editService form {
+#editUser form, #editForm form {
 	margin-top: 30px;
 }
 .contentList {
@@ -317,49 +317,66 @@ nav a:hover {
 	margin-left: 300px;
 	position: relative;
 }
-#addForm input[name="nPrice"], #addForm input[name="nQuantity"] {
+#addForm input[name="nPrice"], #addForm input[name="nQuantity"], #editForm input[name="nPrice"], #editForm input[name="nQuantity"] {
 	width: 80px;
 	height: 30px;
 }
-#addForm span {
+#addForm input[type="checkbox"], #editForm input[type="checkbox"] {
+	height: 30px;
+	display: inline-block;
+	width: 20px;
+	margin-bottom: 5px;
+}
+#addForm span, #editForm span {
 	display: inline-block;
 	float: left;
 	margin-right: 5px;
 	margin-top: 5px;
+}
+.cbOptions > div {
+	display: inline-block;
+	margin-bottom: 15px;
 }
 .formQuantity {
 	position: absolute;
 	margin-top: -86px;
 	margin-left: 140px;
 }
-#addForm label, #editService label, #editService input {
+#editForm .formQuantity {
+	position: absolute;
+	margin-top: -81px;
+	margin-left: 140px;
+}
+#addForm label, #editForm label, #editForm input {
 	display: block;
 }
-#addForm h1, #editService h1 {
+#addForm h1, #editForm h1 {
 	margin-bottom: 30px;
 	font-size: 40pt;
 }
-#addForm textarea, #editService textarea {
+#addForm textarea, #editForm textarea {
 	width: 350px;
 	height: 150px;
 	margin-bottom: 15px;
 	padding: 10px;
 }
-#editService a.removeBtn {
-	font-size: 8pt;
-	padding: 5px 10px;
-	letter-spacing: 1px;
-	font-weight: 400;
-}
-#editService input {
+#editForm input {
 	height: 40px;
 	margin-right: 10px;
 	margin-bottom: 20px;
 	margin-top: 5px;
 	display: block;
-	width: 300px;
+	width: 350px;
 }
-#addForm select, #editService select{
+#editForm .deleteBtn span {
+	font-size: 18pt;
+	position: absolute;
+	display: inline;
+	float: none;
+	margin-left: 5px;
+	margin-top: 125px;
+}
+#addForm select, #editForm select{
 	margin-bottom: 20px;
 	width: 350px;
 }
