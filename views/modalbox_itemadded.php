@@ -14,8 +14,8 @@
 		
 		<div class="modalAdd">
 			<h3>Do you want to add more items?</h3>
-			<a href="#" class="btn sec">Continue Shopping</a>
-			<a href="#" class="btn prime">Go to Checkout</a>
+			<a href="#" id="goBack" class="btn sec">Continue Shopping</a>
+			<a href="index.php?controller=Cart&action=cart" class="btn prime">Go to Checkout</a>
 		</div><!-- //modalAdd -->
 	</div><!-- //modalCont -->
 </div><!-- //modalBox -->
