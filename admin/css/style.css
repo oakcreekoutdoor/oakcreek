@@ -376,8 +376,27 @@ nav a:hover {
 	margin-left: 5px;
 	margin-top: 125px;
 }
-#addForm select, #editForm select{
+#addForm select, #editForm select {
 	margin-bottom: 20px;
 	width: 350px;
 }
+.orderList {
+	width: 1000px;
+	grid-template-columns: repeat(4, 1fr);
+}
+.orderList > div {
+	width: 100%;
+	text-align: center;
+}
+.orderList > div > div {
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+.orderList .editBtn {
 
+}
+.viewBtn {
+	color: red;
+	position: absolute;
+}
