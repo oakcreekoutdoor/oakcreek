@@ -17,7 +17,11 @@
 		}
 
 		public function orderplaced() {
-			$this->loadView("orderplaced", "cart");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["oUserID"] = Orders::getUserOrders();
+			
+			$content = $this->showView("orderplaced", $arrData);
+			include("templates/cart.php");
 		}
 
 		public function delItem() {

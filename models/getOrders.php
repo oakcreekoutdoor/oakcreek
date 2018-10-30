@@ -12,9 +12,13 @@
 
         static function getUserOrders()
      	{
-	         $sql = "SELECT * FROM orders 
-	    		     LEFT JOIN users ON orders.nUsersID = users.id";
-	    		     return DBFactory::newData()->runSql("getData",$sql);
+	       $sql = "SELECT orders.nUsersID,
+                        orders.id,
+                        users.strEmailAddress
+                     FROM orders
+	    		     LEFT JOIN users ON orders.nUsersID = users.id
+                     WHERE orders.id =".$_SESSION["orderID"];
+	    	return DBFactory::newData()->runSql("getData",$sql);
         }
 
         static function getOrderStatus()

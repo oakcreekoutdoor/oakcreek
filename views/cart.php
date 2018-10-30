@@ -38,33 +38,20 @@
 				<?php
 				$arrNb += $a;
 				}
-			}
 			?>
 		</div><!--cartItems-->
 
 		<div id="cartCheckout" class="container">
-			<!-- <div>
-				<div class="cart-code">
-					<p class="cart-label">Postal Code</p>
-					<input type="text"/>
-					<a href="#" class="btn sec">Enter</a>
-				</div>
-				<div class="cart-code">
-					<p class="cart-label">Coupon</p>
-					<input type="text"/>
-					<a href="#" class="btn sec">Enter</a>
-				</div>
-			</div> cart code and shipping calc-->
 		<?php
 		$arrSum = [];
 		foreach ($_SESSION['arrCart'] as $carts) 
 		{
 			array_push($arrSum, $carts['nPrice']);
 		}
-			$subTotal = array_sum($arrSum);
-			$tax = round(($subTotal*0.05), 2);
+			$subTotal = number_format((float)(array_sum($arrSum)), 2, '.', '');
+			$tax = number_format((float)(round(($subTotal*0.05), 2)), 2, '.', '');
 			$sumTotal = $subTotal+$tax;
-			$total = round($sumTotal, 2);
+			$total = number_format((float)(round($sumTotal, 2)), 2, '.', '');
 
 			$_SESSION['nTax'] = $tax;
 			$_SESSION['subTotal'] = $subTotal;
@@ -84,6 +71,9 @@
 				<a href="index.php?controller=Cart&action=shipping" class="btn prime">Checkout</a>
 			</div>
 		</div><!--cartCheckout-->
+	<?php
+		}
+	?>
 	</div>
 </div><!--cartSummary-->
 
