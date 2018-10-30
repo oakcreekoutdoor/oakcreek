@@ -399,8 +399,12 @@ header ul li a:hover {
 }
 
 /*--------------Cart----------------*/
-
 #cartSummary {
+	height: 900px;
+	margin-left: 250px;
+}
+#cartSummary > div {
+	width: 1200px;
 	padding-top: 30px;
 	height: auto;
 	border-bottom: 2px solid #000;
@@ -417,8 +421,17 @@ header ul li a:hover {
 .cart-item> div, .cart-item> p {
 	float: left;
 	display: block;
-	text-align: center;
-	margin-right: 190px;
+	margin-right: 20px;
+	width: 250px;
+}
+.cart-item> div:nth-child(3) {
+	padding-left: 100px;
+}
+.cart-item> div:nth-child(4) {
+	padding-left: 90px;
+}
+.cart-item> div:nth-child(5) {
+	padding-left: 130px;
 }
 .cart-item> div p:nth-child(2) {
 	margin-top: 30px;
@@ -472,7 +485,10 @@ p.cart-label {
 	width: 120px;
 }
 #cartCheckout > div {
-	float: left;
+	float: right;
+	margin-top: 30px;
+	text-align: right;
+	height: 350px;
 }
 #cartCheckout > div:nth-child(2) {
 	width: 250px;
@@ -498,7 +514,7 @@ p.cart-label {
 	width: 100%;
 	margin: 0;
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 70px;
 	padding: 20px;
 }
 
@@ -506,7 +522,7 @@ p.cart-label {
 
 #shipping {
 	margin-top: 30px;
-	height: 820px;
+	height: 1000px;
 }
 #shippingForm {
 	width: 500px;
@@ -653,6 +669,7 @@ p.cart-label {
 
 #billing {
 	margin-top: 30px;
+	height: 1000px;
 }
 .shipping-info {
 	width: 500px;
@@ -683,30 +700,61 @@ p.cart-label {
 	position: relative;
 	margin-top: 20px;
 }
-.billing-info input {
+.billing-info form {
 	margin-top: 20px;
+}
+.billing-info input {
+	margin-top: 5px;
+	display: block;
+	height: 30px;
+	margin-bottom: 15px;
+	width: 100%;
 }
 .billing-info > p {
 	font-weight: bold;
 	position: absolute;
 	right: 0;
 }
+.billing-info #formCountry {
+	position: absolute;
+	top: 118px;
+	right: 0px;
+	width: 220px;
+}
+.billing-info #formProvince {
+	position: absolute;
+	margin-top: 5px;
+	width: 220px;
+}
+.billing-info #formCity {
+	position: absolute;
+	margin-top: 5px;
+	right: 0px;
+	width: 220px;
+}
+.billing-info form input[name="zipcode"] {
+	width: 220px;
+}
 .billing-info .btn.prime {
 	display: block;
 	width: 220px;
+	height: 50px;
 	text-align: center;
 	margin: 0;
-	margin-top: 30px;
-	padding: 20px;
+	margin-top: 120px;
+	border: none;
+	cursor: pointer;
+	font-size: 12pt;
 }
 
 /*--------------Payment------------------*/
 
 #payment {
 	margin-top: 30px;
+	height: 1000px;
 }
 #payment .policies {
-	top: 500px;
+	top: 650px;
 }
 #paymentInfo {
 	width: 500px;
@@ -718,10 +766,13 @@ p.cart-label {
 #paymentInfo .btn.prime {
 	display: block;
 	width: 220px;
+	height: 50px;
 	text-align: center;
 	margin: 0;
 	margin-top: 30px;
-	padding: 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 12pt;
 }
 #paymentInfo > p {
 	font-weight: bold;
