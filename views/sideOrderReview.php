@@ -23,16 +23,14 @@
 	</div><!--cart-review--summary-->
 	<div>
 		<p class="cart-label">Subtotal</p>
-		<p>$280.00</p>
+		<p>$ <?=$_SESSION['subTotal']?></p>
 		<p class="cart-label">Shipping</p>
 		<p>FREE</p>
-		<p class="cart-label">Coupon</p>
-		<p>$0.00</p>
 		<p class="cart-label">Tax</p>
-		<p>$7.26</p>
+		<p>$ <?=$_SESSION['nTax']?></p>
 		<div class="cart-total">
 			<p>Total</p>
-			<p>$287.26</p>
+			<p>$ <?=$_SESSION['nInvoice']?></p>
 		</div><!--cart-total-->
 	</div>
 </div><!--cart-review-->
