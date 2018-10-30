@@ -36,23 +36,21 @@
 	font-size: 12pt;
 }
 #loginForm {
+	width: 550px;
 	align-self: center;
-	background: #fff;
-	padding-top: 40px;
-	height: 450px;
-	border: 1px solid #eee;
-	-webkit-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
-	-moz-box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
-	box-shadow: 0px 0px 43px -9px rgba(0,0,0,0.56);
+	background:  #e5e5cc; /*light green*/
+	padding-top: 60px;
+	height: 500px;
 }
 #loginForm img {
-	width: 80px;
+	width: 400px;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 #loginForm form {
+	margin: 0 auto;
 	width: 300px;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 #loginForm form input {
 	height: 50px;
@@ -61,6 +59,8 @@
 	font-size: 20pt;
 	margin-bottom: -30px;
 	text-align: center;
+	font-weight: bold;
+	color: #223300; /* green */
 }
 #loginForm input {
 	margin-bottom: 15px;
@@ -84,7 +84,7 @@
 	color: #223300; /* green */
 }
 input[type="submit"], #editUser a {
-	background: #5bbaae; /* teal */
+	background: #669900; /* yellow green */
 	padding: 13px 30px 25px 30px;
 	color: #fff;
 	text-transform: uppercase;
@@ -94,7 +94,7 @@ input[type="submit"], #editUser a {
 	cursor: pointer;
 }
 input[type="submit"]:hover {
-	background: #457786; /*dark blue*/
+	background: #223300; /* green */
 	transition: all 0.3s ease;
 }
 #welcome {

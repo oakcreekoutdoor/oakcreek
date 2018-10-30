@@ -11,12 +11,12 @@ include("partials/header.php");
 		<div id="loginForm">
 			<img src="img/symbol.png"/>
 			<h1>Log In</h1>
-			<form method="post" action="login.php">
+			<form method="post" action="login.php" onsubmit="return validateForm();">
 				<input type="text" name="strUserName" placeholder="Enter username"><br/>
 
 				<input type="password" name="strPassword" placeholder="Enter password"><br/>
 
-				<input type="submit" name="Login" value="Log In">
+				<input type="submit" value="Log In">
 			</form>
 		</div>
 	</div><!--container-->
