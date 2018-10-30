@@ -506,6 +506,7 @@ p.cart-label {
 
 #shipping {
 	margin-top: 30px;
+	height: 820px;
 }
 #shippingForm {
 	width: 500px;
@@ -540,26 +541,42 @@ p.cart-label {
 	width: 220px;
 	height: 30px;
 }
-#shipping form a {
+.form-checkbox {
+	position: absolute;
+	left: 0;
+	margin-top: 140px;
+}
+#shipping form input[type="checkbox"] {
+	height: 20px;
+	display: inline-block;
+	width: 20px;
+}
+#shipping form input[type="submit"] {
 	display: block;
 	width: 220px;
+	height: 50px;
 	text-align: center;
 	margin: 0;
-	margin-top: 160px;
-	padding: 20px;
+	margin-top: 210px;
+	border: none;
+	cursor: pointer;
+	font-size: 12pt;
 }
 #formCountry {
 	position: absolute;
 	right: -30px;
+	width: 220px;
 }
 #formProvince {
 	position: absolute;
 	margin-top: 65px;
+	width: 220px;
 }
 #formCity {
 	position: absolute;
 	margin-top: 65px;
 	right: -30px;
+	width: 220px;
 }
 .cart-review {
 	border: 1px solid #000;
@@ -577,7 +594,7 @@ p.cart-label {
 .cart-review-item {
 	margin-top: 20px;
 	position: relative;
-	height: 100px;
+	height: 130px;
 }
 .cart-review-item img {
 	float: left;
@@ -588,6 +605,8 @@ p.cart-label {
 .cart-review-item div {
 	float: left;
 	margin-left: 20px;
+	width: 250px;
+	margin-top: -10px;
 }
 .cart-review-item p {
 	width: 100%;
@@ -616,10 +635,10 @@ p.cart-label {
 	right: 65px;
 }
 .policies {
-	float: left;
 	position: absolute;
-	right: 0;
-	width: 450px;
+	float: right;
+	margin-top: 40px;
+	width: 550px;
 	height: 300px;
 }
 .policies p {
