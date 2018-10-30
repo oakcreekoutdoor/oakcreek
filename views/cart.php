@@ -55,19 +55,30 @@
 					<a href="#" class="btn sec">Enter</a>
 				</div>
 			</div> cart code and shipping calc-->
-
+		<?php
+		$arrSum = [];
+		foreach ($_SESSION['arrCart'] as $carts) 
+		{
+			array_push($arrSum, $carts['nPrice']);
+		}
+			$subTotal = array_sum($arrSum);
+			$tax = round(($subTotal*0.05), 2);
+			$sumTotal = $subTotal+$tax;
+			$total = round($sumTotal, 2);
+		?>
 			<div>
 				<p class="cart-label">Subtotal</p>
-				<p>$280.00</p>
+				<p>$ <?=$subTotal?></p>
 				<p class="cart-label">Shipping</p>
 				<p>FREE</p>
-				<p class="cart-label">Coupon</p>
-				<p>$0.00</p>
 				<p class="cart-label">Tax</p>
-				<p>$7.26</p>
+				<p><?=$tax?></p>
 				<div class="cart-total">
+		<?php
+		
+		?>
 					<p>Total</p>
-					<p>$287.26</p>
+					<p><?=$total?></p>
 				</div><!--cart-total-->
 				<a href="index.php?controller=Cart&action=shipping" class="btn prime">Checkout</a>
 			</div>
