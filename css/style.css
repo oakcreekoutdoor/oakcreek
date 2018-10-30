@@ -130,6 +130,25 @@ header ul li a:hover {
 .fas {
 	margin-right: 10px;
 }
+
+.socialMedia {
+	position: fixed;
+	top: 160px;
+	right: 50px;
+	width: 40px;
+	z-index: 1;
+}
+
+.socialMedia a {
+	margin: 10px 0;
+}
+
+.socialMedia a, .socialMedia img {
+	display: block;
+	width: 100%;
+}
+
+
 /*------------- Hero -------------*/
 
 #heroSection {
