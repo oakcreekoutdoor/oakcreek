@@ -10,6 +10,9 @@
 
 <script src="js/formValidation.js"></script>
 <script src="js/ajaxForm.js"></script>
+<script src="js/submitToShip.js"></script>
+<script src="js/submitToBill.js"></script>
+<script src="js/goToPayment.js"></script>
 <?php
 include("libs/date.php");
 ?>

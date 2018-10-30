@@ -26,7 +26,7 @@ function validateForm()
 				manageError(isOneChecked, el);
 				break;
 			default:
-				manageError(el.value, el)
+				manageError(el.value, el);
 		}
 	}
 	return bSubmit;
