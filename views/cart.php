@@ -31,7 +31,7 @@
 
 					<div>
 						<p class="cart-label">Price</p>
-						<p><?=$prod['nPrice']?></p>
+						<p>$ <?=$prod['nPrice']?></p>
 					</div>
 
 				</div><!--cart-item-->
@@ -65,6 +65,10 @@
 			$tax = round(($subTotal*0.05), 2);
 			$sumTotal = $subTotal+$tax;
 			$total = round($sumTotal, 2);
+
+			$_SESSION['nTax'] = $tax;
+			$_SESSION['subTotal'] = $subTotal;
+			$_SESSION['nInvoice'] = $total;
 		?>
 			<div>
 				<p class="cart-label">Subtotal</p>
@@ -72,13 +76,10 @@
 				<p class="cart-label">Shipping</p>
 				<p>FREE</p>
 				<p class="cart-label">Tax</p>
-				<p><?=$tax?></p>
+				<p>$ <?=$tax?></p>
 				<div class="cart-total">
-		<?php
-		
-		?>
 					<p>Total</p>
-					<p><?=$total?></p>
+					<p>$ <?=$total?></p>
 				</div><!--cart-total-->
 				<a href="index.php?controller=Cart&action=shipping" class="btn prime">Checkout</a>
 			</div>
