@@ -32,13 +32,14 @@
 	text-align: center;
 	display: inline-block;
 	margin: 0 auto;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 12pt;
+	width: 550px;
 }
 #loginForm {
 	width: 550px;
 	align-self: center;
-	background:  #e5e5cc; /*light green*/
+	background: #e5e5cc; /*light green*/
 	padding-top: 60px;
 	height: 500px;
 }
@@ -81,6 +82,14 @@
 	color: #669900; /* yellow green */
 }
 .editBtn:hover {
+	color: #223300; /* green */
+}
+.viewBtn {
+	font-size: 10pt;
+	margin-right: 10px;
+	color: #669900; /* yellow green */
+}
+.viewBtn:hover {
 	color: #223300; /* green */
 }
 input[type="submit"], #editUser a {
@@ -380,23 +389,49 @@ nav a:hover {
 	margin-bottom: 20px;
 	width: 350px;
 }
-.orderList {
-	width: 1000px;
-	grid-template-columns: repeat(4, 1fr);
+
+/*---------------------Orders------------------*/
+
+#orderList {
+	width: 1200px;
+	height: auto;
 }
-.orderList > div {
+#orderList form, .searchField {
+	position: relative; 
+	display: inline-block;
+	margin-top: 20px;
+}
+#orderList table {
 	width: 100%;
+	margin-top: -60px;
+}
+#orderList table thead td { 
+	padding: 10px;
+	background: #669900; /* yellow green */
+	color: #fff;
+}
+#orderList table thead td a {
+	color: #fff;  
+	font-weight: bold;
+	text-decoration: none;
+}
+#orderList table td {
+	margin: 0px;
+}
+#orderList table td {
 	text-align: center;
 }
-.orderList > div > div {
-	height: 50px;
-	width: 100%;
-	position: relative;
+#orderList table td:first-child {
+	text-align: center;
+	width: 150px;
 }
-.orderList .editBtn {
-
+#orderList table td:nth-child(2) {
+	width: 160px;
 }
-.viewBtn {
-	color: red;
-	position: absolute;
+#orderList table tbody tr td {
+	background: #eee; 
+	margin-top: 4px; 
+	border-bottom: 4px solid #fff; 
+	border-top: 4px solid #fff; 
+	padding: 10px;
 }
