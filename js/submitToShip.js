@@ -4,7 +4,7 @@ function saveToShip(){
 		method: "POST",
 		data:
 		{
-			strFullName: $("#name").val(),
+			strFullName: $("#fullName").val(),
 			strEmailAddress: $("#email").val(),
 			nPhone: $("#phone").val(),
 			nAltPhone: $("#altphone").val(),
@@ -16,7 +16,7 @@ function saveToShip(){
 		},
 		success: function(result)
 		{
-			console.log("Yay! Processing order!");
+			console.log(result);
 		},
 		error: function(result)
 		{
