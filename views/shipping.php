@@ -35,7 +35,11 @@
 				<label>City</label>
 				<input type="text" name="city" id="cityShip" class="requiredField" />
 			</div><!--formCity-->
-			<input type="checkbox" name="sameAddress" id="sameAddress" /> Use same address for Billing
+
+			<div class="form-checkbox">
+				<input type="checkbox" name="sameAddress" id="sameAddress" /> Use same address for Billing
+			</div><!--form-checkbox-->
+
 			<input id="shipSubmit" type="submit" class="btn prime" value="Continue to Billing" />
 		</form>
 	</div><!--shippingForm-->

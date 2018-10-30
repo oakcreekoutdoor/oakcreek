@@ -43,5 +43,5 @@
 	<p class="policies-title">Free Returns</p>
 	<p>Free returns on items purchased within the last 60 days.
 	<p class="policies-title">Guarantee</p>
-	<p>Free returns on items purchased within the last 60 days.</p>
+	<p>We stand behind everything we sell. If you’re not satisfied with your purchase, you can return it for a replacement or refund within one year of purchase. </p>
 </div><!--policies-->
