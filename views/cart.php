@@ -4,7 +4,7 @@
 		<?php
 		if(!isset($_SESSION["arrCart"])){
 			echo "No items added.";
-		} else {
+		} else { 
 			$arrProds = $_SESSION["arrCart"];
 			$arrNb = 0;
 			$a = 1;
