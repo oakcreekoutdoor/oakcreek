@@ -130,8 +130,6 @@ header ul li a:hover {
 .fas {
 	margin-right: 10px;
 }
-
-
 /*------------- Hero -------------*/
 
 #heroSection {
@@ -810,13 +808,6 @@ p.cart-label {
 	margin-top: -50px;
 }
 
-
-
-
-
-
-
-
 /*------------- Account Page -------------*/
 
 #heroProfile {
@@ -1072,13 +1063,12 @@ q{
 	border-radius: 4px;
 	color
 }
-/*----------- Login ----------------*/
+/*----------- LogIn/SignUp ----------------*/
 
 #login form{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	width:800px;
-	background:white;
 	margin:0 auto;
 	margin-top:100px;
 	grid-column-gap: 100px;
@@ -1093,6 +1083,15 @@ q{
 	font-family: 'Zilla Slab', serif;
 	font-size:25pt;
 	margin-bottom:30px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 /*------------ Thank You -------------*/
@@ -1137,3 +1136,120 @@ footer {
 	padding: 20px;
 	text-align: center;
 }
+
+
+/*-----------media query-----------*/
+/*------tablet---------*/
+@media only screen and (max-width: 768px){
+      .video img{
+      	width:250px;
+      }
+      .reviews{
+    	padding:10px 20px;
+       }
+      #heroDiv{
+      	height:180px;
+      }
+      .product.col-3{
+       height:240px;
+      }
+      .product img{
+      	height:150px;
+      }
+      #contact{
+      	display:grid;
+      	grid-template-columns: 1fr;
+      	grid-gap:10px;
+      }
+      #contact form{
+     	margin-left:50px;
+      }
+
+     .contactText p, h2{
+        margin-left:50px;
+     }
+     .contactText p{
+     	width:50%;
+     }
+     #login form{
+     	display:grid;
+     	grid-template-columns: 1fr;
+     	width:350px;
+     	grid-gap:15px;
+     	margin-top:50px;
+     }
+}
+/*-----mobile-----*/
+@media only screen and (max-width: 425px) {
+	.product.col-3 {
+		width:100%;
+	}
+    #heroDiv{
+    	height:280px;
+
+    }
+    #testimonial h1{
+    	font-size:25px;
+    }
+    .video {
+    	display:grid;
+    	grid-template-columns: 1fr;
+    	grid-gap:0;
+    }
+     .video img{
+     	width:330px;
+     }
+
+    .reviews{
+    	padding:20px 40px;
+    }
+     q{
+     	font-size:16px;
+     	width:30px;
+     }
+
+     .imgText{
+     	float:none;
+     	width:100%;
+  
+     }
+     .col-img{
+     	height:350px;
+     	width:315px;
+     }
+
+     .col-text{
+     	margin-top:20px;
+     }
+
+     #contact{
+     	display:grid;
+     	grid-template-columns: 1fr;
+     	margin-top:40px;
+     	grid-gap:20px;
+     	width:380px;
+     }
+     #contact form{
+     	width:350px;
+     	margin-left:10px;
+     }
+     .contactText p, h2{
+       font-size:20px;
+       margin-left:20px;
+       width:80%;
+     }
+
+     #login form{
+     	display:grid;
+     	grid-template-columns: 1fr;
+     	width:350px;
+     	grid-gap:15px;
+     	margin-top:50px;
+     }
+
+}
+
+
+
+
+
