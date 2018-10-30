@@ -36,6 +36,7 @@
 	</div><!--billing-info-->
 
 	<?php
+	print_r($_SESSION['arrCart']);
 	include("views/sideOrderReview.php");
 	?>	
 </div><!--shipping-->
