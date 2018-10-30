@@ -21,7 +21,8 @@
 		}
 
 		public function delItem() {
-			unset($_SESSION["arrCart"][$_GET["nItem"]]);
+			$arrCart = $_SESSION["arrCart"];
+			array_splice($_SESSION["arrCart"], $_GET["nItem"], 1);
 
 			header("location: index.php?controller=Cart&action=cart");
 		}

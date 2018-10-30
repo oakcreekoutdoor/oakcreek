@@ -12,7 +12,6 @@ include("controllers/AccountController.php");
 include("controllers/CartController.php");
 
 session_start();
-//session_destroy();
 
 $controller = (isset($_GET["controller"]))?$_GET["controller"]:"pages";
 $action = (isset($_GET["action"]))	?$_GET["action"]:"home";
