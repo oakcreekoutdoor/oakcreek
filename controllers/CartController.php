@@ -9,11 +9,19 @@
 		}
 
 		public function billing() {
-			$this->loadView("billing", "cart");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["arrOrder"] = Orders::getAddress();
+			
+			$content = $this->showView("billing", $arrData);
+			include("templates/cart.php");
 		}
 
 		public function payment() {
-			$this->loadView("payment", "cart");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["arrOrder"] = Orders::getAddress();
+			
+			$content = $this->showView("payment", $arrData);
+			include("templates/cart.php");
 		}
 
 		public function orderplaced() {
