@@ -22,7 +22,7 @@
 	<div id="paymentInfo">
 		<h2>Payment Information</h2>
 		<p>Step 3/3</p>
-		<form method="post" action="index.php?controller=Cart&action=orderplaced">
+		<form method="post" action="models/saveOrder.php">
 			<input type="radio"> Card Number
 			<input type="radio"> Paypal
 			<label>Name on Card</label>
