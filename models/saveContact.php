@@ -1,38 +1,22 @@
-<?php
-include("../libs/connect.php");
+<?php 
+include ("../libs/connect.php"); 
+include ("../libs/DBFactory.php"); 
 
-$sql = "INSERT INTO 
-		users(
-			strFullName,
-			strEmailAddress,
-			nPhone,
-			nAltPhone, 
-			strShippingAddress,
-			strShippingZipCode,
-			strShippingCountry,
-			strShippingState,
-			strShippingCity,
-			strBillingAddress,
-			strBillingZipCode,
-			strBillingCountry,
-			strBillingState,
-			strBillingCity) 
-		VALUES (			
-			'".$_POST['strFullName']."',
-			'".$_POST['strEmailAddress']."',
-			'".$_POST['nPhone']."',
-			'".$_POST['nAltPhone']."',
-			'".$_POST['strShippingAddress']."',
-			'".$_POST['strShippingZipCode']."',
-			'".$_POST['strShippingCountry']."',
-			'".$_POST['strShippingState']."',
-			'".$_POST['strShippingCity']."',
-			'".$_POST['strBillingAddress']."',
-			'".$_POST['strBillingZipCode']."',
-			'".$_POST['strBillingCountry']."',
-			'".$_POST['strBillingState']."',
-			'".$_POST['strBillingCity']."')
-		;";
+$error = ($_POST["strFullName"] && $_POST["strEmailAddress"] && $_POST["strComment"])?false:true;
 
-Connect::runSql("saveData", $sql);
-?>
+$sql = "INSERT INTO contacts (
+		strFullName, 
+		strEmailAddress,
+		strComment
+		) 
+
+	VALUES (
+		'".$_POST["strFullName"]."', 
+		'".$_POST["strEmailAddress"]."',
+		'".$_POST["strComment"]."'
+		
+	)";
+
+
+DBFactory::newData()->runSql("saveData", $sql);
+header("location: ../views/submitthanks.php");?>

@@ -979,7 +979,7 @@ q{
 }
 
 #contact form{
-	background-color: #D3D3D3;/*lightgrey*/
+	background-color: #ccc;/*lightgrey*/
 	padding:15px 30px;
 	width:500px;
 }
@@ -1000,6 +1000,7 @@ q{
 	padding:18px 30px;
 	margin-left:0;
 	border-radius: 4px;
+	color
 }
 /*----------- Login ----------------*/
 
@@ -1016,7 +1017,6 @@ q{
 .loginForm, .signUpForm{
 	border:1px solid black;
 	padding:20px 40px;
-
 }
 
 .loginForm h2, .signUpForm h2{
@@ -1054,8 +1054,6 @@ q{
 #thankyou span{
 	font-weight:bold;
 }
-
-
 
 
 /*------------- Footer -------------*/

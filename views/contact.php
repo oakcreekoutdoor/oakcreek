@@ -3,13 +3,19 @@
 		<h2>Contact Us</h2>
 		<p>Questions, comments, or concerns? We'd love to hear from you. Whether its feedback, positive or negative, we welcome it all. We want you to have the best Oak Creek Outdoor experience possible, so don't hesitate to reach out to us.</p>
 	</div>
-	<form>
-		<labe>Name</labe>
-		<input type="text" id="fName" name="fullName">
-		<labe>Email</labe>
-		<input type="text" id="email" name="email">
-		<label>Comment</label>
-		<textarea id="subject" name="subject"></textarea>
-		<a href="#" class="btn prime">Submit</a>
-	</form>
-</section><!-- //testimonial container -->
+			<div id="contactBox">
+				<form method="post" action="models/saveContact.php" onsubmit="return validateForm()">
+					<label class="requiredLabel">Full Name: </label>
+					<input type="text" name="strFullName" placeholder="Enter your full name" class="requiredField" value=""/><br/>
+
+					<label class="requiredLabel">Email Address: </label>
+					<input type="text" name="strEmailAddress" placeholder="Enter your email address" class="requiredField"/><br/>
+
+					<label class="requiredLabel">Comment: </label>
+					<textarea name="strComment" value=""/></textarea>
+					<input type="submit" name="Submit" class="btn prime" value="Submit" />
+				</form>
+	     </div><!--contactBox-->
+	
+			
+</section>
