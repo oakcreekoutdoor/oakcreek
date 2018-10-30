@@ -1,7 +1,7 @@
 <?php
 include("functions/db.php");
 
-$arrUsers = runSelectSQL("SELECT * FROM users WHERE strUserName='".$_POST["strUserName"]."' AND strPassword='".$_POST["strPassword"]."'")[0];
+$arrUsers = runSelectSQL("SELECT * FROM users WHERE strUserName='".$_POST["strUserName"]."' AND strPassword='".$_POST["strPassword"]."' AND bAdmin=1")[0];
 
 if ($arrUsers)
 {

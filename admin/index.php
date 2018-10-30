@@ -1,4 +1,5 @@
 <?php
+include("functions/db.php");
 include("partials/header.php");
 ?>
 	<div id="container" class="text-center">
