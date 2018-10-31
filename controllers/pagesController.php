@@ -34,15 +34,27 @@
 		}
 
 		public function about() {
-			$this->loadView("about", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["content"] = Page::getPages(4);
+			
+			$content = $this->showView("about", $arrData);
+			include("templates/pages.php");
 		}
 
 		public function testimonials() {
-			$this->loadView("testimonial", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["content"] = Page::getPages(3);
+			
+			$content = $this->showView("testimonial", $arrData);
+			include("templates/pages.php");
 		}
 
 		public function contact() {
-			$this->loadView("contact", "pages");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["content"] = Page::getPages(5);
+			
+			$content = $this->showView("contact", $arrData);
+			include("templates/pages.php");
 		}
          
         public function submitthanks(){

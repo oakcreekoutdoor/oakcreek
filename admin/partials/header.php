@@ -4,7 +4,7 @@ $_GET["error"] = (isset($_GET["error"]))?$_GET["error"]:"";
 ?>
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 	<title>Oak Creek CMS</title>
 
 	<link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@ $_GET["error"] = (isset($_GET["error"]))?$_GET["error"]:"";
 
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600,600i|Nunito:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">

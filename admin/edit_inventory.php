@@ -1,4 +1,5 @@
 <?php
+include("check_user.php");
 include("partials/header.php");
 include("partials/nav.php");
 $arrProducts = runSelectSQL("

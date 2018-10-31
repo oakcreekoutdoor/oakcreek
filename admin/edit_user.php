@@ -1,11 +1,12 @@
 <?php
+include("check_user.php");
 include("partials/header.php");
 include("partials/nav.php");
 $arrUsers = runSelectSQL("SELECT * FROM users WHERE id='".$_GET["id"]."'");
 ?>
 
 	<div id="editUser">
-		<h1>Edit User</h1>
+		<h1>Edit Details</h1>
 		<form method="post" action="update_user.php?id=<?=$arrUsers[0]['id']?>" onsubmit="return validateForm();">
 
 			<label class="requiredLabel">Full Name:</label>

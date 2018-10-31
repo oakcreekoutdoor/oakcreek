@@ -1,4 +1,5 @@
 <?php
+include("check_user.php");
 include("functions/db.php");
 
 $error = ($_POST["strFullName"] && $_POST["strUserName"] && $_POST["strPassword"] && $_POST["strEmailAddress"] && $_POST["nPhone"])?false:true;
@@ -9,7 +10,8 @@ $sql = "INSERT INTO users (
 		strUserName,
 		strPassword,
 		strEmailAddress,
-		nPhone
+		nPhone,
+		bAdmin
 		) 
 
 	VALUES (
@@ -17,8 +19,8 @@ $sql = "INSERT INTO users (
 		'".$_POST["strUserName"]."',
 		'".$_POST["strPassword"]."', 
 		'".$_POST["strEmailAddress"]."',
-		'".$_POST["nPhone"]."'
-		
+		'".$_POST["nPhone"]."',
+		1
 	)";
 
 	runInsertSQL($sql);

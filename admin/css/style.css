@@ -111,7 +111,6 @@ input[type="submit"]:hover {
 }
 #welcome h1 {
 	font-size: 40pt;
-	font-style: italic;
 	text-align: center;
 	margin-top: 120px;
 	color: #223300; /* green */
@@ -136,6 +135,7 @@ input[type="submit"]:hover {
 #manage > div {
 	padding: 40px 20px;
 	border: 3px solid #000;
+	border-radius: 10px;
 }
 #manage > div:hover {
 	border: 3px solid #669900; /* yellow green */
@@ -168,9 +168,9 @@ nav a:hover {
 	border-bottom: 5px solid #669900; /* yellow green */
 }
 #users form {
-	padding: 40px 40px 40px 0px;
+	margin-bottom: 100px;
 	background: #fff;
-	width: 300px;
+	width: 500px;
 }
 #users, #content-list {
 	width: 500px;
@@ -178,9 +178,8 @@ nav a:hover {
 	margin-top: 100px;
 	margin-left: 300px;
 }
-#users h1, #services h1 {
+#users h1  {
 	font-size: 40pt;
-	font-style: italic;
 	margin-bottom: 20px;
 }
 #users input, #services input, #editUser input, #addForm input {
@@ -196,14 +195,14 @@ nav a:hover {
 	display: inline-block;
 }
 #users form a, #addForm a {
-	background: #5bbaae; /* teal */
-	padding: 10px 30px 10px 30px;
-	color: #000;
+	background: #669900; /* yellow green */
+	padding: 15px 50px 15px 50px;
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 13pt;
 	border: 0;
 	cursor: pointer;
-	width: 170px;
+	width: 200px;
 }
 #users form a:hover, #services form a:hover, #addForm a:hover {
 	background: #000; 
@@ -227,10 +226,11 @@ nav a:hover {
 .contactList div {
 	margin: 0 auto;
 	margin-bottom: 10px;
-	width: 240px;
+	width: 180px;
 }
 .contactList h3 {
 	margin-bottom: 10px;
+	font-weight: bold;
 }
 #users {
 	height: 700px;
@@ -240,6 +240,7 @@ nav a:hover {
 	margin-top: 100px;
 	margin-left: 300px;
 	width: 500px;
+	position: relative;
 }
 #editUser input[type="submit"], #editForm input[type="submit"], #addForm input[type="submit"] {
 	padding: 10px 30px; 
@@ -261,11 +262,14 @@ nav a:hover {
 	font-size: 13pt;
 }
 #editUser a:hover, .cancelBtn:hover{
-	background-color: #5bbaae; /* teal */
+	background-color: #223300; /* green */
 	color: #000;
 }
 #editUser form, #editForm form {
 	margin-top: 30px;
+}
+#editForm form p {
+	line-height: 25px;
 }
 .contentList {
 	margin-bottom: 100px;
@@ -277,7 +281,7 @@ nav a:hover {
 	height: 150px;
 	font-size: 12pt;
 }
-#content h1 {
+#content h1, #editUser h1 {
 	font-size: 40pt;
 	display: inline-block;
 }
@@ -423,7 +427,7 @@ nav a:hover {
 }
 #orderList table td:first-child {
 	text-align: center;
-	width: 150px;
+	width: 130px;
 }
 #orderList table td:nth-child(2) {
 	width: 160px;
@@ -434,4 +438,110 @@ nav a:hover {
 	border-bottom: 4px solid #fff; 
 	border-top: 4px solid #fff; 
 	padding: 10px;
+}
+#orderList .viewBtn {
+	font-weight: bold;
+	border: 2px solid #669900; /* yellow green */
+	border-radius: 5px;
+	padding: 5px 10px;
+	padding-top: 7px;
+}
+#orderList .viewBtn:hover {
+	color: #fff;
+	background: #669900; /* yellow green */
+}
+#editForm .user-info span, #editForm .order-info span {
+	font-weight: bold;
+	float: none;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+#editForm .status {
+	margin-top: -15px;
+}
+#editForm .status input[type="submit"] {
+	font-size: 10pt;
+	padding: 8px 8px;
+	height: 35px;
+	width: 80px;
+	position: absolute;
+	margin-top: -52px;
+	margin-left: 170px;
+	border-radius: 20px;
+	background: #fff;
+	border: 2px solid #669900; /* yellow green */
+	color: #669900; /* yellow green */
+}
+#editForm .status input[type="submit"]:hover {
+	color: #fff;
+	background: #669900; /* yellow green */
+}
+#editForm .status select {
+	width: 150px;
+	height: 30px;
+}
+#editForm .status label {
+	font-weight: bold;
+}
+#editForm .user-info {
+	position: absolute;
+	top: 105px;
+	left: 450px;
+	width: 600px;
+}
+#editForm .order-items {
+	margin-top: 20px;
+	width: 1000px;
+}
+#editForm .order-items h2 {
+	font-size: 18pt;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.items {
+	width: 800px;
+	text-align: left;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+.items img {  
+	width: 100px;
+	border: 1px solid #000;
+	display: inline-block;
+}
+.item-info {
+	display: inline-block;
+	position: absolute;
+	margin-left: 20px;
+}
+p.cart-label {
+	font-weight: bold;
+	float: left;
+	font-size: 12pt;
+}
+.order-invoice {
+	margin-right: -300px;
+	float: right;
+	text-align: right;
+	height: 350px;
+}
+.order-invoice:nth-child(2) p {
+	text-align: right;
+	line-height: 25px;
+	background: red;
+	display: inline-block;
+	float: left;
+}
+.cart-total {
+	margin-top: 20px;
+}
+.cart-total p {
+	float: left;
+	font-weight: bold;
+	font-size: 18pt;
+	display: inline-block;
+}
+.cart-total p:nth-child(2) {
+	margin-left: 90px;
 }

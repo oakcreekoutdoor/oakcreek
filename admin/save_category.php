@@ -1,4 +1,5 @@
 <?php
+include("check_user.php");
 include("functions/db.php");
 
 $imgUpload = uploadFile("strHeroImage");
