@@ -37,8 +37,7 @@
 		static function getProduct()
 	    {
 			$sql = "SELECT
-					    products.*,
-					    (SELECT GROUP_CONCAT(' ', product_photos.strPhoto) FROM product_photos INNER JOIN products ON products.id = product_photos.nProductsID WHERE products.id =".$_GET["pID"].") AS strPhotos
+					    *
 					FROM
 					    products
 					WHERE
