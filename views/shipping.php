@@ -24,7 +24,7 @@
 				<input type="text" name="strZipCode" id="zipcode" class="requiredField" />
 			</div>
 			<div id="formCountry">
-				<label>Country</label>
+				<label class="country">Country</label>
 				<input type="text" name="strCountry" id="country" class="requiredField" />
 			</div><!--formCountry-->
 			<div id="formProvince">
