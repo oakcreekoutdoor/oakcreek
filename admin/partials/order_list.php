@@ -34,6 +34,7 @@ $arrOrders = runSelectSQL("
 					<td><a href="#" data-filtervalue="strOrderStatus">Status</a></td>
 					<td><a href="#" data-filtervalue="strFullName">Customer</a></td>
 					<td><a href="#" data-filtervalue="strEmailAddress">Email Address</a></td>
+					<td></td>
 				</tr>
 			</thead>
 
