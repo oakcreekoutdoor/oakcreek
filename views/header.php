@@ -23,7 +23,7 @@
 					} else {
 						echo "0";
 					}
-				?> items)</a>
+				?> items )</a>
 			</div><!-- //cart-user -->
 			<?php 
 				include("views/nav.php");
