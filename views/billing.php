@@ -1,11 +1,11 @@
 <div id="billing" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		<a href="index.php?controller=Cart&action=shipping">Edit</a>
+		<!-- <a href="index.php?controller=Cart&action=shipping">Edit</a> -->
 		<div>
-			<p>Full Name</p>
-			<p>Address - City</p>
-			<p>Province/Country/Postal Code</p>
+			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strShippingAddress"]?>, <?=$arrData["arrOrder"][0]["strShippingCity"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strShippingState"]?> - <?=$arrData["arrOrder"][0]["strShippingCountry"]?> - <?=$arrData["arrOrder"][0]["strShippingZipCode"]?></p>
 		</div>
 	</div><!--shipping-info-->
 
@@ -36,7 +36,6 @@
 	</div><!--billing-info-->
 
 	<?php
-	print_r($_SESSION['arrCart']);
 	include("views/sideOrderReview.php");
 	?>	
 </div><!--shipping-->

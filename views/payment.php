@@ -1,21 +1,21 @@
 <div id="payment" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		<a href="index.php?controller=Cart&action=shipping">Edit</a>
+		<!-- <a href="index.php?controller=Cart&action=shipping">Edit</a> -->
 		<div>
-			<p>Full Name</p>
-			<p>Address - City</p>
-			<p>Province/Country/Postal Code</p>
+			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strShippingAddress"]?>, <?=$arrData["arrOrder"][0]["strShippingCity"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strShippingState"]?> - <?=$arrData["arrOrder"][0]["strShippingCountry"]?> - <?=$arrData["arrOrder"][0]["strShippingZipCode"]?></p>
 		</div>
 	</div><!--shipping-info-->
 
 	<div class="billing-info">
 		<h2>Billing Information</h2>
-		<a href="index.php?controller=Cart&action=billing">Edit</a>
+		<!-- <a href="index.php?controller=Cart&action=billing">Edit</a> -->
 		<div>
-			<p>Full Name</p>
-			<p>Address - City</p>
-			<p>Province/Country/Postal Code</p>
+			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strBillingAddress"]?>, <?=$arrData["arrOrder"][0]["strBillingCity"]?></p>
+			<p><?=$arrData["arrOrder"][0]["strBillingState"]?> - <?=$arrData["arrOrder"][0]["strBillingCountry"]?> - <?=$arrData["arrOrder"][0]["strBillingZipCode"]?></p>
 		</div>
 	</div><!--billing-info-->
 

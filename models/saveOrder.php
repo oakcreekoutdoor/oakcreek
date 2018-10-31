@@ -19,6 +19,7 @@ $sql = "INSERT INTO
 			'1')
 		;";
 $lastOID = Connect::runSql("saveData", $sql);
+$_SESSION["orderID"] = $lastOID;
 
 $arrProds = $_SESSION["arrCart"];
 

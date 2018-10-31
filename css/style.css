@@ -130,6 +130,25 @@ header ul li a:hover {
 .fas {
 	margin-right: 10px;
 }
+
+.socialMedia {
+	position: fixed;
+	top: 160px;
+	right: 50px;
+	width: 40px;
+	z-index: 1;
+}
+
+.socialMedia a {
+	margin: 10px 0;
+}
+
+.socialMedia a, .socialMedia img {
+	display: block;
+	width: 100%;
+}
+
+
 /*------------- Hero -------------*/
 
 #heroSection {
@@ -1233,6 +1252,7 @@ footer {
      	width:350px;
      	margin-left:10px;
      }
+
      .contactText p, h2{
        font-size:20px;
        margin-left:20px;
@@ -1246,10 +1266,53 @@ footer {
      	grid-gap:15px;
      	margin-top:50px;
      }
+     #cartSummary {
+		height: 800px;
+		width: 100%;
+	}
+     #cartSummary.container {
+     	width:100%;
+     	margin-left:0;
+     }
+     #cartSummary > div{
+     	width:100%;
+     }
+     .cart-item img {
+     	margin-left: 15px;
+     }
+     .cart-item> div:nth-child(2) {
+		padding-left: 0;
+		float: right;
+		position: absolute;
+		left: 130px;
+	}
+     .cart-item> div:nth-child(3) {
+		padding-left: 0;
+		float: right;
+		position: absolute;
+		left: 130px;
+		margin-top: 50px;
+	}
+	.cart-item> div:nth-child(4) {
+		padding-left: 0;
+		float: right;
+		position: absolute;
+		left: 200px;
+		margin-top: 50px;
+	}
+	.cart-item> div:nth-child(5) {
+		padding-left: 0;
+		float: right;
+		position: absolute;
+		left: 290px;
+		margin-top: 50px;
+	}
+	#cartCheckout > div {
+		height: 250px;
+		width: 300px;
+	}
 
 }
 
-
-
-
-
+   
+  

@@ -1,7 +1,7 @@
 <section id="contact" class="container cf">
 	<div class="contactText">
-		<h2>Contact Us</h2>
-		<p>Questions, comments, or concerns? We'd love to hear from you. Whether its feedback, positive or negative, we welcome it all. We want you to have the best Oak Creek Outdoor experience possible, so don't hesitate to reach out to us.</p>
+		<h2><?=$arrData["content"][0]['strHeading1']?></h2>
+		<p><?=$arrData["content"][0]['strBodyText']?></p>
 	</div>
 			<div id="contactBox">
 				<form method="post" action="models/saveContact.php" onsubmit="return validateForm()">
@@ -15,7 +15,5 @@
 					<textarea name="strComment" value=""/></textarea>
 					<input type="submit" name="Submit" class="btn prime" value="Submit" />
 				</form>
-	     </div><!--contactBox-->
-	
-			
+	     </div><!--contactBox-->	
 </section>
