@@ -1,21 +1,12 @@
 <section id="product" class="container">		
 	<?php 
 	//include("views/breadcrumb.php");
-	$arrPhoto = array_map("trim", explode(", ",$arrData["product"][0]["strPhotos"]));
 	?>
 
 	<div id="prodDetails">
 		<div class="imgText col-img cf">
-			<img class="bigImg" src="assets/<?=$arrPhoto[0]?>" alt="<?=$arrPhoto[0]?>" />
-		<?php
-		foreach($arrPhoto as $photo)
-		{
-		?>
-			<img class="smallImg" src="assets/<?=$photo?>" alt="<?=$photo?>" />
-		<?php
-		}
-		?>
-		</div><!-- //imgText col-img -->
+			<img class="bigImg" src="assets/<?=$arrData['product'][0]['strFeatPhoto']?>" alt="<?=$arrData['product'][0]['strFeatPhoto']?>" />
+		</div>
 
 		<div class="imgText col-text">
 			<h2><?=$arrData["product"][0]["strName"]?></h2>
