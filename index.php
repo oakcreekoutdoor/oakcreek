@@ -7,8 +7,8 @@ include("models/getProduct.php");
 include("models/getOrders.php");
 include("models/accessAcc.php");
 include("models/getPages.php");
-include("controllers/MainController.php");
-include("controllers/PagesController.php");
+include("controllers/mainController.php");
+include("controllers/pagesController.php");
 include("controllers/AccountController.php");
 include("controllers/CartController.php");
 
