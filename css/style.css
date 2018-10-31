@@ -1618,7 +1618,12 @@ footer {
 
 }
 /*------------ hamburger menu--------------*/
-       
+       .hamburger {
+      	display:none;
+      	margin:0 auto;
+      	color:#a67c00;/*gold*/
+      }
+
       #toggle{
       	display:none;
       }
@@ -1629,7 +1634,7 @@ footer {
      		cursor:pointer;
 
      	}
-       nav{
+        nav{
       	   display:none;
      
        }
