@@ -148,6 +148,10 @@ header ul li a:hover {
 	width: 100%;
 }
 
+#ham{
+	display:none;
+}
+
 
 /*------------- Hero -------------*/
 
@@ -1144,6 +1148,8 @@ input[type=text], input[type=password] {
 }
 
 
+
+
 /*------------- Footer -------------*/
 
 footer {
@@ -1171,11 +1177,9 @@ footer {
       #heroDiv{
       	height:180px;
       }
-      .product.col-3{
-       height:240px;
-      }
+   
       .product img{
-      	height:150px;
+      	width:100%;
       }
       #contact{
       	display:grid;
@@ -1418,9 +1422,7 @@ footer {
 }
 /*-----mobile-----*/
 @media only screen and (max-width: 425px) {
-	.product{
-
-	}
+	
 	.product.col-3 {
 		width:100%;
 	}
@@ -1476,7 +1478,7 @@ footer {
 
      .contactText p, h2{
        font-size:20px;
-       margin-left:20px;
+       margin-left:0;
        width:80%;
      }
 
@@ -1591,10 +1593,6 @@ footer {
 	#payment{
 		height:1100px;
     }
-
-    .product{
-    	height:1250px;
-    }
      
     .cart-user{
     	display:none;
@@ -1613,8 +1611,18 @@ footer {
     	margin-left:-20px;
     }
 
+    .logo img{
+    	width:200px;
+    }
 
-     
+    #prodDetails .imgText.col-img {
+		width: 100%;
+		height: auto;
+}
+
+     #prodDetails .imgText.col-text {
+		width: 100%;
+		padding: 0;
 
 }
 /*------------ hamburger menu--------------*/
@@ -1622,10 +1630,11 @@ footer {
       	display:none;
       	margin:0 auto;
       	color:#a67c00;/*gold*/
+      	position:relative
       }
 
-      #toggle{
-      	display:none;
+        #toggle{
+        	display:none;
       }
      
      @media only screen and (max-width: 450px){
@@ -1634,9 +1643,17 @@ footer {
      		cursor:pointer;
 
      	}
-        nav{
+        #hams{
       	   display:none;
      
+       }
+
+       #ham{
+       	display:block;
+       }
+
+       #ham nav{
+       	display:none;
        }
 
        header ul li {

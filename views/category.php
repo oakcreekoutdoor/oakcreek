@@ -1,4 +1,4 @@
-<section id="product" class="container">
+<section id="product" class="container cf">
 	<?php
 		include("views/smallHeroImg.php");
 		//include("views/breadcrumb.php");
