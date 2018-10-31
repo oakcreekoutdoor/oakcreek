@@ -1,7 +1,7 @@
 <?php
 include_once("functions/db.php");
 
-$arrMyUsers = runSelectSQL("SELECT * FROM users");
+$arrMyUsers = runSelectSQL("SELECT * FROM users WHERE bAdmin = 1");
 
 ?>
 
@@ -13,15 +13,15 @@ $arrMyUsers = runSelectSQL("SELECT * FROM users");
 		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><a class="editBtn" href="edit_user.php?id=<?=$user['id']?>">Edit</a><a class="deleteBtn" href="delete_user.php?id=<?=$user['id']?>">Delete</a><?=$user['strFullName']?>
-
-	</div>
-
-<?php
-
-}
-
-?></div>
+		<div>
+			<a class="editBtn" href="edit_user.php?id=<?=$user['id']?>"><span class="far fa-edit"></span></a>
+			<a class="deleteBtn" href="delete_user.php?id=<?=$user['id']?>"><span class="far fa-trash-alt"></span></a> 
+			<?=$user['strFullName']?>
+		</div>
+		<?php
+		}
+		?>
+		</div>
 
 	<div class="userName">
 		<h3>Username</h3>
@@ -30,15 +30,12 @@ $arrMyUsers = runSelectSQL("SELECT * FROM users");
 		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$user['strUserName']?>
+		<div><?=$user['strUserName']?></div>
 
+		<?php
+		}
+		?>
 	</div>
-
-<?php
-
-}
-
-?></div>
 
 	<div class="password">
 		<h3>Password</h3>
@@ -47,45 +44,38 @@ $arrMyUsers = runSelectSQL("SELECT * FROM users");
 		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$user['strPassword']?>
-
+		<div><?=$user['strPassword']?></div>
+		
+		<?php
+		}
+		?>
 	</div>
 
-<?php
-
-}
-
-?></div>
-      <div class="email">
+    <div class="email">
 		<h3>Email Address</h3>
 
 		<?php
 		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$user['strEmailAddress']?>
+		<div><?=$user['strEmailAddress']?></div>
 
+		<?php
+		}
+		?>
 	</div>
 
-<?php
-
-}
-
-?></div>
-      <div class="Phone">
+    <div class="Phone">
 		<h3>Phone Number</h3>
 
 		<?php
 		foreach($arrMyUsers as $user)
 		{
 		?>
-		<div><?=$user['nPhone']?>
+		<div><?=$user['nPhone']?></div>
 
+		<?php
+		}
+		?>
 	</div>
-
-<?php
-
-}
-
-?></div>
-</div>	
+</div><!--contactList-->

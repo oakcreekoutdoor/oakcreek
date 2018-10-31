@@ -2,7 +2,7 @@
 include("check_user.php");
 include("partials/header.php");
 include("partials/nav.php");
-$arrUsers = runSelectSQL("SELECT * FROM users");
+$arrUsers = runSelectSQL("SELECT * FROM users WHERE id = '".$_SESSION["loggedUserId"]."'");
 ?>
 	<div id="welcome" class="text-center">
 		<h1>Welcome back, <?=$arrUsers[0]["strFullName"]?>!</h1>

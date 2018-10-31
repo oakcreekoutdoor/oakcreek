@@ -1,4 +1,5 @@
 <?php
+include("check_user.php");
 include_once("functions/db.php");
 runSQL("
 	UPDATE
