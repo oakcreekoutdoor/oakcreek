@@ -1595,8 +1595,52 @@ footer {
     .product{
     	height:1250px;
     }
+     
+    .cart-user{
+    	display:none;
+    }
+
+    .socialMedia img{
+    	margin-left:60px;
+    	width:30px;
+    }
+
+    #shop .shopCat h2{
+    	margin-left:-20px;
+    }
+
+    .shopCat .btn{
+    	margin-left:-20px;
+    }
+
+
+     
 
 }
 /*------------ hamburger menu--------------*/
+       
+      #toggle{
+      	display:none;
+      }
+     
+     @media only screen and (max-width: 450px){
+     	.hamburger{
+     		display:block;
+     		cursor:pointer;
 
+     	}
+       nav{
+      	   display:none;
+     
+       }
 
+       header ul li {
+       	font-size:12px;
+       	width:250px;
+
+       }
+
+       #toggle:checked + nav{
+       	display:block;
+       }
+     }
