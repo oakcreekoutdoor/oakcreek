@@ -16,7 +16,7 @@
 			</div><!-- //logo -->
 			<div class="cart-user">
 				<a class="user" href="index.php?controller=Account&action=login"><span class="fas fa-user-circle"></span>Login / Sign Up</a>
-				<a href="index.php?controller=Cart&action=cart"><span class="fas fa-shopping-cart"></span>Cart</a>
+				<a href="index.php?controller=Cart&action=cart"><span class="fas fa-shopping-cart"></span>Cart (<?=count($_SESSION["arrCart"])?> items)</a>
 			</div><!-- //cart-user -->
 			<?php 
 				include("views/nav.php");
