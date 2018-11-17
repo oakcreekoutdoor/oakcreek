@@ -5,6 +5,9 @@
 			$arrData["prods"] = Product::featureProducts();
 			
 			$content = $this->showView("heroImg");
+
+			$content .= $this->showView("teaser");
+
 			$content .= $this->showView("product_section", $arrData);
 			include("templates/pages.php");
 		}
