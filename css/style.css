@@ -6,7 +6,7 @@ orange cta: #f3790c
 brown: #604837
 light beige (testimonial bg): #fbeee5
 brown leaf (ratings): #c2a28b
-yellow green (social icons hover): #dbb95f
+yellow green (btn hover): #dbb95f
 
 headings:
 font-family: 'Zilla Slab', serif;
@@ -73,7 +73,8 @@ a {
 }
 
 .btn.prime:hover {
-	background-color: #604837; /* brown */
+	background-color: #dbb95f; /* yellow green */
+	color:#2c5412; /* dark green */
 }
 
 .btn.sec {
@@ -210,11 +211,33 @@ header ul li a:hover {
 #heroDiv {
 	overflow: hidden;
 	height: 500px;
-	margin-top: 15px;
 }
 
 #heroDiv img {
 	width: 100%;
+}
+
+.heroText {
+	position: absolute;
+	top: 100px;
+	left: 80px;
+	color: #fff;
+}
+
+.heroText h1 {
+	font-size: 52pt;
+	margin-bottom: -5px;
+	font-family: 'Zilla Slab', serif;
+}
+
+.heroText p {
+	margin-bottom: 20px;
+}
+.heroText .btn {
+	width: 200px;
+	text-align: center;
+	padding: 15px;
+	margin-left: 0px;
 }
 
 
@@ -308,17 +331,6 @@ header ul li a:hover {
 	position: relative;
 	margin-top: 25px;
 	width: 100%;
-}
-
-.heroText {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: #fff;
-}
-
-.heroText h2 {
-	margin-bottom: 20px;
 }
 
 .shopCat {
