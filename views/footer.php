@@ -1,4 +1,9 @@
 	<footer>
+		<div class="socialMedia">
+			<a href="#"><span class="fab fa-facebook-square"></span></a>
+			<a href="#"><span class="fab fa-instagram"></span></a>
+			<a href="#"><span class="fab fa-youtube-square"></span></a>
+		</div><!--//socialMedia-->
 		<p>Copyright &copy; 2018 - All Rights Reserved</p>
 	</footer><!-- //footer -->
 
