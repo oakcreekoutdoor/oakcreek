@@ -579,13 +579,10 @@ header ul li a:hover {
 /*--------------Cart----------------*/
 #cartSummary {
 	height: 900px;
-	margin-left: 250px;
 }
 #cartSummary > div {
-	width: 1200px;
 	padding-top: 30px;
 	height: auto;
-	border-bottom: 2px solid #000;
 }
 #cartSummary h2 {
 	font-size: 24pt;
@@ -596,23 +593,22 @@ header ul li a:hover {
 .cart-item {
 	height: 125px;
 }
+.cart-item .product-Name {
+    width: 40%;
+    text-align: left;
+}
 .cart-item> div, .cart-item> p {
 	float: left;
 	display: block;
-	margin-right: 20px;
-	width: 250px;
+	width: 15%;
+    text-align: center;
 }
-.cart-item> div:nth-child(3) {
-	padding-left: 100px;
-}
-.cart-item> div:nth-child(4) {
-	padding-left: 90px;
-}
-.cart-item> div:nth-child(5) {
-	padding-left: 130px;
+.cart-item div input[type=number]::-webkit-inner-spin-button, 
+.cart-item div input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
 }
 .cart-item> div p:nth-child(2) {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 .cart-item img {
 	margin-right: 20px;
@@ -626,28 +622,28 @@ header ul li a:hover {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-	display: block;
-	margin-top: 25px;
-	margin-left: 20px;
+	margin-top: 30px;
 	color: red;
 }
 .cart-item > div:nth-child(4) span:hover {
 	color: black;
 }
 .cart-item input {
-	width: 35px;
-	height: 25px;
-	display: block;
+	width: 40px;
+	height: 30px;
 	margin-top: 25px;
+    text-align: center;
 }
 p.cart-label {
 	font-weight: bold;
-	float: left;
 	font-size: 12pt;
 }
 #cartCheckout {
 	margin-top: 30px;
 	position: relative;
+    border-top: 2px solid #000;
+    display: inline-block;
+    width: 100%;
 }
 .cart-code {
 	margin-bottom: 20px;
@@ -677,22 +673,34 @@ p.cart-label {
 	text-align: right;
 	line-height: 25px;
 }
+#cart-checkout-price {
+    width: 250px;
+    display: inline-block;
+    position: relative;
+}
+.cart-price {
+    display: inline-block;
+    position: relative;
+    width: 100%;;
+}
+.cart-price p {
+    display: inline-block;
+}
+.cart-price p:first-child {
+    float: left;
+    font-weight: bold;
+}
 .cart-total {
-	margin-top: 20px;
-	font-size: 20pt;
-	font-weight: bold;
+    padding: 15px 0;
 }
 .cart-total p {
-	float: left;
-}
-.cart-total p:nth-child(2) {
-	margin-left: 90px;
+    font-size: 22px;
+    font-weight: bold;
 }
 #cartCheckout .btn.prime {
 	width: 100%;
 	margin: 0;
 	text-align: center;
-	margin-top: 70px;
 	padding: 20px;
 }
 

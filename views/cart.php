@@ -15,7 +15,7 @@
 				<div class="cart-item">
 
 					<img src="assets/<?=$prod['strImage']?>">
-					<div>
+					<div class="product-Name">
 						<p class="cart-label"><?=$prod['strName']?></p>
 					</div>
 
@@ -57,14 +57,20 @@
 			$_SESSION['subTotal'] = $subTotal;
 			$_SESSION['nInvoice'] = $total;
 		?>
-			<div>
-				<p class="cart-label">Subtotal</p>
-				<p>$ <?=$subTotal?></p>
-				<p class="cart-label">Shipping</p>
-				<p>FREE</p>
-				<p class="cart-label">Tax</p>
-				<p>$ <?=$tax?></p>
-				<div class="cart-total">
+			<div id="cart-checkout-price">
+                <div class="cart-price">
+				    <p>Subtotal</p>
+				    <p>$ <?=$subTotal?></p>
+                </div>
+                <div class="cart-price">
+				    <p>Shipping</p>
+				    <p>FREE</p>
+                </div>
+                <div class="cart-price">
+				    <p>Tax</p>
+				    <p>$ <?=$tax?></p>
+                </div>
+				<div class="cart-price cart-total">
 					<p>Total</p>
 					<p>$ <?=$total?></p>
 				</div><!--cart-total-->
