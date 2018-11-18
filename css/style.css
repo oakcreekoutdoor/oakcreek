@@ -1368,17 +1368,9 @@ footer {
      	grid-gap:15px;
      	margin-top:50px;
      }
-     #cartSummary.container {
-     	width:100%;
-     	margin-left:50px;
-     }
-     #cartSummary {
-		height: 800px;
-		max-width: 600px;
-		margin-left: 0px;
-	}
 	 #cartSummary h2 {
 	  	width: 250px;
+         margin: 0;
 	  }
      #cartSummary > div{
      	width: 9px;
@@ -1387,62 +1379,63 @@ footer {
      	height: 150px;
      	margin: 0 auto;
      }
-     .cart-item img {
-     	margin-left: 50px;
-     }
      .cart-item> div:nth-child(2) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 180px;
-		width: 220px;
+		width: 80%;
+        display: inline-block;   
+         padding: 0;
 	}
-     .cart-item> div:nth-child(3) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 180px;
-		margin-top: 50px;
-		width: 300px;
-	}
-	.cart-item> div:nth-child(4) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 280px;
-		margin-top: 50px;
-		width: 300px;
-	}
-	.cart-item> div:nth-child(5) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 413px;
-		margin-top: 50px;
-		width: 200px;
-	}
-	#cartSummary .container {
-		width: 100%;
-		margin-left: 0px;
+     .cart-item> div {
+		width: 25%;
 	}
 	#cartSummary > div {
 		width: 100%;
 	}
+    #cartSummary > p, .cart-label {
+		display: inline-block;
+        margin-right: 10px;
+	}
 	#cartCheckout {
 		width: 100%;
+        margin: 0;
 	}
 	#cartCheckout > div {
 		height: 250px;
-		width: 100%;
+		width: 45%;
 		margin-right: 0px;
 	}
 	.cart-total p:nth-child(2) {
 	    position: absolute;
 	    right: 0px;
 	}
-	.cart-item> div, .cart-item> p {
+    .cart-item > div {
+        padding-top: 25px;
+    }
+    .cart-item input {
+        margin: 0;
+    }
+	.cart-item > div, .cart-item> p {
 	    margin-right: 0px;
+        text-align: left
 	}
+    .cart-item > div p:nth-child(2) {
+        margin: 0;
+        display: inline-block;
+    }
+    .cart-item > div:nth-child(4) span {
+        margin: 0;
+    }
+    .cart-item .remove {
+        width: auto;
+        padding: 0;
+        position: absolute;
+        right: 0;
+    }
+    .cart-item .remove .cart-label {
+       display: none;
+    }
+    .cart-item .remove a span {
+        font-size: 20px;
+    }
    	#shipping {
    		height: 1200px;
    }
@@ -1654,70 +1647,15 @@ footer {
      	grid-gap:15px;
      	margin-top:50px;
      }
-	#cartSummary {
-		height: 800px;
-		max-width: 300px;
-		margin-left: 0px;
-	}
-     #cartSummary.container {
-     	max-width:350px;
-     	margin-left:0;
-     }
-     #cartSummary > div{
-     	max-width:300;
-     }
-     .cart-item {
-     	height: 150px;
-        width:350px;
-     }
-     .cart-item img {
-     	margin-left: 15px;
-     }
-     .cart-item> div:nth-child(2) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 130px;
-		max-width: 220px;
-	}
-     .cart-item> div:nth-child(3) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 130px;
-		margin-top: 50px;
-		width: 50px;
-	}
-	.cart-item> div:nth-child(4) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 200px;
-		margin-top: 50px;
-		width: 50px;
-	}
-	.cart-item> div:nth-child(5) {
-		padding-left: 0;
-		float: right;
-		position: absolute;
-		left: 290px;
-		margin-top: 50px;
-		width:60px;
-	}
 	#cartCheckout > div {
-		height: 250px;
-		width: 300px;
+		width: 100%;;
 	}
-	.cart-total p:nth-child(2) {
-	    position: absolute;
-	    right: 0;
-	    background-color:pink;
-	}
-	.cart-item> div, .cart-item> p {
-	    margin-right: 0px;
-	    width: 60px;
-	}
-
+    .cart-item> div {
+        width: 33%;
+    }
+    .cart-item> div:nth-child(2) {
+        width: 55%;
+    }
 	.cart-review{
 		display:none;
 	}

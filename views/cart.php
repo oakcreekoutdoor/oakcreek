@@ -24,7 +24,7 @@
 						<input type="number" name="quantity" value="1" min="1">
 					</div>
 
-					<div>
+					<div class="remove">
 						<p class="cart-label">Remove</p>
 						<a href="index.php?controller=Cart&action=delItem&nItem=<?=$arrNb?>"><span class="far fa-trash-alt"></span></a>
 					</div>
