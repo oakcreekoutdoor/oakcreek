@@ -59,7 +59,7 @@
 			<div class="listCol"><p>26/10/2018</p></div>
 			<div class="listCol"><p>Shipped</p></div>
 			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a href="#">View Order</a></div>
+			<div class="listCol vOrder"><a class="btn sec" href="#">Details</a></div>
 		</div><!-- //orderList -->
 
 		<div class="orderList cf">
@@ -67,7 +67,7 @@
 			<div class="listCol"><p>26/10/2018</p></div>
 			<div class="listCol"><p>Shipped</p></div>
 			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a href="#">View Order</a></div>
+			<div class="listCol vOrder"><a class="btn sec" href="#">Details</a></div>
 		</div><!-- //orderList -->
 	</div><!-- //orderHistory -->
 </section><!-- //profile container -->
