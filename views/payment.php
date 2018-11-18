@@ -1,7 +1,7 @@
 <div id="payment" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		<!-- <a href="index.php?controller=Cart&action=shipping">Edit</a> -->
+		 <a href="index.php?controller=Cart&action=shipping">Edit</a> 
 		<div>
 			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
 			<p><?=$arrData["arrOrder"][0]["strShippingAddress"]?>, <?=$arrData["arrOrder"][0]["strShippingCity"]?></p>
@@ -9,9 +9,9 @@
 		</div>
 	</div><!--shipping-info-->
 
-	<div class="billing-info">
+	<div class="billing-info-rv">
 		<h2>Billing Information</h2>
-		<!-- <a href="index.php?controller=Cart&action=billing">Edit</a> -->
+		 <a href="index.php?controller=Cart&action=billing">Edit</a> 
 		<div>
 			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
 			<p><?=$arrData["arrOrder"][0]["strBillingAddress"]?>, <?=$arrData["arrOrder"][0]["strBillingCity"]?></p>
