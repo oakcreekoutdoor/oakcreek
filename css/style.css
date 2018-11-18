@@ -1205,21 +1205,29 @@ input[type=text], input[type=password] {
 
 /*------------ Thank You -------------*/
 #thankyou{
-	margin-top:50px;
 	position:relative;
 }
-
-#thankyou img{
-	width:1200px;
-	margin-bottom:50px;
+.heroThankYou {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.heroThankYou img{
+    width: 100%;
 }
 
 #thankyou h1{
-	position:absolute;
-	top:170px;
-	left:460px;
-	font-size:40pt;
-	color:white;
+	position: absolute;
+	top: 0;
+	left: 0;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    height: 70px;
+    margin: auto;
+	font-size: 40pt;
+	color: white;
 }
 
 #thankyou p{
