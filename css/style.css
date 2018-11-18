@@ -88,7 +88,7 @@ a {
 }
 
 .requiredField.error {
-	background-color: red;
+	background-color: #d3d2b1;
 }
 
 
@@ -706,37 +706,37 @@ p.cart-label {
 
 /*--------------Shipping------------*/
 
-#shipping {
+#shipping, #billing, #payment {
 	margin-top: 30px;
 }
-#shippingForm {
+#shippingForm, .billing-info, #paymentInfo {
 	width: 45%;
 	position: relative;
 }
-#shippingForm h2, .cart-review h2 {
+#shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
 	float: left;
 	font-size: 25px;
     font-weight: bold;
     margin-right: 0;
     margin-bottom: 25px;
 }
-#shippingForm p {
+#shippingForm p, .billing-info p, #paymentInfo p {
 	display: inline-block;
     float: right;
     margin-top: 6px;
 	font-weight: bold;
 }
-#shipping form {
+#shipping form, .billing-info form, #paymentInfo form {
     display: inline-block;
 }
-#shipping form label {
+#shipping form label, .billing-info form label, #paymentInfo form label {
 	display: inline-block;
     margin-bottom: 5px;
 }
-#shipping form label .req {
+#shipping form label .req, .billing-info form label .req {
     color: red;
 }
-#shipping form input {
+#shipping form input, .billing-info form input, #paymentInfo form input {
 	display: inline-block;
 	height: 35px;
     margin: 0;
@@ -744,11 +744,11 @@ p.cart-label {
 	width: 100%;
     padding: 0;
 }
-#shipping form #formPhone, #shipping form #formPostal, #shipping form #formProvince {
+#formPhone, #formPostal, #formProvince, #paymentInfo form .expiration {
 	float: left;
 	width: 45%;
 }
-#shipping form #formAltPhone, #shipping form #formCountry, #shipping form #formCity {
+#formAltPhone, #formCountry, #formCity, #paymentInfo form .cvv {
 	float: right;
 	width: 45%;
 }
@@ -765,7 +765,7 @@ p.cart-label {
 	height: 20px;
 	width: 20px;
 }
-#shipping form input[type="submit"] {
+#shipping form input[type="submit"], .billing-info form input[type="submit"], #paymentInfo form input[type="submit"] {
 	display: inline-block;
 	width: 220px;
 	height: 50px;
@@ -844,17 +844,14 @@ p.cart-label {
 
 /*-------------Billing--------------------*/
 
-#billing {
-	margin-top: 30px;
-	height: 1000px;
-}
-.shipping-info {
-	width: 500px;
+.shipping-info, .billing-info-rv {
+	width: 45%;
 	position: relative;
 	border-bottom: 1px solid #000;
 	padding-bottom: 20px;
+    margin-bottom: 20px;
 }
-.shipping-info a, .billing-info a {
+.shipping-info a, .billing-info-rv a {
 	padding: 5px 30px;
 	border: 2px solid #000;
 	color: #000;
@@ -862,111 +859,26 @@ p.cart-label {
 	top: 0;
 	right: 0;
 }
-.shipping-info a:hover, .billing-info a:hover {
+.shipping-info a:hover, .billing-info-rv a:hover {
 	color: #fff;
 	background: #000;
 }
-.shipping-info > div, .billing-info > div {
-	margin-top: 20px;
+.shipping-info > div, .billing-info-rv > div {
+	display: inline-block;
+    width: 100%;
 }
-#billing .policies {
-	top: 500px;
-}
-.billing-info {
-	width: 500px;
-	position: relative;
-	margin-top: 20px;
-}
-.billing-info form {
-	margin-top: 20px;
-}
-.billing-info input {
-	margin-top: 5px;
-	display: block;
-	height: 30px;
-	margin-bottom: 15px;
-	width: 100%;
-}
-.billing-info > p {
-	font-weight: bold;
-	position: absolute;
-	right: 0;
-}
-.billing-info #formCountry {
-	position: absolute;
-	top: 118px;
-	right: 0px;
-	width: 220px;
-}
-.billing-info #formProvince {
-	position: absolute;
-	margin-top: 5px;
-	width: 220px;
-}
-.billing-info #formCity {
-	position: absolute;
-	margin-top: 5px;
-	right: 0px;
-	width: 220px;
-}
-.billing-info form input[name="zipcode"] {
-	width: 220px;
-}
-.billing-info .btn.prime {
-	display: block;
-	width: 220px;
-	height: 50px;
-	text-align: center;
-	margin: 0;
-	margin-top: 120px;
-	border: none;
-	cursor: pointer;
-	font-size: 12pt;
+
+.billing-info form input[type="submit"], #paymentInfo form input[type="submit"] {
+    margin-top: 15px;
 }
 
 /*--------------Payment------------------*/
 
-#payment {
-	margin-top: 30px;
-	height: 1000px;
-}
-#payment .policies {
-	top: 650px;
-}
-#paymentInfo {
-	width: 500px;
-	margin-top: 30px;
-	padding-top: 20px;
-	border-top: 1px solid #000;
-	position: relative;
-}
-#paymentInfo .btn.prime {
-	display: block;
-	width: 220px;
-	height: 50px;
-	text-align: center;
-	margin: 0;
-	margin-top: 30px;
-	border: none;
-	cursor: pointer;
-	font-size: 12pt;
-}
-#paymentInfo > p {
-	font-weight: bold;
-	position: absolute;
-	right: 0;
-}
 #paymentInfo form {
-	position: relative;
+    width: 100%;
 }
 #paymentInfo form label {
-	display: block;
-}
-#paymentInfo form input {
-	display: block;
-	height: 30px;
-	margin-bottom: 15px;
-	width: 100%;
+    width: 100%;
 }
 #paymentInfo input[type="radio"] {
 	margin-top: 20px;
@@ -977,14 +889,9 @@ p.cart-label {
 	margin-bottom: 30px;
 }
 .expiration select {
-	height: 30px;
-	width: 100px;
-}
-.cvv {
-	width: 200px;
-	position: absolute;
-	right: 0;
-	margin-top: -50px;
+	height: 35px;
+	width: 49%;
+    margin-bottom: 15px;
 }
 
 /*------------- Account Page -------------*/
@@ -1394,10 +1301,6 @@ footer {
 		width: 45%;
 		margin-right: 0px;
 	}
-	.cart-total p:nth-child(2) {
-	    position: absolute;
-	    right: 0px;
-	}
     .cart-item > div {
         padding-top: 25px;
     }
@@ -1427,84 +1330,42 @@ footer {
     .cart-item .remove a span {
         font-size: 20px;
     }
-   	#shipping {
-   		height: 1200px;
-   }
-    #shippingForm{
-    	width:450px;
-    	height: 1000px;
-    	float:none;
+    #shippingForm {
+        width: 50%;
     }
-    #shipping form input {
-		height: 30px;
-		margin-bottom: 15px;
-		width: 220px;
+    #shippingForm h2, .cart-review h2 {
+        margin-left: 0;
+        font-size: 22px;
     }
-	.cart-review{
-		width:360px;
-		margin-right:0px;
-	}
-	#shipping form div {
-		float:none;
-		padding:0;
-	}
-	#formCountry{
-		right:200px;
-		position: absolute;
-	}
-	#formCity{
-		position: absolute;
-		right:200px;
-		top: 590px;
-	}
-    .cart-review-item{
-    	margin-right:50px;
-    	padding:0;
+    .cart-review {
+        padding: 15px 20px;
     }
-
+    .cart-review h2 {
+        margin-bottom: 0;
+    }
+    #shipping form #formPhone, #shipping form #formPostal, #shipping form #formProvince, #shipping form #formAltPhone, #shipping form #formCountry, #shipping form #formCity, .cart-review-item div {
+        width: 100%;
+        float: none;
+    }
+    .cart-review-item div {
+        margin-left: 0;
+        padding-top: 10px;
+    }
     .cart-review-item img {
-    	margin-top:-5px;
+        display: none;
     }
-	#shipping input[type="submit"] {
-		position: absolute;
-		top: 580px;
-	}
-    .cart-review-summary {
-	    padding-bottom: 20px;
+    .cart-review .cart-side-total p, .cart-review .cart-side-total .cart-total p {
+        width: 45%;
+        text-align: right;
+        float: right;
     }
-   .form-checkbox {
-   		position: absolute;
-   		top: 600px;
-   }
-	.cart-review > div:nth-child(3) {
-		margin-top: 10px;
-		width: 250px;
-		right: 0;
-	}
-	.cart-review > div:nth-child(3) p {
-		text-align: right;
-		line-height: 25px;
-	}
-	.cart-review-item p:nth-child(4) {
-		position: absolute;
-	    right: -60px;
-	   	margin-top: 100px;
-	}
-	.cart-review .cart-total {
-		font-size: 14pt;
-		margin-top: 5px;
-	}
-	.cart-review .cart-total p:nth-child(2) {
-		position: absolute;
-		right: 75px;
-	}
-	.cart-review-item > div {
-		width:210px;
-		position: absolute;
-		right: -70px;
-	}
+    .cart-review .cart-side-total .cart-label, .cart-review .cart-side-total .cart-total p:first-child {
+        width: 45%;
+        text-align: left;
+        float: left
+    }
 	#shipping .policies {
-		margin-top: -100px;
+		width: auto;
 	}
 
 	.billing-info{
