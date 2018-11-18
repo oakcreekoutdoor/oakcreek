@@ -853,7 +853,7 @@ p.cart-label {
 .policies {
 	position: relative;
 	margin: 40px 0;
-	width: 550px;
+	width: 50%;
 }
 .policies p {
 	line-height: 26px;
@@ -902,12 +902,14 @@ p.cart-label {
     width: 100%;
 }
 #paymentInfo input[type="radio"] {
-	margin-top: 20px;
 	height: 15px;
 	display: inline-block;
 	width: 15px;
-	margin-left: 10px;
+	margin-right: 5px;
 	margin-bottom: 30px;
+}
+#paymentInfo span {
+	margin-right: 60px;
 }
 .expiration select {
 	height: 35px;
@@ -1371,10 +1373,13 @@ footer .socialMedia .fab:hover {
     .cart-item .remove a span {
         font-size: 20px;
     }
-    #shippingForm {
+    #shippingForm, .shipping-info, .billing-info-rv, .billing-info, #paymentInfo {
         width: 50%;
     }
-    #shippingForm h2, .cart-review h2 {
+    .shipping-info a, .billing-info-rv a {
+        padding: 5px 20px;
+    }
+    #shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
         margin-left: 0;
         font-size: 22px;
     }
@@ -1384,7 +1389,7 @@ footer .socialMedia .fab:hover {
     .cart-review h2 {
         margin-bottom: 0;
     }
-    #shipping form #formPhone, #shipping form #formPostal, #shipping form #formProvince, #shipping form #formAltPhone, #shipping form #formCountry, #shipping form #formCity, .cart-review-item div {
+   #formPhone, #formPostal, #formProvince, #formAltPhone, #formCountry, #formCity, .cart-review-item div, #paymentInfo form .expiration, #paymentInfo form .cvv {
         width: 100%;
         float: none;
     }
@@ -1405,67 +1410,12 @@ footer .socialMedia .fab:hover {
         text-align: left;
         float: left
     }
-	#shipping .policies {
+    #paymentInfo span {
+        margin-right: 40px;
+    }
+	.policies {
 		width: auto;
 	}
-
-	.billing-info{
-		width:200px;
-	}
-	.shipping-info{
-		width:250px;
-	}
-	.billing-info input {
-	   width: 100%;
-    }
-    .billing-info #formCountry {
-	   position: absolute;
-	   top:270px;
-	   left:0px;
-    }
-	.billing-info .btn.prime {
-		height: 50px;
-		margin-top: 210px;	
-    }
-
-	#billing .policies {
-		top: 620px;
-    }
-	.billing-info #formCity{
-		position: absolute;
-		top:330px;
-		left:0;
-    }
-
-    #payment{
-    	height:1080px;
-    }
-
-    #paymentInfo{
-    	width:250px;
-    }
-
-    #paymentInfo p{
-    	margin-right:170px;
-    }
-    .cvv {
-		width: 200px;	
-		margin-top: 15px;
-		margin-right:50px;
-    }
-
-    #paymentInfo .btn.prime {
-    	margin-top:80px;
-    }
-
-    #payment .policies {
-	    top: 0px;
-    }
-
-    #paymentInfo form {
-    	margin-top:20px;
-    }
-
     .shopCat h2{
     	margin
     }
@@ -1541,55 +1491,33 @@ footer .socialMedia .fab:hover {
      	margin-top:50px;
      }
 	#cartCheckout > div {
-		width: 100%;;
+		width: 100%;
 	}
+    #cartItems {
+        margin-top: 20px;
+    }
+    .cart-item {
+        height: 130px;
+    }
+    .cart-item img {
+        display: none;
+    }
     .cart-item> div {
-        width: 33%;
+        width: 50%;
     }
     .cart-item> div:nth-child(2) {
-        width: 55%;
+        width: 85%;
     }
 	.cart-review{
 		display:none;
 	}
 
-	.policies {
-	 width: 250px;
-    }
-
-    #shippingForm{
+    #shippingForm, .shipping-info, .billing-info-rv, .billing-info, #paymentInfo {
     	width:100%;
     }
-
-    #formCountry{
-    	position:absolute;
-    	left:0px;
+    #shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
+        width: 70%;
     }
-
-    #formCity{
-    	margin-top:40px;
-    	position:absolute;
-    	left:0;
-    }
-
-    #shipping form input {
-		height: 30px;
-		margin-bottom: 15px;
-		width: 250px;
-    }
-
-    #shippingForm p{
-    	margin-left:19px;
-    }
-    
-    #payment .policies {
-	   top: 750px;
-    }
-
-	#payment{
-		height:1100px;
-    }
-     
     .cart-user{
     	display:none;
     }
