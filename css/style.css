@@ -1219,7 +1219,10 @@ q{
 
 }
 
-
+.cont .btn.prime:hover {
+	background-color: #dbb95f; /* yellow green */
+	color:#2c5412; /* dark green */
+}
 .cont {
    overflow: hidden;
    position: relative;
@@ -1257,7 +1260,7 @@ q{
    transform: translate3d(-640px, 0, 0);
 }
 
-a.btn.prime {/*login button*. You can style all the a tag btn*/
+.cont a.btn.prime {/*login button*. You can style all the a tag btn*/
    display: block;
    margin-left:140px;
    width: 200px;
@@ -1355,6 +1358,8 @@ a.btn.prime {/*login button*. You can style all the a tag btn*/
    background-color:none;
    border:2px solid #ffffff;/*white*/
 }
+
+
 .cont .btn.sec:after {
    content: "";
    z-index: 2;
