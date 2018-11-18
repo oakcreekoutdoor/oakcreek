@@ -8,6 +8,8 @@
 
 			$content .= $this->showView("teaser");
 
+			$content .= $this->showView("testimonial_quote");
+
 			$content .= $this->showView("product_section", $arrData);
 			include("templates/pages.php");
 		}
