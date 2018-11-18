@@ -23,8 +23,8 @@
 		<h2>Payment Information</h2>
 		<p>Step 3/3</p>
 		<form method="post" action="models/saveOrder.php">
-			<input type="radio"> Card Number
-			<input type="radio"> Paypal
+			<input type="radio"><span>Card Number</span>
+			<input type="radio"><span>Paypal</span>
 			<label>Name on Card</label>
 			<input type="text">
 			<label>Card Number</label>
