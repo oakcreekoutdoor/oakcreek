@@ -708,95 +708,89 @@ p.cart-label {
 
 #shipping {
 	margin-top: 30px;
-	height: 1000px;
 }
 #shippingForm {
-	width: 500px;
+	width: 45%;
 	position: relative;
 }
-#shippingForm h2 {
+#shippingForm h2, .cart-review h2 {
 	float: left;
-	clear: both;
-	margin-right: 190px;
+	font-size: 25px;
+    font-weight: bold;
+    margin-right: 0;
+    margin-bottom: 25px;
 }
 #shippingForm p {
-	margin-bottom: 30px;
+	display: inline-block;
+    float: right;
+    margin-top: 6px;
 	font-weight: bold;
 }
+#shipping form {
+    display: inline-block;
+}
 #shipping form label {
-	display: block;
+	display: inline-block;
+    margin-bottom: 5px;
+}
+#shipping form label .req {
+    color: red;
 }
 #shipping form input {
-	display: block;
-	height: 30px;
+	display: inline-block;
+	height: 35px;
+    margin: 0;
 	margin-bottom: 15px;
 	width: 100%;
+    padding: 0;
 }
-#shipping form div {
+#shipping form #formPhone, #shipping form #formPostal, #shipping form #formProvince {
 	float: left;
-	margin-right: 30px;
+	width: 45%;
 }
-#shipping form input[name="zipcode"], #shipping form input[name="phone"], #shipping form input[name="altphone"] {
-	width: 220px;
-} 
+#shipping form #formAltPhone, #shipping form #formCountry, #shipping form #formCity {
+	float: right;
+	width: 45%;
+}
 #shipping form select {
 	width: 220px;
 	height: 30px;
 }
 .form-checkbox {
-	position: absolute;
-	left: 0;
-	margin-top: 140px;
+	display: inline-block;
+    margin: 15px 0;
+    width: 100%;
 }
 #shipping form input[type="checkbox"] {
 	height: 20px;
-	display: inline-block;
 	width: 20px;
 }
 #shipping form input[type="submit"] {
-	display: block;
+	display: inline-block;
 	width: 220px;
 	height: 50px;
-	text-align: center;
-	margin: 0;
-	margin-top: 210px;
 	border: none;
 	cursor: pointer;
-	font-size: 12pt;
-}
-#formCountry {
-	position: absolute;
-	right: -30px;
-	width: 220px;
-}
-#formProvince {
-	position: absolute;
-	margin-top: 65px;
-	width: 220px;
-}
-#formCity {
-	position: absolute;
-	margin-top: 65px;
-	right: -30px;
-	width: 220px;
 }
 .cart-review {
 	border: 1px solid #000;
-	padding: 30px;
+	padding: 20px 30px;
 	float: left;
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 450px;
+	width: 45%;
 }
 .cart-review-summary {
 	padding-bottom: 20px;
 	border-bottom: 1px solid #000;
+    display: inline-block;
+    width: 100%;
 }
 .cart-review-item {
-	margin-top: 20px;
+	margin-top: 10px;
 	position: relative;
-	height: 130px;
+	display: inline-block;
 }
 .cart-review-item img {
 	float: left;
@@ -807,44 +801,41 @@ p.cart-label {
 .cart-review-item div {
 	float: left;
 	margin-left: 20px;
-	width: 250px;
-	margin-top: -10px;
 }
 .cart-review-item p {
 	width: 100%;
 	line-height: 25px;
 	font-size: 12pt;
 }
-.cart-review-item p:nth-child(4) {
-	margin-top: 50px;
-	right: -200px;
+.cart-review .cart-side-total {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
 }
-.cart-review > div:nth-child(3) {
-	margin-top: 10px;
-	width: 350px;
-	right: 0;
+.cart-review .cart-side-total p {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: right;
 }
-.cart-review > div:nth-child(3) p {
-	text-align: right;
-	line-height: 25px;
+.cart-review .cart-side-total .cart-label {
+    float: left;
+    font-size: 18px;
 }
-.cart-review .cart-total {
-	font-size: 16pt;
-	margin-top: 5px;
+.cart-review .cart-side-total .cart-total {
+    display: inline-block;
+    width: 100%;
 }
-.cart-review .cart-total p:nth-child(2) {
-	position: absolute;
-	right: 65px;
+.cart-review .cart-side-total .cart-total p {
+    float: left;
 }
 .policies {
-	position: absolute;
-	float: right;
-	margin-top: 40px;
+	position: relative;
+	margin: 40px 0;
 	width: 550px;
-	height: 300px;
 }
 .policies p {
-	line-height: 20px;
+	line-height: 26px;
 }
 .policies-title {
 	font-weight: bold;

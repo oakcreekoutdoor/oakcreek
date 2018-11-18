@@ -11,9 +11,8 @@
 				<img src="assets/<?=$prod['strImage']?>">
 				<div>
 					<p class="cart-label"><?=$prod['strName']?></p>
-					<p class="cart-label">Qty: 1</p>
-					<p class="cart-label">Price</p>
-					<p><?=$prod['nPrice']?></p>
+					<p class="cart-label">Qty: <span>1</span></p>
+					<p class="cart-label">Price: <span><?=$prod['nPrice']?></span></p>
 				</div>
 			</div><!--cart-item-review-->
 	<?php
@@ -21,7 +20,7 @@
 	}
 	?>
 	</div><!--cart-review--summary-->
-	<div>
+	<div class="cart-side-total">
 		<p class="cart-label">Subtotal</p>
 		<p>$ <?=$_SESSION['subTotal']?></p>
 		<p class="cart-label">Shipping</p>
