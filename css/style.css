@@ -262,7 +262,7 @@ header ul li a:hover {
 	margin: 0 auto;
 	margin-top: 50px;
 	width: 900px;
-	height: 600px;
+	height: 620px;
 }
 
 .teaser-grid img {
@@ -284,6 +284,45 @@ header ul li a:hover {
 	float: left;
 	margin-left: 0;
 	margin-top: 40px;
+}
+
+
+/*--------------Testimonial Teaser--------*/
+
+.testimonial {
+	background: #fbeee5;
+	padding: 40px;
+	margin-bottom: 70px;
+	position: relative;
+}
+
+.testimonial img {
+	width: 300px;
+}
+
+.testimonial .ratings {
+	position: absolute;
+	top: 40px;
+	left: 510px;
+}
+
+.testimonial .ratings img{
+	width: 35px;
+	padding: 3px;
+}
+
+.testimonial p {
+	position: absolute;
+	top: 100px;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 22pt;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.testimonial p.test-name {
+	top: 200px;
+	right: 60px;
 }
 
 /*------------- Product Grid -------------*/
