@@ -1,7 +1,6 @@
 <div id="heroDiv">
-	<div class="heroText">
+	<div class="catText">
 		<h2><?=$arrData["prods"][0]["strCatName"]?></h2>
-		<p><?=$arrData["prods"][0]["strDesc"]?></p>
 	</div><!-- //heroText-->
-	<img src="assets/hero.jpeg" alt="hero" />
+	<img src="assets/<?=$arrData["prods"][0]["strHeroImage"]?>" alt="<?=$arrData["prods"][0]["strCatName"]?>" />
 </div><!-- //heroDiv-->
