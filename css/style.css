@@ -920,7 +920,7 @@ p.cart-label {
 #userName a {
 	color: #666;
 	padding-top: 8px;
-	font-size: 16px;
+	font-size: 20px;
 	display: inline-block;
 }
 
@@ -1002,6 +1002,7 @@ p.cart-label {
 .labelEdit .btn {
 	padding: 5px 25px;
 	margin: 0 0 0 45px;
+    float: right;
 }
 
 .contEdit {
@@ -1048,6 +1049,11 @@ p.cart-label {
 	text-align: center;
 }
 
+.vOrder .btn {
+    padding: 5px;
+    margin: -7px;
+    text-align: center;
+}
 .oCol {
 	width: 33%;
 	text-align: left;
@@ -1387,13 +1393,40 @@ footer {
 	.policies {
 		width: auto;
 	}
-    .shopCat h2{
-    	margin
+    #account {
+        margin: 0;
+    }
+    #userName h2 {
+        margin: 0;
+    }
+    .userInfo, .shipInfo {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    .labelEdit {
+        padding: 35px 0 5px;
+    }
+    .labelEdit .btn {
+        padding: 3px 21px;
+    }
+    .labelEdit h3 {
+        font-weight: bold;
+        font-size: 21px;
+    }
+    .userInfo .contEdit {
+        width: 100%;
+        padding: 0;
+    }
+    .contEdit {
+        margin-top: 15px;
     }
 }
 /*-----mobile-----*/
 @media only screen and (max-width: 425px) {
-	
+    body{
+        padding-bottom: 88px;
+    }	
 	.product.col-3 {
 		width:100%;
 	}
@@ -1512,12 +1545,38 @@ footer {
     #prodDetails .imgText.col-img {
 		width: 100%;
 		height: auto;
-}
-
+    }
      #prodDetails .imgText.col-text {
 		width: 100%;
 		padding: 0;
-
+    }
+    #heroProfile {
+        height: auto;
+    }
+    #userName {
+        padding: 20px;
+    }
+    #userName h2 {
+        margin: 0;
+        width: 100%;
+        font-size: 25px;
+    }
+    #accNav a {
+        margin: 0;
+        padding: 15px 18px;
+    }
+    .shipInfo {
+        margin-bottom: 25px;
+    }
+    .labelEdit .btn {
+        padding: 3px 10px;
+    }
+    .contEdit {
+        margin-top: 25px;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
 }
 /*------------ hamburger menu--------------*/
        .hamburger {
