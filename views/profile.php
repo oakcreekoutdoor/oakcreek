@@ -5,12 +5,12 @@
 	
 	<div id="userName">
 		<h2>Hello Paul Baker</h2>
-		<a href="#">Logout here</a>
+		<a href="#">Logout</a>
 	</div><!-- //userName -->
 
 	<div id="accNav">
-		<a class="actAccNav" href="#">Account</a>
-		<a href="#">Order History</a>
+		<a id="accProfileNav" class="actAccNav" href="#">Account</a>
+		<a id="accOrderNav" href="#">Order History</a>
 	</div><!-- //accNav -->
 
 	<div id="account">

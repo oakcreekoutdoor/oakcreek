@@ -18,6 +18,7 @@
 <script src="js/submitToShip.js"></script>
 <script src="js/submitToBill.js"></script>
 <script src="js/goToPayment.js"></script>
+<script src="js/toggleAccOptions.js"></script>
 
 </body>
 </html>

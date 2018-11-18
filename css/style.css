@@ -984,7 +984,7 @@ p.cart-label {
 	padding: 25px;
 	margin: 0 25px;
 	display: inline-block;
-	color: #d3d2b1; /* light green */
+	color: #2c5412; /* dark green */
 	font-weight: bold;
 }
 
@@ -997,7 +997,11 @@ p.cart-label {
 	margin: 25px;
 	display: inline-block;
 	width: 100%;
-	display: none;
+}
+
+#orderHistory {
+    width: 100%;
+    display: none;
 }
 
 #orderStatus h3 {
@@ -1014,7 +1018,7 @@ p.cart-label {
 
 .actAccNav:hover {
 	background-color: #e6e6e6 !important;
-	color: #d3d2b1 !important; /* light green */
+	color: #2c5412 !important; /* dark green */
 }
 
 .userInfo, .shipInfo {
@@ -1451,7 +1455,6 @@ footer .socialMedia .fab:hover {
     .shopCat h2{
     	margin
     }
-
 }
 /*-----mobile-----*/
 @media only screen and (max-width: 425px) {
