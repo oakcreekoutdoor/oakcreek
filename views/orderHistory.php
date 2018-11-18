@@ -15,13 +15,13 @@
 		<div class="stOrderList cf">
 			<div class="oCol"><p>#5793746</p></div>
 			<div class="oCol"><p>26/10/2018</p></div>
-			<div class=oCol"><p>28/10/2018</p></div>
+			<div class="oCol"><p>28/10/2018</p></div>
 		</div><!-- //orderList -->
 	</div><!-- //orderStatus -->
 
 	<div id="orderTrack">
 		<div class="stOrderLabel cf">
-			<div class="oCol"><h4>Trancking Number</h4></div>
+			<div class="oCol"><h4>Tracking</h4></div>
 			<div class="oText oCol"><h4>Comment</h4></div>
 		</div><!-- //labelList -->
 
