@@ -1577,6 +1577,18 @@ footer {
         width: 100%;
         padding: 0;
     }
+    .labelList .listCol:nth-child(2), .labelList .listCol:nth-child(3), .orderList .listCol:nth-child(2), .orderList .listCol:nth-child(3) {
+        display: none;
+    }
+    
+    .labelList .listCol, .orderList .listCol {
+        width: 39%;
+    }
+    
+    .listCol.vOrder {
+        width: 22%;
+        font-size: 16px;
+    }
 }
 /*------------ hamburger menu--------------*/
        .hamburger {
