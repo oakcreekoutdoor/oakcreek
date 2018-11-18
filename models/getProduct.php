@@ -18,8 +18,9 @@
 	    {
 	        $sql = "SELECT
 					    product_cats.*,
-					    products.strName AS strProdName,
+					    products.strName,
 					    products.nPrice,
+					    products.nOldPrice,
 					    products.strFeatPhoto,
 					    categories.strName AS strCatName,
 					    categories.strHeroImage AS strHeroImg,
@@ -50,6 +51,7 @@
 	        $sql = "SELECT 
 	        			products.id as nProductsID,
 	        			products.strName,
+	        			products.nOldPrice,
 	        			products.nPrice,
 	        			products.strFeatPhoto
 					FROM

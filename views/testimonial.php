@@ -8,4 +8,4 @@
 		<q><?=$arrData["content"][0]['strBodyText']?></q>
 		<p><?=$arrData["content"][0]['strSubheading1']?></p>
 	</div>
-</section><!-- //testimonial container -->
+</section><!-- //testimonial -->
