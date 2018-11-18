@@ -346,7 +346,8 @@ header ul li a:hover {
 }
 
 .prod-name {
-	height: 40px;
+	margin: 0 auto;
+	height: 55px;
 	font-weight: 700;
 	color: #604837; /* brown */
 }
@@ -364,6 +365,11 @@ header ul li a:hover {
 	margin-bottom: 30px;
 }
 
+.product.col-3 .btn {
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
 
 
 /*------------- Home -------------*/
@@ -386,7 +392,7 @@ header ul li a:hover {
 
 /*------------- About -------------*/
 
-#about, #shop, #testimonial, #contact, #product {
+#about, #shop, #testimonial, #contact {
 	margin-top: 35px;
 	position: relative;
 }
@@ -423,15 +429,33 @@ header ul li a:hover {
 
 /*------------- Shop -------------*/
 
+#product {
+	padding-bottom: 120px;
+}
+
 #product #heroDiv {
-	height: 250px;
+	height: 200px;
 	position: relative;
+	margin-bottom: 50px;
+}
+
+.catText {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+}
+
+.catText h2 {
+	font-family: 'Zilla Slab', serif;
+	font-size: 60pt;
+	color: #fff;
 }
 
 #product #heroDiv:before {
 	content: "";
 	background-color: #000;
-	opacity: 0.5;
+	opacity: 0.3;
 	position: absolute;
 	top: 0;
 	left: 0;

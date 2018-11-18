@@ -23,7 +23,7 @@
 					    products.nOldPrice,
 					    products.strFeatPhoto,
 					    categories.strName AS strCatName,
-					    categories.strHeroImage AS strHeroImg,
+					    categories.strHeroImage,
 					    categories.strDesc
 					FROM
 					    product_cats
