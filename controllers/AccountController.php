@@ -16,8 +16,11 @@
 
 		public function orderHistory() {
 			$arrData["mainNav"] = MainNav::makeMainNav();
-			$arrData["order"] = Login::getorders($_GET['userID']);
-			
+			$arrDetails = Orders::getUserOrders($_GET['orderID'], $_GET['userID']);
+            
+            $arrData["order"] = $arrDetails["order"][0];
+            $arrData["items"] = $arrDetails["items"];
+            
 			$content = $this->showView("orderHistory", $arrData);
 			include("templates/account.php");
 		}

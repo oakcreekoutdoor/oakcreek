@@ -1,30 +1,15 @@
 <?php
     class Orders
      {
-        static function getUserOrders()
+        static function getUserOrders($oID, $userID)
      	{
-	       $sql = "SELECT orders.nUsersID,
-                        orders.id,
-                        users.strEmailAddress
-                     FROM orders
-	    		     LEFT JOIN users ON orders.nUsersID = users.id
-                     WHERE orders.id =".$_SESSION["orderID"];
-
-	    	return DBFactory::newData()->runSql("getData",$sql);
-        }
-
-        // static function getOrderStatus()
-        // {
-        // 	 $sql = "SELECT * FROM orders 
-        // 	         LEFT JOIN order_status ON orders.nOrder_StatusID = order_status.id";
-        // 	         return DBFactory::newData()->runSql("getData",$sql);
-        // }
-
-        static function getAddress()
-        {
-            $sql = "SELECT * FROM users WHERE id=".$_SESSION['lastID'];
-
-            return DBFactory::newData()->runSql("getData",$sql);
+            $sql = "SELECT orders.*, order_status.strName AS 'status', order_status.strStatusMessage AS 'strMessage' FROM orders LEFT JOIN order_status ON orders.nOrder_StatusID = order_status.id WHERE orders.id = ".$oID." AND orders.nUsersID = ".$userID;
+            $arrDetails['order'] = DBFactory::newData()->runSql("getData",$sql);
+            
+            $sql = "SELECT order_items.* FROM order_items WHERE order_items.nOrdersID = ".$oID;
+            $arrDetails['items'] = DBFactory::newData()->runSql("getData",$sql);
+            
+            return $arrDetails;
         }
      }
 ?>

@@ -62,10 +62,10 @@
         ?>
 		<div class="orderList cf">
 			<div class="listCol"><p>#<?=$order['id']?></p></div>
-			<div class="listCol"><p><?=$order['date']?></p></div>
+			<div class="listCol"><p><?=$order['dateOrder']?></p></div>
 			<div class="listCol"><p><?=$order['status']?></p></div>
 			<div class="listCol"><p>$ <?=$order['nInvoiceTotal']?></p></div>
-			<div class="listCol vOrder"><a class="btn sec" href="index.php?controller=Account&action=orderHistory&orderID=<?=$order['id']?>">Details</a></div>
+			<div class="listCol vOrder"><a class="btn sec" href="index.php?controller=Account&action=orderHistory&userID=<?=$arrData["user"]['id']?>&orderID=<?=$order['id']?>">Details</a></div>
 		</div><!-- //orderList -->
         <?php
         }
