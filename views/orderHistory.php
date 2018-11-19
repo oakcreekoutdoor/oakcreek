@@ -1,7 +1,7 @@
 <section id="orderDetails" class="container cf">
 	<div id="userName">
 		<h2>Order Details</h2>
-		<p href="#">Thank you for your order! Check out the details below.</p>
+		<p href="#"><?=$arrData["order"]['strMessage']?></p>
 	</div><!-- //userName -->
 
 	<div id="orderStatus">
@@ -13,21 +13,39 @@
 		</div><!-- //labelList -->
 
 		<div class="stOrderList cf">
-			<div class="oCol"><p>#5793746</p></div>
-			<div class="oCol"><p>26/10/2018</p></div>
-			<div class="oCol"><p>28/10/2018</p></div>
+			<div class="oCol"><p>#<?=$arrData["order"]['id']?></p></div>
+			<div class="oCol"><p><?=$arrData["order"]['dateOrder']?></p></div>
+        <?php
+        if($arrData["order"]['dateShip'] != '0000-00-00') {   
+        ?>
+			<div class="oCol"><p><?=$arrData["order"]['dateShip']?></p></div>
+        <?php
+        }
+        ?>
 		</div><!-- //orderList -->
 	</div><!-- //orderStatus -->
 
 	<div id="orderTrack">
 		<div class="stOrderLabel cf">
-			<div class="oCol"><h4>Tracking</h4></div>
+        <?php
+        if($arrData["order"]['strTrackingNb']) {   
+        ?>
+            <div class="oCol"><h4>Tracking</h4></div>
+        <?php
+        }
+        ?>
 			<div class="oText oCol"><h4>Comment</h4></div>
 		</div><!-- //labelList -->
 
 		<div class="stOrderList cf">
-			<div class="oCol"><p>ua6269949006us</p></div>
-			<div class="oText oCol"><p>Your order is currently in transit to the destination.</p></div>
+        <?php
+        if($arrData["order"]['strTrackingNb']) {   
+        ?>
+            <div class="oCol"><p><?=$arrData["order"]['strTrackingNb']?></p></div>
+        <?php
+        }
+        ?>
+			<div class="oText oCol"><p><?=$arrData["order"]['strComment']?></p></div>
 		</div><!-- //orderList -->
 	</div><!-- //orderTrack -->
 
@@ -39,19 +57,22 @@
 			<div class="listCol itemSm"><h4>Qtd</h4></div>
 			<div class="listCol itemSm"><h4>Price</h4></div>
 		</div><!-- //itemLabel -->
+<?php
+if($arrData["items"]) {
+    foreach($arrData["items"] as $item) {    
+    ?>
 
 		<div class="itemList cf">
-			<div class="listCol itemMd"><img src="assets/hammock.jpg" alt="Product"></div>
-			<div class="listCol itemBg"><p>Super Fancy Hammock</p></div>
-			<div class="listCol itemSm"><p>1</p></div>
-			<div class="listCol itemSm"><p>$18</p></div>
+			<div class="listCol itemMd"><img src="assets/<?=$item['strFeatPhoto']?>" alt="Product"></div>
+			<div class="listCol itemBg"><p><?=$item['strProductName']?></p></div>
+			<div class="listCol itemSm"><p><?=$item['nQuantity']?></p></div>
+			<div class="listCol itemSm"><p>$ <?=$item['nPrice']?></p></div>
 		</div><!-- //itemList -->
-
-		<div class="itemList cf">
-			<div class="listCol itemMd"><img src="assets/hammock.jpg" alt="Product"></div>
-			<div class="listCol itemBg"><p>Super Fancy Hammock</p></div>
-			<div class="listCol itemSm"><p>1</p></div>
-			<div class="listCol itemSm"><p>$18</p></div>
-		</div><!-- //itemList -->
+    <?php
+    }
+} else {
+    echo "Sorry, we couldn't find any item. Please, contact our support.";
+}
+?>
 	</div><!-- //orderItems -->
 </section><!-- //profile container -->

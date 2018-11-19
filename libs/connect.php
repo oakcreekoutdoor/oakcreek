@@ -14,6 +14,9 @@ class Connect
 				{
 					$arrResult[] = $row;
 				}
+                
+                $arrResult = isset($arrResult)?$arrResult:"";
+                
 				return $arrResult;
 				break;
 
