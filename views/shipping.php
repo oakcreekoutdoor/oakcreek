@@ -45,5 +45,7 @@
 	</div><!--shippingForm-->
 	<?php
 	include("views/sideOrderReview.php");
+    
+    print_r($_SESSION);
 	?>	
 </div><!--shipping-->

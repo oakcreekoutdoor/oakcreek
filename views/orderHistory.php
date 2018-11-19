@@ -20,6 +20,10 @@
         ?>
 			<div class="oCol"><p><?=$arrData["order"]['dateShip']?></p></div>
         <?php
+        } else {
+        ?>
+            <div class="oCol"><p>Not shipped yet.</p></div>
+        <?php
         }
         ?>
 		</div><!-- //orderList -->

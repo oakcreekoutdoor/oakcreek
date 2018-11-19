@@ -37,7 +37,7 @@ html {
 }
 
 body {
-	padding-bottom: 70px;
+	padding-bottom: 100px;
 }
 
 a {
@@ -1910,10 +1910,6 @@ footer .socialMedia .fab:hover {
 /*-----mobile-----*/
 
 @media only screen and (max-width: 425px) {
-
-    body {
-        padding-bottom: 88px;
-    }	
 
     .logo img {
     	width:180px;
