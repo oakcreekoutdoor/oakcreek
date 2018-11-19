@@ -1159,6 +1159,7 @@ p.cart-label {
 .itemSm {
 	padding-left: 25px;
 	width: 20%;
+    text-align: center;
 }
 
 /*------------- Testimonial ---------*/
@@ -2253,6 +2254,10 @@ footer .socialMedia .fab:hover {
     }
     .orderList, .stOrderList {
         border: 0;
+    }
+    
+    .itemSm {
+        width: 30%;
     }
 
     footer .socialMedia {
