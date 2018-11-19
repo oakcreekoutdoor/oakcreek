@@ -411,23 +411,29 @@ header ul li a:hover {
 #about, #shop, #testimonial, #contact {
 	margin-top: 35px;
 	position: relative;
+	text-align:center;
+
 }
 
 .imgText {
 	width: 50%;
 	display: inline-block;
 	float: left;
-	height: 500px;
-}
+	height: 450px;
+	margin-bottom:100px;
+ }
 
-.imgText h2 {
-	margin-bottom: 5px 0;
+#about h2 {
 	font-family: 'Zilla Slab', serif;
 	font-size: 26pt;
+	margin-bottom:40px;
+
 }
 
-.imgText p {
-	margin: 10px 0;
+.imgText p {	
+	text-align:left;
+	width:80%;
+
 }
 
 .col-img {
@@ -436,6 +442,7 @@ header ul li a:hover {
 
 .col-img img {
 	height: 100%;
+	margin-bottom:50px;
 }
 
 .col-text {
@@ -2011,6 +2018,12 @@ footer .socialMedia .fab:hover {
 	.contEdit {
 		margin-top: 15px;
 	}
+
+
+.imgText p {	
+	    width:290px;
+
+}
 }
 
 /*-----mobile-----*/
@@ -2399,5 +2412,12 @@ footer .socialMedia .fab:hover {
     footer .socialMedia {
     	display: block;
     }
-}
 
+    .imgText p {	
+	    width:300px;
+	    margin-top:-70px;
+	    margin-left:-38px;
+
+    }
+
+}
