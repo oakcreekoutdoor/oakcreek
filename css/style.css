@@ -1219,18 +1219,19 @@ q{
 #login form{
    margin: 40px auto 50px;
 }
-.cont input, a.btn.prime {
+
+.cont input, .cont a.btn.prime {
    border:none;
    outline: none;
    background: none;
    margin-top:35px;
-
 }
 
 .cont .btn.prime:hover {
 	background-color: #dbb95f; /* yellow green */
 	color:#2c5412; /* dark green */
 }
+
 .cont {
    overflow: hidden;
    position: relative;
@@ -1263,6 +1264,7 @@ q{
    transition: transform 1.2s ease-in-out;
    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .cont.s--signup .sub-cont {
    -webkit-transform: translate3d(-640px, 0, 0);
    transform: translate3d(-640px, 0, 0);
@@ -1282,7 +1284,6 @@ q{
    margin-bottom:10px;
    text-align:center;
    border-radius:4px;
-
 }
 
 .img {
@@ -1295,6 +1296,7 @@ q{
    height: 100%;
    padding-top: 360px;
 }
+
 .img:before {
    content: "";
    position: absolute;
@@ -1308,6 +1310,7 @@ q{
    transition: transform 1.2s ease-in-out;
    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .img:after {
    content: "";
    position: absolute;
@@ -1317,10 +1320,12 @@ q{
    height: 100%;
    background: rgba(0, 0, 0, 0.3);
 }
+
 .cont.s--signup .img:before {
    -webkit-transform: translate3d(640px, 0, 0);
    transform: translate3d(640px, 0, 0);
 }
+
 .img__text { /*new here*/
    z-index: 2;
    position: absolute;
@@ -1334,6 +1339,7 @@ q{
    transition: transform 1.2s ease-in-out;
    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .img__text h2 {
    margin-bottom: 10px;
    font-weight: normal;
@@ -1343,14 +1349,17 @@ q{
    -webkit-transform: translateX(520px);
    transform: translateX(520px);
 }
+
 .img__text.m--in {
    -webkit-transform: translateX(-520px);
    transform: translateX(-520px);
 }
+
 .cont.s--signup .img__text.m--in {
    -webkit-transform: translateX(0);
    transform: translateX(0);
 }
+
 .cont .btn.sec { /*where thesignupnow and login stuff are and you can style it*/
    overflow: hidden;
    z-index: 2;
@@ -1367,6 +1376,10 @@ q{
    border:2px solid #ffffff;/*white*/
 }
 
+.cont .btn.sec:hover {
+	background: #fff;
+	color: #000;
+}
 
 .cont .btn.sec:after {
    content: "";
@@ -1376,8 +1389,8 @@ q{
    top: 0;
    width: 100%;
    height: 100%;
- 
 }
+
 .cont .btn.sec span {
    position: absolute;
    left: 0;
@@ -1391,14 +1404,17 @@ q{
    transition: transform 1.2s;
    transition: transform 1.2s, -webkit-transform 1.2s;
 }
+
 .cont .btn.sec span.m--in {
    -webkit-transform: translateY(-72px);
    transform: translateY(-72px);
 }
+
 .cont.s--signup .btn.sec span.m--in {
    -webkit-transform: translateY(0);
    transform: translateY(0);
 }
+
 .cont.s--signup .btn.sec span.m--up {
    -webkit-transform: translateY(72px);
    transform: translateY(72px);
@@ -1444,6 +1460,7 @@ q{
     border: 2px solid #d3dae9;
     color: #8fa1c7;
 }
+
 .fb-btn span {
     font-weight: bold;
     color: #455a81;
@@ -1452,6 +1469,7 @@ q{
 .sign-in {
     transition-timing-function: ease-out;
 }
+
 .cont.s--signup .sign-in {
     transition-timing-function: ease-in-out;
     transition-duration: 1.2s;
@@ -1463,6 +1481,7 @@ q{
     -webkit-transform: translate3d(-900px, 0, 0);
     transform: translate3d(-900px, 0, 0);
 }
+
 .cont.s--signup .sign-up {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1473,21 +1492,25 @@ q{
     margin-left:140px;
 }
 
+
 /*------------ Thank You -------------*/
-#thankyou{
+
+#thankyou {
 	position:relative;
 }
+
 .heroThankYou {
     position: relative;
     display: inline-block;
     width: 100%;
     margin-bottom: 50px;
 }
-.heroThankYou img{
+
+.heroThankYou img {
     width: 100%;
 }
 
-#thankyou h1{
+#thankyou h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1500,18 +1523,15 @@ q{
 	color: white;
 }
 
-#thankyou p{
+#thankyou p {
 	text-align:center;
 	font-size:18pt;
 	line-height:30pt;
-
 }
 
-#thankyou span{
+#thankyou span {
 	font-weight:bold;
 }
-
-
 
 
 /*------------- Footer -------------*/
@@ -1552,257 +1572,408 @@ footer .socialMedia .fab:hover {
 /*------tablet---------*/
 @media only screen and (max-width: 768px){
 
-      .video img{
-      	width:250px;
-      }
-      .reviews{
-    	padding:10px 20px;
-       }
-      #heroDiv{
-      	height:180px;
-      }
-   
-      .product img{
-      	width:100%;
-      }
-      #contact{
-      	display:grid;
-      	grid-template-columns: 1fr;
-      	grid-gap:10px;
-      }
-      #contact form{
-     	margin-left:50px;
-      }
-
-     .contactText p, h2{
-        margin-left:50px;
-     }
-     .contactText p{
-     	width:50%;
-     }
-     #login form{
-     	display:grid;
-     	grid-template-columns: 1fr;
-     	width:350px;
-     	grid-gap:15px;
-     	margin-top:50px;
-     }
-	 #cartSummary h2 {
-	  	width: 250px;
-         margin: 0;
-	  }
-     #cartSummary > div{
-     	width: 9px;
-     }
-     .cart-item {
-     	height: 150px;
-     	margin: 0 auto;
-     }
-     .cart-item> div:nth-child(2) {
-		width: 80%;
-        display: inline-block;   
-         padding: 0;
+	.logo {
+		width: 40%;
 	}
-     .cart-item> div {
+
+	.socialMedia {
+		top: 15px;
+	}
+
+	.socialMedia .fab {
+		font-size: 12pt;
+		padding: 6px 7px;
+	}
+
+	.cart-user {
+		margin: -40px 10px 10px;
+	}
+
+	.cart-user a {
+		font-size: 12pt;
+	}
+
+	.video img {
+		width:250px;
+	}
+
+	.reviews {
+		padding:10px 20px;
+	}
+
+	#heroDiv{
+		height: 320px;
+	}
+
+	.heroText {
+		top: 40px;
+		left: 30px;
+	}
+
+	.heroText h1 {
+		font-size: 44pt;
+	}
+
+	.heroText p {
+		font-size: 12pt;
+	}
+
+	.heroText .btn {
+		width: 180px;
+	}
+
+	#teaser {
+		margin: 0 auto;
+	}
+
+	.teaser-grid {
+		width: 100%;
+		height: 480px;
+	}
+
+	.teaser-grid img {
+		width: 330px;
+		margin-right: 20px;
+	}
+
+	.teaser-grid p {
+		width: 650px;
+		font-size: 13pt;
+	}
+
+	.teaser-grid .btn {
+		width: 180px;
+		margin-top: 20px;
+		padding: 15px;
+	}
+
+	.testimonial .ratings {
+		left: 225px;
+	}
+
+	.testimonial .quote {
+		font-size: 18pt;
+	}
+
+	.testimonial p.test-name {
+		top: 220px;
+	}
+
+	.product img {
+		width:100%;
+	}
+
+	#contact {
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-gap:10px;
+	}
+
+	#contact form {
+		margin-left:50px;
+	}
+
+	.contactText p {
+		margin-left:50px;
+	}
+
+	.contactText p {
+		width:50%;
+	}
+
+	#featureProd {
+		width: 100%;
+	}
+
+	.prodImg {
+		height: 180px;
+	}
+
+	.product img {
+		height: 180px;
+	}
+
+	.product.col-3 .btn.sec {
+		width: 100%;
+	}
+
+	.prod-name {
+		height: 100px;
+	}
+
+	#login form {
+		display:grid;
+		grid-template-columns: 1fr;
+		width:350px;
+		grid-gap:15px;
+		margin-top:50px;
+	}
+
+	#cartSummary h2 {
+		width: 250px;
+	 	margin: 0;
+	}
+
+	#cartSummary > div {
+		width: 9px;
+	}
+
+	.cart-item {
+		height: 150px;
+		margin: 0 auto;
+	}
+
+	.cart-item> div:nth-child(2) {
+		width: 80%;
+		display: inline-block;   
+	 	padding: 0;
+	}
+
+	.cart-item> div {
 		width: 25%;
 	}
+
 	#cartSummary > div {
 		width: 100%;
 	}
-    #cartSummary > p, .cart-label {
+
+	#cartSummary > p, .cart-label {
 		display: inline-block;
-        margin-right: 10px;
+		margin-right: 10px;
 	}
+
 	#cartCheckout {
 		width: 100%;
-        margin: 0;
+		margin: 0;
 	}
+
 	#cartCheckout > div {
 		height: 250px;
 		width: 45%;
 		margin-right: 0px;
 	}
-    .cart-item > div {
-        padding-top: 25px;
-    }
-    .cart-item input {
-        margin: 0;
-    }
-	.cart-item > div, .cart-item> p {
-	    margin-right: 0px;
-        text-align: left
+
+	.cart-item > div {
+		padding-top: 25px;
 	}
-    .cart-item > div p:nth-child(2) {
-        margin: 0;
-        display: inline-block;
-    }
-    .cart-item > div:nth-child(4) span {
-        margin: 0;
-    }
-    .cart-item .remove {
-        width: auto;
-        padding: 0;
-        position: absolute;
-        right: 0;
-    }
-    .cart-item .remove .cart-label {
-       display: none;
-    }
-    .cart-item .remove a span {
-        font-size: 20px;
-    }
-    #shippingForm, .shipping-info, .billing-info-rv, .billing-info, #paymentInfo {
-        width: 50%;
-    }
-    .shipping-info a, .billing-info-rv a {
-        padding: 5px 20px;
-    }
-    #shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
-        margin-left: 0;
-        font-size: 22px;
-    }
-    .cart-review {
-        padding: 15px 20px;
-    }
-    .cart-review h2 {
-        margin-bottom: 0;
-    }
-   #formPhone, #formPostal, #formProvince, #formAltPhone, #formCountry, #formCity, .cart-review-item div, #paymentInfo form .expiration, #paymentInfo form .cvv {
-        width: 100%;
-        float: none;
-    }
-    .cart-review-item div {
-        margin-left: 0;
-        padding-top: 10px;
-    }
-    .cart-review-item img {
-        display: none;
-    }
-    .cart-review .cart-side-total p, .cart-review .cart-side-total .cart-total p {
-        width: 45%;
-        text-align: right;
-        float: right;
-    }
-    .cart-review .cart-side-total .cart-label, .cart-review .cart-side-total .cart-total p:first-child {
-        width: 45%;
-        text-align: left;
-        float: left
-    }
-    #paymentInfo span {
-        margin-right: 40px;
-    }
+
+	.cart-item input {
+		margin: 0;
+	}
+
+	.cart-item > div, .cart-item> p {
+		margin-right: 0px;
+		text-align: left
+	}
+
+	.cart-item > div p:nth-child(2) {
+		margin: 0;
+		display: inline-block;
+	}
+
+	.cart-item > div:nth-child(4) span {
+		margin: 0;
+	}
+
+	.cart-item .remove {
+		width: auto;
+		padding: 0;
+		position: absolute;
+		right: 0;
+	}
+
+	.cart-item .remove .cart-label {
+		display: none;
+	}
+
+	.cart-item .remove a span {
+		font-size: 20px;
+	}
+
+	#shippingForm, .shipping-info, .billing-info-rv, .billing-info, #paymentInfo {
+		width: 50%;
+	}
+
+	.shipping-info a, .billing-info-rv a {
+		padding: 5px 20px;
+	}
+
+	#shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
+		margin-left: 0;
+		font-size: 22px;
+	}
+
+	.cart-review {
+		padding: 15px 20px;
+	}
+
+	.cart-review h2 {
+		margin-bottom: 0;
+	}
+
+	#formPhone, #formPostal, #formProvince, #formAltPhone, #formCountry, #formCity, .cart-review-item div, #paymentInfo form .expiration, #paymentInfo form .cvv {
+		width: 100%;
+		float: none;
+	}
+
+	.cart-review-item div {
+		margin-left: 0;
+		padding-top: 10px;
+	}
+
+	.cart-review-item img {
+		display: none;
+	}
+
+	.cart-review .cart-side-total p, .cart-review .cart-side-total .cart-total p {
+		width: 45%;
+		text-align: right;
+		float: right;
+	}
+
+	.cart-review .cart-side-total .cart-label, .cart-review .cart-side-total .cart-total p:first-child {
+		width: 45%;
+		text-align: left;
+		float: left
+	}
+
+	#paymentInfo span {
+		margin-right: 40px;
+	}
+
 	.policies {
 		width: auto;
 	}
-    #account {
-        margin: 0;
-    }
-    #userName h2 {
-        margin: 0;
-    }
-    .userInfo, .shipInfo {
-        width: 100%;
-        float: none;
-        padding: 0;
-    }
-    .labelEdit {
-        padding: 35px 0 5px;
-    }
-    .labelEdit .btn {
-        padding: 3px 21px;
-    }
-    .labelEdit h3 {
-        font-weight: bold;
-        font-size: 21px;
-    }
-    .userInfo .contEdit {
-        width: 100%;
-        padding: 0;
-    }
-    .contEdit {
-        margin-top: 15px;
-    }
+
+	#account {
+		margin: 0;
+	}
+
+	#userName h2 {
+		margin: 0;
+	}
+
+	.userInfo, .shipInfo {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+
+	.labelEdit {
+		padding: 35px 0 5px;
+	}
+
+	.labelEdit .btn {
+		padding: 3px 21px;
+	}
+
+	.labelEdit h3 {
+		font-weight: bold;
+		font-size: 21px;
+	}
+
+	.userInfo .contEdit {
+		width: 100%;
+		padding: 0;
+	}
+
+	.contEdit {
+		margin-top: 15px;
+	}
 }
+
 /*-----mobile-----*/
+
 @media only screen and (max-width: 425px) {
-    body{
+
+    body {
         padding-bottom: 88px;
     }	
+
 	.product.col-3 {
 		width:100%;
 	}
-    #heroDiv{
-    	height:280px;
 
+    #heroDiv {
+    	height:280px;
     }
-    #testimonial h1{
+
+    #testimonial h1 {
     	font-size:25px;
     }
+
     .video {
     	display:grid;
     	grid-template-columns: 1fr;
     	grid-gap:0;
     }
-     .video img{
+
+    .video img {
      	width:330px;
      }
 
-    .reviews{
+    .reviews {
     	padding:20px 40px;
     }
-     q{
+
+    q {
      	font-size:16px;
      	width:30px;
-     }
+    }
 
-     .imgText{
+    .imgText {
      	float:none;
      	width:100%;
-  
-     }
-     .col-img{
+    }
+
+    .col-img {
      	height:350px;
      	width:315px;
-     }
+    }
 
-     .col-text{
+    .col-text {
      	margin-top:20px;
      }
 
-     #contact{
+    #contact {
      	display:grid;
      	grid-template-columns: 1fr;
      	margin-top:40px;
      	grid-gap:20px;
      	width:380px;
      }
-     #contact form{
+
+    #contact form {
      	width:350px;
      	margin-left:10px;
      }
 
-     .contactText p, h2{
+    .contactText p, h2 {
        font-size:20px;
        margin-left:0;
        width:80%;
-     }
+    }
 
-     #login form{
+    #login form {
      	display:grid;
      	grid-template-columns: 1fr;
      	width:350px;
      	grid-gap:15px;
      	margin-top:50px;
-     }
+    }
+
 	#cartCheckout > div {
 		width: 100%;
 	}
+
     #cartItems {
         margin-top: 20px;
     }
+
     .cart-item {
         height: 130px;
     }
+
     .cart-item img {
         display: none;
     }
@@ -1812,26 +1983,28 @@ footer .socialMedia .fab:hover {
     .cart-item> div:nth-child(2) {
         width: 85%;
     }
-	.cart-review{
+	.cart-review {
 		display:none;
 	}
 
     #shippingForm, .shipping-info, .billing-info-rv, .billing-info, #paymentInfo {
     	width:100%;
     }
+
     #shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
         width: 70%;
     }
-    .cart-user{
+
+    .cart-user {
     	display:none;
     }
 
-    .socialMedia img{
+    .socialMedia img {
     	margin-left:60px;
     	width:30px;
     }
 
-    #shop .shopCat h2{
+    #shop .shopCat h2 {
     	margin-left:-20px;
     }
 
@@ -1851,27 +2024,34 @@ footer .socialMedia .fab:hover {
 		width: 100%;
 		padding: 0;
     }
+
     #heroProfile {
         height: auto;
     }
+
     #userName {
         padding: 20px;
     }
+
     #userName h2 {
         margin: 0;
         width: 100%;
         font-size: 25px;
     }
+
     #accNav a {
         margin: 0;
         padding: 15px 18px;
     }
+
     .shipInfo {
         margin-bottom: 25px;
     }
+
     .labelEdit .btn {
         padding: 3px 10px;
     }
+
     .contEdit {
         margin-top: 25px;
         float: none;
@@ -1920,7 +2100,9 @@ footer .socialMedia .fab:hover {
         border: 0;
     }
 }
+
 /*------------ hamburger menu--------------*/
+
        .hamburger {
       	display:none;
       	margin:0 auto;
