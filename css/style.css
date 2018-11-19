@@ -1618,10 +1618,15 @@ p.cart-label {
     margin-left:140px;
 }
 
-.logError {
+.logError, .logSuccess {
     text-align: center;
     padding: 15px 10px;
     margin-top: 25px;
+}
+.logError {
+    background-color: #f3790c;
+}
+.logSuccess {
     background-color: #d3d2b1;
 }
 
