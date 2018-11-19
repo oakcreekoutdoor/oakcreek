@@ -2029,6 +2029,7 @@ footer .socialMedia .fab:hover {
 	}
 
 	.prod-name {
+		height: 55px;
 		margin-top: 20px;
 		width: 100%;
 	}
