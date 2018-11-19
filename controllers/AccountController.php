@@ -5,11 +5,21 @@
 		}
 
 		public function profile() {
-			$this->loadView("profile", "account");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+            $profileInfo = Login::getorders($_GET['userID']);
+			$arrData["user"] = $profileInfo['user'][0];
+            $arrData["orders"] = $profileInfo['orders'];
+			
+			$content = $this->showView("profile", $arrData);
+			include("templates/account.php");
 		}
 
 		public function orderHistory() {
-			$this->loadView("orderHistory", "account");
+			$arrData["mainNav"] = MainNav::makeMainNav();
+			$arrData["order"] = Login::getorders($_GET['userID']);
+			
+			$content = $this->showView("orderHistory", $arrData);
+			include("templates/account.php");
 		}
 	}
 ?>

@@ -1007,6 +1007,10 @@ p.cart-label {
 	display: inline-block;
 }
 
+.labelEdit h3, .contEdit h4 {
+    font-weight: bold;
+}
+
 .labelEdit .btn {
 	padding: 5px 25px;
 	margin: 0 0 0 45px;
@@ -1020,6 +1024,10 @@ p.cart-label {
 	float: left;
 	width: 50%;
 	padding-right: 30px;
+}
+
+.contEdit h4 {
+    margin-bottom: 5px;
 }
 
 .labelList {

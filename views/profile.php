@@ -4,7 +4,7 @@
 	</div><!-- //heroProfile -->
 	
 	<div id="userName">
-		<h2>Hello Paul Baker</h2>
+		<h2>Hello, <?=$arrData["user"]['strFullName']?></h2>
 		<a href="#">Logout</a>
 	</div><!-- //userName -->
 
@@ -20,9 +20,10 @@
 				<a class="btn sec" href="#">Edit</a>
 			</div><!-- //labelEdit -->
 			<div class="contEdit">
-				<p>Paul Bake</p>
-				<p>paul.baker@gmail.com</p>
-				<p>+1 222 333 4444</p>
+				<p><?=$arrData["user"]['strFullName']?></p>
+				<p><?=$arrData["user"]['strEmailAddress']?></p>
+				<p><?=$arrData["user"]['nPhone']?></p>
+                <p><?=$arrData["user"]['nAltPhone']?></p>
 			</div><!-- //contEdit -->
 		</div><!-- //userInfo -->
 
@@ -32,16 +33,18 @@
 				<a class="btn sec" href="#">Edit</a>
 			</div><!-- //labelEdit -->
 			<div class="contEdit">
-				<h4>Address 1</h4>
-				<p>1616 Pendrell St.</p>
-				<p>Vancouver BC</p>
-				<p>V6G 1S8</p>
+				<h4>Shipping</h4>
+				<p><?=$arrData["user"]['strShippingAddress']?></p>
+				<p><?=$arrData["user"]['strShippingCity']?></p>
+                <p><?=$arrData["user"]['strShippingState']?>, <?=$arrData["user"]['strShippingCountry']?></p>
+				<p><?=$arrData["user"]['strShippingZipCode']?></p>
 			</div><!-- //contEdit -->
 			<div class="contEdit">
-				<h4>Address 2</h4>
-				<p>1616 Pendrell St.</p>
-				<p>Vancouver BC</p>
-				<p>V6G 1S8</p>
+				<h4>Billing</h4>
+				<p><?=$arrData["user"]['strBillingAddress']?></p>
+				<p><?=$arrData["user"]['strBillingCity']?></p>
+                <p><?=$arrData["user"]['strBillingState']?>, <?=$arrData["user"]['strBillingCountry']?></p>
+				<p><?=$arrData["user"]['strBillingZipCode']?></p>
 			</div><!-- //contEdit -->
 		</div><!-- //shipInfo -->
 	</div><!-- //account -->
@@ -53,21 +56,19 @@
 			<div class="listCol"><h4>Status</h4></div>
 			<div class="listCol"><h4>Total</h4></div>
 		</div><!-- //labelList -->
-
+        
+        <?php
+        foreach($arrData["orders"] as $order) {
+        ?>
 		<div class="orderList cf">
-			<div class="listCol"><p>#5793746</p></div>
-			<div class="listCol"><p>26/10/2018</p></div>
-			<div class="listCol"><p>Shipped</p></div>
-			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a class="btn sec" href="#">Details</a></div>
+			<div class="listCol"><p>#<?=$order['id']?></p></div>
+			<div class="listCol"><p><?=$order['date']?></p></div>
+			<div class="listCol"><p><?=$order['status']?></p></div>
+			<div class="listCol"><p>$ <?=$order['nInvoiceTotal']?></p></div>
+			<div class="listCol vOrder"><a class="btn sec" href="index.php?controller=Account&action=orderHistory&orderID=<?=$order['id']?>">Details</a></div>
 		</div><!-- //orderList -->
-
-		<div class="orderList cf">
-			<div class="listCol"><p>#5793746</p></div>
-			<div class="listCol"><p>26/10/2018</p></div>
-			<div class="listCol"><p>Shipped</p></div>
-			<div class="listCol"><p>$ 87.00</p></div>
-			<div class="listCol vOrder"><a class="btn sec" href="#">Details</a></div>
-		</div><!-- //orderList -->
+        <?php
+        }
+        ?>
 	</div><!-- //orderHistory -->
 </section><!-- //profile container -->
