@@ -2029,6 +2029,7 @@ footer .socialMedia .fab:hover {
 	}
 
 	.prod-name {
+		margin-top: 20px;
 		width: 100%;
 	}
 
@@ -2052,6 +2053,13 @@ footer .socialMedia .fab:hover {
     	margin-left: 60px;
     }
 
+    .catText h2 {
+    	font-size: 50pt;
+    }
+
+    #productGrid .product.col-3 {
+    	height: 550px;
+    }
     #testimonial h1 {
     	font-size:25px;
     }
