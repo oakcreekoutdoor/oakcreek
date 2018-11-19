@@ -1216,21 +1216,21 @@ p.cart-label {
 	display:grid;
 	grid-gap:40px
 }
-.video img{
+.video img {
 	width:575px;
 	margin-top:50px;
 }
-.reviews{
+.reviews {
 	background-color: #D3D3D3; /* lightgrey */
 	margin-top:50px;
 	padding:30px 60px;
 }
 
-q{
+q {
 	font-family: 'Muli', sans-serif;
 	font-size:20px;
 }
-.reviews p{
+.reviews p {
 	font-family: 'Muli', sans-serif;
 	font-weight:bold;
 	margin-top:10px;
@@ -1552,7 +1552,7 @@ q{
     transform: translate3d(0, 0, 0);
 }
 
-.fakeImg img{
+.fakeImg img {
     width:200px;
     margin-left:140px;
 }
@@ -1710,6 +1710,11 @@ footer .socialMedia .fab:hover {
 		width: 180px;
 		margin-top: 20px;
 		padding: 15px;
+	}
+
+	.shopCat-text {
+		left: 16%;
+		top: 16%;
 	}
 
 	.testimonial .ratings {
@@ -2089,6 +2094,21 @@ footer .socialMedia .fab:hover {
 
     .heroText .btn {
     	margin-left: 60px;
+    }
+
+    #shop .container {
+    	width: 100%;
+    	margin: 0 auto;
+    }
+
+    .shopCat {
+    	width: 100%;
+    	margin: 0 auto;	
+    	margin-bottom: 50px;
+    }
+
+    .shopCat-text {
+    	left: 27%;
     }
 
     .catText h2 {
