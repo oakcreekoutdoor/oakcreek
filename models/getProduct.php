@@ -24,7 +24,7 @@
 					    products.strFeatPhoto,
 					    categories.strName AS strCatName,
 					    categories.strHeroImage,
-					    categories.strDesc
+					    categories.strIcon
 					FROM
 					    product_cats
 					LEFT JOIN products ON products.id = product_cats.nProductsID
