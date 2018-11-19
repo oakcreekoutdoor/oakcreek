@@ -201,6 +201,22 @@ header ul li a:hover {
 }
 
 
+/*------------ Hamburger Menu--------------*/
+	
+.nav label {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	z-index: 40;
+	font-size: 30px;
+}
+
+#toggle {
+	display: none;
+}
+
+
 /*------------- Hero -------------*/
 
 #heroSection {
@@ -1890,12 +1906,72 @@ footer .socialMedia .fab:hover {
         padding-bottom: 88px;
     }	
 
+    .logo img {
+    	width:180px;
+    }
+
+    .socialMedia {
+    	top: 30px;
+    	display: none;
+    }
+
+    .nav label {
+		display: block;
+		cursor: pointer;
+	}
+
+	#toggle:checked + nav {
+		display: block;
+	}
+	
+	header nav {
+		text-align: center;
+		height: 500px;
+		position: absolute;
+		top: 70px;
+		display: none;
+		z-index: 50;
+	}
+
+	header ul li {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+
+    .promo {
+    	height: 35px;
+    	padding: 15px;
+    	margin-top: 25px;
+    }
+
+    .promo p {
+    	font-size: 14pt;
+    	margin-top: -10px;
+    }
+
 	.product.col-3 {
 		width:100%;
 	}
 
     #heroDiv {
-    	height:280px;
+    	height:400px;
+    }
+
+    #heroDiv img {
+    	height: 400px;
+    	width: 800px;
+    }
+
+    .heroText {
+    	top: 80px;
+    	left: 10px;
+    	padding: 10px;
+    	text-align: center;
+    }
+
+    .heroText .btn {
+    	margin-left: 60px;
     }
 
     #testimonial h1 {
@@ -1996,12 +2072,8 @@ footer .socialMedia .fab:hover {
     }
 
     .cart-user {
-    	display:none;
-    }
-
-    .socialMedia img {
-    	margin-left:60px;
-    	width:30px;
+    	width: 100%;
+    	margin-top: -10px;
     }
 
     #shop .shopCat h2 {
@@ -2010,10 +2082,6 @@ footer .socialMedia .fab:hover {
 
     .shopCat .btn{
     	margin-left:-20px;
-    }
-
-    .logo img{
-    	width:200px;
     }
 
     #prodDetails .imgText.col-img {
@@ -2101,45 +2169,3 @@ footer .socialMedia .fab:hover {
     }
 }
 
-/*------------ hamburger menu--------------*/
-
-       .hamburger {
-      	display:none;
-      	margin:0 auto;
-      	color:#a67c00; /*gold*/
-      	position:relative
-      }
-
-        #toggle{
-        	display:none;
-      }
-     
-     @media only screen and (max-width: 450px){
-     	.hamburger{
-     		display:block;
-     		cursor:pointer;
-
-     	}
-        #hams{
-      	   display:none;
-     
-       }
-
-       #ham{
-       	display:block;
-       }
-
-       #ham nav{
-       	display:none;
-       }
-
-       header ul li {
-       	font-size:12px;
-       	width:250px;
-
-       }
-
-       #toggle:checked + nav{
-       	display:block;
-       }
-     }
