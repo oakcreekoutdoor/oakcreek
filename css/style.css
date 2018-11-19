@@ -1471,7 +1471,7 @@ q{
     padding-bottom: 10px;
     font-size: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-    text-align: center;
+    text-align: left;
 }
 
 .submit {
