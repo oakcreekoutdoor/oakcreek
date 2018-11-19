@@ -1946,12 +1946,82 @@ footer .socialMedia .fab:hover {
     }
 
     .promo p {
-    	font-size: 14pt;
+    	font-size: 15pt;
     	margin-top: -10px;
     }
 
+    #teaser {
+    	width: 100%;
+    	margin-top: 30px;
+    	height: 1100px;
+    }
+
+    .teaser-grid {
+    	width: 100%;
+    	margin-top: 5px;
+    }
+
+    .teaser-grid img {
+    	float: none;
+    	width: 350px;
+    	margin: 0 auto;
+    	margin-top: 20px;
+    	margin-bottom: 40px;
+    }
+
+    .teaser-grid p {
+    	width: 85%;
+    	line-height: 22px;
+    	margin: 0 auto;
+    	margin-bottom: 0px;
+    }
+
+    .teaser-grid .btn {
+    	margin-left: 30px;
+    	margin-top: 30px;
+    }
+
+    .testimonial {
+    	padding: 10px;
+    	height: 400px;
+    }
+
+    .testimonial .ratings {
+    	left: 80px;
+    }
+
+    .testimonial p.test-name {
+    	top: 335px;
+    	right: 20px;
+    }
+
+    .product {
+    	padding: 0;
+    }
+
 	.product.col-3 {
-		width:100%;
+		float: none;
+		width: 100%;
+		height: 500px;
+		margin: 0 auto;
+	}
+
+	.prodImg {
+		height: 300px;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.product img {
+		height: 100%;
+	}
+
+	.product.col-3 .btn.sec {
+		width: 300px;
+	}
+
+	.prod-name {
+		width: 100%;
 	}
 
     #heroDiv {
@@ -2024,7 +2094,7 @@ footer .socialMedia .fab:hover {
      	margin-left:10px;
      }
 
-    .contactText p, h2 {
+    .contactText p {
        font-size:20px;
        margin-left:0;
        width:80%;
@@ -2166,6 +2236,10 @@ footer .socialMedia .fab:hover {
     }
     .orderList, .stOrderList {
         border: 0;
+    }
+
+    footer .socialMedia {
+    	display: block;
     }
 }
 
