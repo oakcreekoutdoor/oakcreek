@@ -1,10 +1,7 @@
 <?php 
-session_start();
-
-if (!isset($_SESSION["userID"])) 
+if (!isset($_SESSION["userID"]) || ($_SESSION["userID"] != $_GET['userID'])) 
 {
-	header("location: index.php?error=true");
+	header("location: index.php?controller=Account&action=login");
 	die;
-}
-
+} 
 ?>

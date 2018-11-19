@@ -895,7 +895,7 @@ p.cart-label {
 	display: inline-block;
     margin-bottom: 5px;
 }
-#shipping form label .req, .billing-info form label .req {
+#shipping form label .req, .billing-info form label .req, #login form label .req {
     color: red;
 }
 #shipping form input, .billing-info form input, #paymentInfo form input {
@@ -1346,7 +1346,7 @@ p.cart-label {
    margin: 40px auto 50px;
 }
 
-.cont input, .cont a.btn.prime {
+.cont input, .cont .btn.prime {
    border:none;
    outline: none;
    background: none;
@@ -1396,7 +1396,7 @@ p.cart-label {
    transform: translate3d(-640px, 0, 0);
 }
 
-.cont a.btn.prime {/*login button*. You can style all the a tag btn*/
+.cont .btn.prime {/*login button*. You can style all the a tag btn*/
    display: block;
    margin-left:140px;
    width: 200px;
@@ -1616,6 +1616,13 @@ p.cart-label {
 .fakeImg img {
     width:200px;
     margin-left:140px;
+}
+
+.logError {
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 25px;
+    background-color: #d3d2b1;
 }
 
 
