@@ -1,17 +1,17 @@
 <section id="login" class="container cf">
-<form>
+<form id="loginForm" method="post" action="">
 		<div class="cont">
 		  <div class="form sign-in">
 			      <h2>Welcome back!</h2>
 				  <label>
-				        <span>E-mail Address</span>
-				        <input type="email" />
+				        <span>E-mail Address:</span><span class="req">*</span>
+				        <input id="email" name="email" type="email" class="requiredField" />
 				  </label>
 			      <label>
-				        <span>Password:</span>
-				        <input type="password" />
+				        <span>Password:</span><span class="req">*</span>
+				        <input id="password" name="password" type="password" class="requiredField" />
 			      </label>
-			            <a href="#" class="btn prime">LOG IN</a>
+			            <input type="submit" id="signIn" class="btn prime" value="LOG IN" />
 			       <div class="fakeImg">
 			            <img src="assets/login.jpeg" alt="login images">
 		           </div>    
@@ -32,19 +32,19 @@
 				    <div class="form sign-up">
 					      <h2>Be One of Us</h2>
 					      <label>
-						        <span>Name:</span>
-						        <input type="text" name="fname" required>
+						        <span>Full Name:</span><span class="req">*</span>
+						        <input id="newname" type="text" name="newname" class="requiredField" />
 					      </label>
 					      <label>
-						        <span>E-mail Address:</span>
-						        <input type="text" name="email" required>
+						        <span>E-mail Address:</span><span class="req">*</span>
+						        <input id="newemail" type="email" name="newemail" class="requiredField" />
 					      </label>
 					      <label>
-						        <span>Password:</span>
-						        <input type="text" name="password" required>
+						        <span>Password:</span><span class="req">*</span>
+						        <input id="newpassword" type="password" name="newpassword" class="requiredField" />
 					      </label>
 					      <div>
-					            <a href="#" class="btn prime">SIGN UP</a>
+                              <input type="submit" id="signUp" class="btn prime" value="SIGN UP" />
 							    <div class="fakeImg">
 							            <img src="assets/signup.jpeg" alt="signup images">
 							    </div>
