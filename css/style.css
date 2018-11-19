@@ -2058,14 +2058,14 @@ footer .socialMedia .fab:hover {
 	}
 
     .promo {
-    	height: 35px;
-    	padding: 15px;
+    	width: 100%;
+    	padding: 5px;
     	margin-top: 25px;
     }
 
     .promo p {
-    	font-size: 15pt;
-    	margin-top: -10px;
+    	font-size: 18pt;
+    	margin-top: 0px;
     }
 
     #teaser {
@@ -2305,6 +2305,19 @@ footer .socialMedia .fab:hover {
     .cart-user {
     	width: 100%;
     	margin-top: -10px;
+    }
+
+    .cart-user a {
+    	font-size: 10pt;
+    }
+
+    .cart-user .fas {
+    	font-size: 12pt;
+    	margin-right: 5px;
+    }
+
+    .cart-user .user {
+    	margin-right: 20px;
     }
 
     #shop .shopCat h2 {
