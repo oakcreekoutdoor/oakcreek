@@ -10,9 +10,11 @@ $(function() {
     
     $('#accProfileNav').on('click', function() {
         toggleActiveAcc($(this), '#accOrderNav', '#account', '#orderHistory');
+        return false;
     });
     
     $('#accOrderNav').on('click', function() {
         toggleActiveAcc($(this), '#accProfileNav', '#orderHistory', '#account');
+        return false;
     });
 });
