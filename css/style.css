@@ -450,16 +450,20 @@ header ul li a:hover {
 }
 
 #product #heroDiv {
-	height: 200px;
+	height: 220px;
 	position: relative;
 	margin-bottom: 50px;
+}
+
+#heroDiv .catText img {
+	width: 50px;
 }
 
 .catText {
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	top: 20%;
+	top: 15%;
 }
 
 .catText h2 {
@@ -488,20 +492,56 @@ header ul li a:hover {
 .shopCat {
 	width: 45%;
 	float: left;
-	background: #ddd;
 	margin: 0 2.5%;
-	padding: 55px;
 	text-align: center;
+	height: 280px;
+	position: relative;
+}
+
+.shopCat:before {
+	content: "";
+	background-color: #000;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.shopCat img {
+	height: 100%;
+	width: 100%;
+}
+
+.shopCat-text {
+	position: absolute;
+	top: 20%;
+	left: 30%;
+}
+
+.shopCat-text img {
+	width: 50px;
 }
 
 .shopCat h2 {
-	margin-bottom: 35px;
-	font-size: 26pt;
+	margin-bottom: 10px;
+	font-size: 34pt;
+	color: #fff;
 	font-family: 'Zilla Slab', serif;
 }
 
 .shopCat .btn {
 	display: inline-block;
+	width: 180px;
+	padding: 5px;
+	color: #fff;
+	border-color: #fff;
+}
+
+.shopCat .btn:hover {
+	color: #604837; /* brown */
+	background: #fff;
 }
 
 .prodImg {
