@@ -32,6 +32,10 @@ $('#signIn').on('click', function()
     if($('.logError'.length>0)) {
         $('.logError').css('display', 'none');
     }
+    
+    if($('.logSuccess'.length>0)) {
+        $('.logSuccess').css('display', 'none');
+    }
 
 	$.ajax(
     {	
@@ -47,12 +51,12 @@ $('#signIn').on('click', function()
             if(result) {
                 window.location = "index.php?controller=Account&action=profile&userID="+result;
             } else {
-                $('.sign-in').append('<p class="logError">Sorry e-mail or password not correct.</p>');
+                $('.sign-in').append('<p class="logError">E-mail or password are not correct.</p>');
             }
         },
         error: function(a, b, error)
         {
-             $('.sign-in').append('<p class="logError">Sorry e-mail or password not correct.</p>');
+             $('.sign-in').append('<p class="logError">Sorry something went wrong.</p>');
             console.log(error);
         }
     });
@@ -64,20 +68,30 @@ $('#signUp').on('click', function()
 	if($('.logError'.length>0)) {
         $('.logError').css('display', 'none');
     }
-
+    
+    if($('.logSuccess'.length>0)) {
+        $('.logSuccess').css('display', 'none');
+    }
     $.ajax(
     {	
-        url: "libs/checkLogin.php",
+        url: "models/saveUser.php",
         method: "POST",	
         data: 
         {
-            strEmailAddress: $("#newemail").val(),
-            strFullName: $("#newname").val(),
-            strPassword: $("#newpassword").val()
+            newemail: $("#newemail").val(),
+            newname: $("#newname").val(),
+            newpassword: $("#newpassword").val()
         },				
         success: function(result)
         {
-            console.log('works');
+            if(result) {
+                $('#loginForm').append('<p class="logSuccess">Thank you! Please make your login.</p>');
+                
+                window.location = "index.php?controller=Account&action=login";
+                
+            } else {
+                $('#loginForm').append('<p class="logError">Something went wrong!</p>')
+            }
         },
         error: function(a, b, error)
         {

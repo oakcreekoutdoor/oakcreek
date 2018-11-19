@@ -5,7 +5,7 @@
 	
 	<div id="userName">
 		<h2>Hello, <?=$arrData["user"]['strFullName']?></h2>
-		<a href="#">Logout</a>
+		<a href="libs/logout.php">Logout</a>
 	</div><!-- //userName -->
 
 	<div id="accNav">
@@ -30,8 +30,19 @@
 		<div class="shipInfo">
 			<div class="labelEdit cf">
 				<h3>Addresses</h3>
+            <?php
+            if(!empty($arrData["user"]['strShippingAddress']) && !empty($arrData["user"]['strBillingAddress'])) {
+            ?>
 				<a class="btn sec" href="#">Edit</a>
+            <?php
+            } else {
+                echo '<a class="btn sec" href="#">Add</a>';
+            }
+            ?>
 			</div><!-- //labelEdit -->
+        <?php
+        if(!empty($arrData["user"]['strShippingAddress']) && !empty($arrData["user"]['strBillingAddress'])) {
+        ?>
 			<div class="contEdit">
 				<h4>Shipping</h4>
 				<p><?=$arrData["user"]['strShippingAddress']?></p>
@@ -46,10 +57,18 @@
                 <p><?=$arrData["user"]['strBillingState']?>, <?=$arrData["user"]['strBillingCountry']?></p>
 				<p><?=$arrData["user"]['strBillingZipCode']?></p>
 			</div><!-- //contEdit -->
+        <?php
+        } else {
+            echo "No addresses registered.";
+        }
+        ?>
 		</div><!-- //shipInfo -->
 	</div><!-- //account -->
 
 	<div id="orderHistory">
+        <?php
+        if(!empty($arrData["orders"])) {
+        ?>
 		<div class="labelList cf">
 			<div class="listCol"><h4>Order</h4></div>
 			<div class="listCol"><h4>Date</h4></div>
@@ -58,16 +77,19 @@
 		</div><!-- //labelList -->
         
         <?php
-        foreach($arrData["orders"] as $order) {
-        ?>
-		<div class="orderList cf">
-			<div class="listCol"><p>#<?=$order['id']?></p></div>
-			<div class="listCol"><p><?=$order['dateOrder']?></p></div>
-			<div class="listCol"><p><?=$order['status']?></p></div>
-			<div class="listCol"><p>$ <?=$order['nInvoiceTotal']?></p></div>
-			<div class="listCol vOrder"><a class="btn sec" href="index.php?controller=Account&action=orderHistory&userID=<?=$arrData["user"]['id']?>&orderID=<?=$order['id']?>">Details</a></div>
-		</div><!-- //orderList -->
-        <?php
+            foreach($arrData["orders"] as $order) {
+            ?>
+            <div class="orderList cf">
+                <div class="listCol"><p>#<?=$order['id']?></p></div>
+                <div class="listCol"><p><?=$order['dateOrder']?></p></div>
+                <div class="listCol"><p><?=$order['status']?></p></div>
+                <div class="listCol"><p>$ <?=$order['nInvoiceTotal']?></p></div>
+                <div class="listCol vOrder"><a class="btn sec" href="index.php?controller=Account&action=orderHistory&userID=<?=$arrData["user"]['id']?>&orderID=<?=$order['id']?>">Details</a></div>
+            </div><!-- //orderList -->
+            <?php
+            }
+        } else {
+            echo "No orders registered.";
         }
         ?>
 	</div><!-- //orderHistory -->
