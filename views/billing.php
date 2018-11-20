@@ -16,7 +16,7 @@ if(isset($_SESSION["userID"])) {
 <div id="billing" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		 <a href="">Edit</a> 
+<!--		 <a href="">Edit</a> -->
 		<div>
 			<p><?=$_SESSION["userID"]['fullName']?></p>
 			<p><?=$_SESSION["userID"]['shipAddress']?>, <?=$_SESSION["userID"]['shipCity']?></p>
