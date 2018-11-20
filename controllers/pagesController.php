@@ -67,6 +67,11 @@
         	$this->loadView("submitthanks", "pages");
 
         }
+
+         public function orderplaced(){
+        	$this->loadView("orderplaced", "pages");
+
+        }
     
 		public function addItem() {
 			$oCart = new Cart();
