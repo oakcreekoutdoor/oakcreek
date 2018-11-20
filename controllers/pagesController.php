@@ -64,7 +64,7 @@
 		}
          
         public function submitthanks(){
-        	$this->loadView("submitthanks, pages");
+        	$this->loadView("submitthanks", "pages");
 
         }
     

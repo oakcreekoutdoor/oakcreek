@@ -19,4 +19,4 @@ $sql = "INSERT INTO contacts (
 
 
 DBFactory::newData()->runSql("saveData", $sql);
-header("location: ../views/submitthanks.php");?>
+header("location: ../index.php?controller=Pages&action=submitthanks");?>
