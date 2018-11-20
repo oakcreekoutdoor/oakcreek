@@ -17,7 +17,7 @@
 		<div class="userInfo">
 			<div class="labelEdit cf">
 				<h3>Personal Details</h3>
-				<a class="btn sec" href="#">Edit</a>
+<!--				<a class="btn sec" href="#">Edit</a>-->
 			</div><!-- //labelEdit -->
 			<div class="contEdit">
 				<p><?=$arrData["user"]['strFullName']?></p>
@@ -33,7 +33,7 @@
             <?php
             if(!empty($arrData["user"]['strShippingAddress']) && !empty($arrData["user"]['strBillingAddress'])) {
             ?>
-				<a class="btn sec" href="#">Edit</a>
+<!--				<a class="btn sec" href="#">Edit</a>-->
             <?php
             } else {
                 echo '<a class="btn sec" href="#">Add</a>';
