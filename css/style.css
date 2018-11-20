@@ -1494,18 +1494,18 @@ p.cart-label {
 
 /*----------- LogIn/SignUp ----------------*/
 
-#login form{
+#login form, #mobileForm form {
    margin: 40px auto 50px;
 }
 
-.cont input, .cont .btn.prime {
+.cont input, .cont .btn.prime, #mobileForm .btn.prime, #mobileForm input {
    border:none;
    outline: none;
    background: none;
    margin-top:35px;
 }
 
-.cont .btn.prime:hover {
+.cont .btn.prime:hover, #mobileForm .btn.prime:hover {
 	background-color: #dbb95f; /* yellow green */
 	color:#2c5412; /* dark green */
 }
@@ -1548,7 +1548,7 @@ p.cart-label {
    transform: translate3d(-640px, 0, 0);
 }
 
-.cont .btn.prime {/*login button*. You can style all the a tag btn*/
+.cont .btn.prime, #mobileForm .btn.prime {/*login button*. You can style all the a tag btn*/
    display: block;
    margin-left:140px;
    width: 200px;
@@ -1698,26 +1698,26 @@ p.cart-label {
    transform: translateY(72px);
 }
 
-.cont h2 { 
+.cont h2, #mobileForm h2 { 
     width: 100%;
     font-size: 26px;
     text-align: center;
     margin-top:-20px;
 }
 
-.cont label {/*line*/
+.cont label, #mobileForm label {/*line*/
     display: block;
     width: 300px;
     margin:40px auto 0;
 
 }
-.cont label span {/*here you can style the label*/
+.cont label span:nth-child(2), #mobileForm label span:nth-child(2) {/*here you can style the label*/
     font-size:17px;
-    color: rgba(0, 0, 0, 0.7);
+    color: red;
 
 }
 
-.cont input {/*here you can change the thickness, color etc of the line/border*/
+.cont input, #mobileForm input {/*here you can change the thickness, color etc of the line/border*/
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -1782,6 +1782,11 @@ p.cart-label {
     background-color: #d3d2b1;
 }
 
+/*-------------Mobile Form------------*/
+
+#mobileForm {
+	display: none;
+}
 
 /*------------ Thank You -------------*/
 
@@ -2888,5 +2893,44 @@ footer .socialMedia .fab:hover {
      #testimonial .testimonial p.test-name {
      	margin-top: -100px;
      }
+
+         #login {
+    	display: none;
+    }
+
+    #mobileForm {
+    	display: block;
+    	width: 80%;
+		margin: 0 auto;
+    }
+
+    #mobileForm input, #mobileForm label {
+		width: 100%;
+	}
+
+	#mobileForm .btn.prime {
+		margin-left: 0px;
+		margin-top: 15px;
+	}
+
+	.fakeImg img {
+		margin-left: 0px;
+	}
+
+	#mobileForm p {
+		display: inline-block;
+		margin-top: 10px;
+		font-size: 12pt;
+	}
+
+	.formLink {
+		font-size: 12pt;
+		color: #f3790c; /* orange */
+		text-decoration: underline;
+	}
+
+	#signUpFormMobile {
+		display: none;
+	}
 
 }
