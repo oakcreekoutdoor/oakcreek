@@ -1,21 +1,20 @@
 <div id="payment" class="container">
 	<div class="shipping-info">
 		<h2>Shipping Information</h2>
-		 <a href="index.php?controller=Cart&action=shipping">Edit</a> 
+        <a href="">Edit</a> 
 		<div>
-			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
-			<p><?=$arrData["arrOrder"][0]["strShippingAddress"]?>, <?=$arrData["arrOrder"][0]["strShippingCity"]?></p>
-			<p><?=$arrData["arrOrder"][0]["strShippingState"]?> - <?=$arrData["arrOrder"][0]["strShippingCountry"]?> - <?=$arrData["arrOrder"][0]["strShippingZipCode"]?></p>
+			<p><?=$_SESSION["userID"]['fullName']?></p>
+			<p><?=$_SESSION["userID"]['shipAddress']?>, <?=$_SESSION["userID"]['shipCity']?></p>
+			<p><?=$_SESSION["userID"]['shipState']?> - <?=$_SESSION["userID"]['shipCountry']?> - <?=$_SESSION["userID"]['shipZip']?></p>
 		</div>
 	</div><!--shipping-info-->
 
 	<div class="billing-info-rv">
 		<h2>Billing Information</h2>
-		 <a href="index.php?controller=Cart&action=billing">Edit</a> 
+		 <a href="">Edit</a> 
 		<div>
-			<p><?=$arrData["arrOrder"][0]["strFullName"]?></p>
-			<p><?=$arrData["arrOrder"][0]["strBillingAddress"]?>, <?=$arrData["arrOrder"][0]["strBillingCity"]?></p>
-			<p><?=$arrData["arrOrder"][0]["strBillingState"]?> - <?=$arrData["arrOrder"][0]["strBillingCountry"]?> - <?=$arrData["arrOrder"][0]["strBillingZipCode"]?></p>
+			<p><?=$_SESSION["userID"]["billAddress"]?>, <?=$_SESSION["userID"]["billCity"]?></p>
+			<p><?=$_SESSION["userID"]["billState"]?> - <?=$_SESSION["userID"]["billCountry"]?> - <?=$_SESSION["userID"]["billZip"]?></p>
 		</div>
 	</div><!--billing-info-->
 
@@ -64,7 +63,7 @@
 				<label>CVV Number</label>
 				<input type="text">
 			</div><!--cvv-->
-			<input type="submit" class="btn prime" value="Place Order" />
+			<input id="paySubmit" type="submit" class="btn prime" value="Place Order" />
 		</form>
 	</div><!--paymentInfo-->
 

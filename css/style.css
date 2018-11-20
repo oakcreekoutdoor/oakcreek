@@ -980,6 +980,30 @@ p.cart-label {
 	border: none;
 	cursor: pointer;
 }
+
+#checkOpt {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #eee;
+    padding: 15px 20px 5px;
+}
+
+#checkOpt label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#checkOpt input[type=radio] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+#checkOpt input[type=radio]:last-child {
+    margin-left: 15px;
+}
+
 .cart-review {
 	border: 1px solid #000;
 	padding: 20px 30px;
@@ -1048,6 +1072,77 @@ p.cart-label {
 .policies-title {
 	font-weight: bold;
 	margin-top: 15px;
+}
+
+#modalLogin {
+    display: none;
+}
+
+#modalLogin::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+#modalLogin #login {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 440px;
+    height: 460px;
+    background-color: #fff;
+    padding: 50px;
+}
+
+#modalLogin #login h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;    
+}
+
+#modalLogin .logform .fakeImg img {
+    margin: 0;
+}
+
+#modalLogin .logform label {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#modalLogin .logform label:nth-child(2) {
+    margin-top: 20px;
+}
+
+#modalLogin .logform label, #modalLogin .logform input {
+    display: inline-block;
+    width: 100%;
+    outline-width: 0;
+}
+
+#modalLogin .logform input {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+#modalLogin .logform input[type=submit] {
+    width: auto;
+    border: 0;
+    outline-width: 0;
+    margin: 0;
+    padding: 10px 35px;
+    margin: 20px 0 15px;
+}
+
+#modalLogin .logform #cancelBtn {
+    display: inline-block;
 }
 
 /*-------------Billing--------------------*/
@@ -2148,6 +2243,10 @@ footer .socialMedia .fab:hover {
 		margin-left: 0;
 		font-size: 22px;
 	}
+    
+    #checkOpt label {
+        width: 100%;
+    }
 
 	.cart-review {
 		padding: 15px 20px;
@@ -2635,6 +2734,12 @@ footer .socialMedia .fab:hover {
 
     #shippingForm h2, .cart-review h2, .billing-info h2, .shipping-info h2, .billing-info-rv h2, #paymentInfo h2 {
         width: 70%;
+    }
+    
+    #modalLogin #login {
+        padding: 30px;
+        width: 290px;
+        height: 440px;
     }
 
     .cart-user {

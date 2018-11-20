@@ -22,14 +22,32 @@
 	</div><!--cart-review--summary-->
 	<div class="cart-side-total">
 		<p class="cart-label">Subtotal</p>
+    <?php
+    if(!empty($_SESSION["subTotal"])) {    
+    ?>
 		<p>$ <?=$_SESSION['subTotal']?></p>
+    <?php
+    }
+    ?>
 		<p class="cart-label">Shipping</p>
 		<p>FREE</p>
 		<p class="cart-label">Tax</p>
+    <?php
+    if(!empty($_SESSION["nTax"])) {    
+    ?>
 		<p>$ <?=$_SESSION['nTax']?></p>
+    <?php
+    }
+    ?>
 		<div class="cart-total">
 			<p>Total</p>
-			<p>$ <?=$_SESSION['nInvoice']?></p>
+        <?php
+        if(!empty($_SESSION["nInvoice"])) {    
+        ?>
+            <p>$ <?=$_SESSION['nInvoice']?></p>
+        <?php
+        }
+        ?>
 		</div><!--cart-total-->
 	</div>
 </div><!--cart-review-->

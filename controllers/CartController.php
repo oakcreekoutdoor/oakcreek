@@ -9,27 +9,15 @@
 		}
 
 		public function billing() {
-			$arrData["mainNav"] = MainNav::makeMainNav();
-			$arrData["arrOrder"] = Orders::getAddress();
-			
-			$content = $this->showView("billing", $arrData);
-			include("templates/cart.php");
+			$this->loadView("billing", "cart");
 		}
 
 		public function payment() {
-			$arrData["mainNav"] = MainNav::makeMainNav();
-			$arrData["arrOrder"] = Orders::getAddress();
-			
-			$content = $this->showView("payment", $arrData);
-			include("templates/cart.php");
+			$this->loadView("payment", "cart");
 		}
 
 		public function orderplaced() {
-			$arrData["mainNav"] = MainNav::makeMainNav();
-			$arrData["oUserID"] = Orders::getUserOrders();
-			
-			$content = $this->showView("orderplaced", $arrData);
-			include("templates/cart.php");
+            $this->loadView("orderplaced", "cart");
 		}
 
 		public function delItem() {
