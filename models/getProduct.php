@@ -59,6 +59,17 @@
 					ORDER BY products.id DESC
 					LIMIT 3";
 			return DBFactory::newData()->runSql("getData", $sql);
-		 }
+		}
+
+		static function getReviews()
+	    {
+	        $sql = "SELECT 
+	        			*
+					FROM
+					    reviews
+					WHERE
+						nProductsID = ".$_GET["pID"];
+			return DBFactory::newData()->runSql("getData", $sql);
+		}
 	 }
 ?>

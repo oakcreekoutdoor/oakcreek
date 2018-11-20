@@ -33,6 +33,7 @@
 		public function product() {
 			$arrData["mainNav"] = MainNav::makeMainNav();
 			$arrData["product"] = Product::getProduct();
+			$arrData["reviews"] = Product::getReviews();
 			
 			$content = $this->showView("productDetails", $arrData);
 			include("templates/pages.php");
