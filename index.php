@@ -15,7 +15,7 @@ include("controllers/CartController.php");
 session_start();
 
 $controller = (isset($_GET["controller"]))?$_GET["controller"]:"pages";
-$action = (isset($_GET["action"]))	?$_GET["action"]:"home";
+$action = (isset($_GET["action"]))?$_GET["action"]:"home";
 
 $cName = ucfirst($controller)."Controller";
 $oController = new $cName();

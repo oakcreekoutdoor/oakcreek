@@ -4,5 +4,5 @@
 	   <h1>Thank You</h1>
     </div>
 	<p>Your order number is: <span>#<?=$_SESSION["orderID"]?></span></p>
-	<p>We sent a copy to your e-mail: <span><?=$arrData["oUserID"][0]["strEmailAddress"]?></span></p>
+	<p>We sent a copy to your e-mail: <span><?=$_SESSION['userID']['email']?></span></p>
 </section><!-- //Thank You container -->
