@@ -781,9 +781,6 @@ header ul li a:hover {
 }
 
 
-
-
-
 /*--------------Cart----------------*/
 
 #cartSummary {
@@ -1841,6 +1838,83 @@ footer .socialMedia .fab:hover {
 		top: 16%;
 	}
 
+	#prodDetails {
+		height: 1000px;
+	}
+
+	#prodDetails .imgText.col-img {
+		width: 100%;
+		margin-top: 150px;
+	}
+
+	#prodDetails .imgText.col-text {
+		width: 100%;
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.col-img img {
+		height: 50%;
+	}
+
+	.bigImg {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.imgText h2 {
+		position: absolute;
+		top: 30px;
+		font-size: 20pt;
+	}
+
+	.imgText .ratings {
+		position: absolute;
+		top: 70px;
+	}
+
+	.prod-price {
+		position: absolute;
+		top: 95px;
+	}
+
+	.old-price {
+		font-size: 22pt;
+	}
+
+	.new-price {
+		font-size: 30pt;
+	}
+
+	.prod-photos {
+		margin-top: -50px;
+	}
+
+	.imgText h4 {
+		margin-top: -120px;
+	}
+
+	.imgText ul {
+		width: 45%;
+	}
+
+	.imgText .specs {
+		position: absolute;
+		right: -40px;
+		top: 660px;
+	}
+
+	.imgText .btn {
+		position: absolute;
+		right: 30px;
+		top: 800px;
+	}
+
+	.review-user {
+		width: 100%;
+		margin: 30px 0;
+	}
+
 	.testimonial .ratings {
 		left: 225px;
 	}
@@ -2195,7 +2269,7 @@ footer .socialMedia .fab:hover {
 	}
 
 	.product.col-3 .btn.sec {
-		width: 300px;
+		width: 100%;
 	}
 
 	.prod-name {
@@ -2239,17 +2313,99 @@ footer .socialMedia .fab:hover {
     	left: 15%;
     }
 
+    .shopCat-text h2 {
+    	font-size: 36pt;
+    }
+
     .catText h2 {
-    	font-size: 50pt;
+    	font-size: 40pt;
     }
 
     #heroDiv .catText img {
     	height: 50px;
     }
 
+    #prodDetails {
+    	height: 1100px;
+    }
+
+    .imgText h2 {
+    	top: 15px;
+    }
+
+    .imgText .ratings {
+    	top: 90px;
+    }
+
+    .imgText .ratings p {
+    	width: 130px;
+    	margin-left: 5px;
+    }
+
+    .prod-price {
+    	top: 115px;
+    }
+
+    .old-price {
+    	font-size: 16pt;
+    }
+
+    .new-price {
+    	font-size: 22pt;
+    }
+
+    .col-img img {
+    	height: 70%;
+    }
+
+    .bigImg {
+    	width: 100%;
+    }
+
+    .smallImg {
+    	padding: 5px;
+    }
+
+    .imgText ul {
+    	width: 100%;
+    	padding: 5px 10px;
+    }
+
+    .imgText li {
+    	font-size: 12pt;
+    }
+
+    .imgText .specs {
+    	top: 950px;
+    	left: 50px;
+    }
+
+    .imgText .btn {
+    	right: 0;
+    	top: 950px;
+    	width: 100%;
+    }
+
+    .specs p:nth-child(3) {
+    	margin-top: -20px;
+    }
+
+    .specs input {
+    	margin-top: 35px;
+    }
+
+    .review {
+    	padding-bottom: 0px;
+    }
+
+    .review-user .ratings .leaf {
+    	width: 15px;
+    }
+
     #productGrid .product.col-3 {
     	height: 550px;
     }
+
     #testimonial h1 {
     	font-size:25px;
 
@@ -2264,7 +2420,7 @@ footer .socialMedia .fab:hover {
     .video iframe {
      	width:100%;
      	margin-top:20px;
-     }
+    }
 
     #testimonial .icon{
     	margin-top:20px;

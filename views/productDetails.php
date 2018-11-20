@@ -7,12 +7,12 @@
 		<div class="imgText col-img cf">
 			<img class="bigImg" src="assets/<?=$arrData['product'][0]['strFeatPhoto']?>" alt="<?=$arrData['product'][0]['strFeatPhoto']?>" />
 
-			<div>
+			<div class="prod-photos">
 				<img class="smallImg" src="assets/m-gc-1.jpg" alt="<?=$arrData["product"][0]["strName"]?>"/>
 				<img class="smallImg" src="assets/m-gc-2.jpg" alt="<?=$arrData["product"][0]["strName"]?>"/>
 				<img class="smallImg" src="assets/m-gc-3.jpg" alt="<?=$arrData["product"][0]["strName"]?>"/>
 				<img class="smallImg" src="assets/m-gc-4.jpg" alt="<?=$arrData["product"][0]["strName"]?>"/>
-			</div>
+			</div><!--//prod-photos-->
 		</div>
 
 		<div class="imgText col-text">
