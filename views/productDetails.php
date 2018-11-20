@@ -19,11 +19,11 @@
 			<h2><?=$arrData["product"][0]["strName"]?></h2>
 
 			<div class="ratings">
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf_beige"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf_beige.png"/>
 				<p>10 reviews</p>
 			</div><!--//ratings-->
 
@@ -60,11 +60,11 @@
 
 		<div class="review-user">
 			<div class="ratings">
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf"/>
-				<img class="leaf" src="images/icon_leaf_beige"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf.png"/>
+				<img class="leaf" src="images/icon_leaf_beige.png"/>
 			</div><!--//ratings-->
 			<p class="bold"><?=$review["strName"]?></p>
 			<p><?=$review["strReview"]?></p>
