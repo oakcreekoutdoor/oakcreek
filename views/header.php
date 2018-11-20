@@ -41,9 +41,19 @@
 				<a href="#"><span class="fab fa-instagram"></span></a>
 				<a href="#"><span class="fab fa-youtube-square"></span></a>
 			</div><!--//socialMedia-->
-
-			<div class="cart-user">
+            
+            <div class="cart-user">
+            <?php
+            if(!isset($_SESSION["userID"])){
+            ?>
 				<a class="user" href="index.php?controller=Account&action=login"><span class="fas fa-user-circle"></span>Login / Sign Up</a>
+            <?php
+            } else {
+            ?>
+                <a class="user" href="index.php?controller=Account&action=profile&userID=<?=$_SESSION['userID']['id']?>"><span class="fas fa-user-circle"></span>My Account</a>
+            <?php
+            }
+            ?>
 				<a href="index.php?controller=Cart&action=cart"><span class="fas fa-shopping-cart"></span>Cart (
 				<?php
 					if(isset($_SESSION["arrCart"])) {
