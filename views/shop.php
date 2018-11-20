@@ -8,7 +8,7 @@
 			<h2><?=$cat["strName"]?></h2>
 			<a class="btn sec" href="index.php?controller=Pages&action=category&cID=<?=$cat["id"]?>">See Products</a>
 		</div><!--shopCat-text-->
-		<img src="assets/<?=$cat["strHeroImage"]?>" alt="<?=$cat["strName"]?>"/>
+		<img src="assets/<?=$cat["strCoverPhoto"]?>" alt="<?=$cat["strName"]?>"/>
 	</div><!-- //shopCat -->
 <?php
 	}
