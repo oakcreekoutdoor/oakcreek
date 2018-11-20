@@ -112,5 +112,3 @@ if(isset($_SESSION["userID"])) {
         </div>
     </form>
 </div>
-
-<?php print_r($_SESSION);?>

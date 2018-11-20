@@ -20,7 +20,7 @@
 		}
 
 		public function orderHistory() {
-            include("libs/checkUser.php");
+            include("libs/doubleCheckUser.php");
             
 			$arrData["mainNav"] = MainNav::makeMainNav();
 			$arrDetails = Orders::getUserOrders($_GET['orderID'], $_GET['userID']);
