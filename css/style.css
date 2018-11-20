@@ -785,9 +785,6 @@ header ul li a:hover {
 
 /*--------------Cart----------------*/
 
-#cartSummary {
-	height: 900px;
-}
 #cartSummary > div {
 	padding-top: 30px;
 	height: auto;
