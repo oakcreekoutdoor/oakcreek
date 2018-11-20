@@ -12,7 +12,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <!-- JQuery CDN -->
-
+<script src="js/loginform.js"></script>
 <script src="js/formValidation.js"></script>
 <script src="js/ajaxForm.js"></script>
 <script src="js/submitToShip.js"></script>

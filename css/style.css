@@ -2230,6 +2230,28 @@ footer .socialMedia .fab:hover {
 	.imgText p {	
 	    width:290px;
 	}
+
+	#testimonial .testimonial p {
+		font-size: 16pt;
+	}
+
+	#testimonial .testimonial p.test-name {
+		font-size: 18pt;
+	}
+
+	#about .imgText {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	#about .col-img img {
+		height: 100%;
+	}
+
+	#about .imgText p {
+		width: 100%;
+	}
+
 }
 
 /*-----mobile-----*/
@@ -2562,10 +2584,11 @@ footer .socialMedia .fab:hover {
     #contact form {
      	width:100%;
      	margin-left:0px;
+     	padding: 15px;
      }
 
     .contactText p {
-       font-size:20px;
+       font-size: 14pt;
        margin-left:0;
        width:100%;
     }
@@ -2593,12 +2616,15 @@ footer .socialMedia .fab:hover {
     .cart-item img {
         display: none;
     }
+
     .cart-item> div {
         width: 50%;
     }
+
     .cart-item> div:nth-child(2) {
         width: 85%;
     }
+
 	.cart-review {
 		display:none;
 	}
@@ -2700,23 +2726,29 @@ footer .socialMedia .fab:hover {
         padding: 0;
         text-align: center;
     }
+
     .stOrderLabel, .stOrderList {
         width: 50%;
         float: left;
     }
+
     #orderTrack .stOrderList .oCol {
         padding-top: 18px;
     }
+
     .stOrderList .oCol:nth-child(1) {
         padding-top: 20px;
     }
+
     .stOrderList .oCol:nth-child(2) {
         padding-top: 22px;
     }
+
     .stOrderLabel .oCol, .stOrderList .oCol, #orderTrack .stOrderList .oText {
         width: 100%;
         padding-top: 25px;
     }
+
     .orderList, .stOrderList {
         border: 0;
     }
@@ -2740,5 +2772,16 @@ footer .socialMedia .fab:hover {
 		margin-left:-40px;
     }
 
+    #about .imgText {
+    	margin-top: 50px;
+    }
+
+     #about .col-img {
+     	margin-top: -20px;
+     }
+
+     #testimonial .testimonial p.test-name {
+     	margin-top: -100px;
+     }
 
 }
